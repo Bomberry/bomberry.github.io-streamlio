@@ -1,0 +1,54 @@
+//  globalFooter.sass
+
+
+//@import "../shame/ssg-colors"
+
+
+#Footer
+  @extend .bg-color-dark-gray-shade-3
+  //background-color: rgb(33,33,33)
+  color: lightgray
+  padding-top: 3rem
+  padding-bottom: 1rem
+  a
+    color: lightgray
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: none
+  h1
+    font-size: 3rem
+  h2
+    font-size: 2.5rem
+  h3
+    font-size: 2rem
+  h4
+    font-size: 1.5rem
+  h5
+    font-size: 1rem
+    a:hover
+      text-decoration: underline
+  [class~="icons"] a
+    margin-right: 1.25rem
+    &:last-of-type
+      margin-right: 0rem
+  span[class~="icon"]
+    padding: .3rem .35rem
+    //border-color: transparent
+    //border-width: 1px
+    //border-style: solid
+    border-radius: 2rem
+    //background-color: transparent
+    &:hover
+      //border-color: cyan
+      background-color: black
+  .footer-brand
+    padding: 0px
+    margin-left: 0
+  .footer-brand>img
+    height: 75%
+    padding: 5px
+    margin-left: 0
+    width: auto
+  .footerCopy
+    font-size: .75rem

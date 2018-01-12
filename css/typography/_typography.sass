@@ -1,0 +1,40 @@
+/* Typography: Heebo and Martel fonts (Google Fonts) */
+
+// Import Fonts from CDNs or local files
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700|Martel:300,400,700)
+
+
+// Font Variables
+/* Standardise the font-family names, add appropriate values for weights and styles */
+$font-heebo: 'Heebo', sans-serif
+$font-sans: $font-heebo
+$font-martel: 'Martel', serif
+$font-serif: $font-martel
+
+$font-light: 300
+$font-normal: 400
+$font-bold: 700
+
+%global-typography-spacing
+  letter-spacing: 0.075rem
+  word-spacing: 0.1rem
+
+// Global Typographic Styles
+body
+  font-family: $font-heebo
+  font-weight: $font-light
+  @extend %global-typography-spacing
+h1, h2, h3, h4, h5, h6
+  font-family: $font-heebo
+  font-weight: $font-normal
+h1, h2
+  letter-spacing: 0.05rem
+
+.blockquote, .quote
+  font-family: $font-martel
+  font-weight: $font-light
+//.button
+  font-family: $font-heebo
+  font-weight: $font-bold
+

@@ -1,0 +1,19 @@
+// Functions
+
+//  Color Helpwers
+//  tint: returns a 'tint' of a color at a certain percentage
+@function tint($color, $percentage)
+  @return mix(white, $color, $percentage)
+
+//  shade: returns a 'shade' of a color at a certain percentage
+@function shade($color, $percentage)
+  @return mix(black, $color, $percentage)
+
+//  get-color: returns the HEX value for a color name
+@function get-color($key)
+  @if map-has-key($streamlio-colors, $key)
+    @return map-get($streamlio-colors, $key)
+
+  @warn "Unknown `#{$key}` in $streamlio-colors."
+  @return null
+

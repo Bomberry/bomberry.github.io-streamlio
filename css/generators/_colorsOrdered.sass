@@ -1,0 +1,50 @@
+/* CSS Document */
+
+//  Generators
+
+//  Generate Color Tabl (Based on the Streamlio Colors map)
+
+//  Variable(s)
+//  ColorDelta Variable: step for the color's Tint & Shade
+//  The colorDelta is set to 1.618, and is multuplied by 10 during each iteration of the loop
+//  IMPORTANT: This numner must remain 1.618, as does the 10x multipule.
+$color-delta: 1.618
+
+//  Generates the following variable CSS classes
+//  .color-colorName
+//  .color-colorName-tint-tintValue
+//  .color-colorName-shade-shadeValue
+//  .bg-color-colorName
+//  .bg-color-colorName-tint-tintValue
+//  .bg-color-colorName-shade-shadeValue
+//  Structure:
+//  .color-#{$key}
+//  .color-#{index(($streamlio-colors), ($key $value))}
+//  .color-#{index(($streamlio-colors), ($key $value))}-shade-#{$i}
+@each $key, $value in $streamlio-colors
+  //  "color" attribute
+  .color-#{$key}
+    color: $value
+  //  "color" Tints
+  @for $i from 1 to 4
+    $increment: $i * 10
+    .color-#{$key}-tint-#{$i}
+      color: tint($value, $increment * $color-delta)
+  //  "Color" Shades
+  @for $i from 1 to 4
+    $increment: $i * 10
+    .color-#{$key}-shade-#{$i}
+      color: shade($value, $increment * $color-delta)
+  //  "background-color" attribute
+  .bg-color-#{$key}
+    background-color: $value
+  //  "background-color" Tints
+  @for $i from 1 to 4
+    $increment: $i * 10
+    .bg-color-#{$key}-tint-#{$i}
+      background-color: tint($value, $increment * $color-delta)
+  //  "background-color" Shades
+  @for $i from 1 to 4
+    $increment: $i * 10
+    .bg-color-#{$key}-shade-#{$i}
+      background-color: shade($value, $increment * $color-delta)

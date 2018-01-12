@@ -1,0 +1,49 @@
+//  pageTitleBlock.sass
+
+
+//@import "../shame/ssg-colors"
+//@import "../shame/backgroundImages"
+//@import "../shame/backgroundGradients"
+
+
+$color-text-primary: white
+$color-text-accent: white
+$text-title: $color-text-accent
+$text-body: $color-text-primary
+
+$global-block-padding: 5rem
+
+$background-color: map-get($streamlio-colors, streamlio-cyan)
+
+.pageTitleBlock
+  padding-top: ($global-block-padding*2.5)
+  padding-bottom: $global-block-padding
+  color: $text-body
+  background-color: $background-color
+  font-family: $font-heebo
+  h1
+    padding: 3rem 0 1.5rem 0
+    text-align: left
+    @extend %global-typography-spacing
+    line-height: 1.25
+    font-weight: bold
+  p
+    font-size: 1.5rem
+    @extend %global-typography-spacing
+    line-height: 1.5
+  p:not(:last-child)
+    padding-bottom: ($global-block-padding/2)
+  a
+    color: $color-text-accent
+    text-decoration: none
+    &:hover
+      //color: $color-text-primary
+      text-decoration: underline
+  button
+    @extend .bg-color-streamlio-cyan
+    border: 1px solid white
+    &:hover
+      @extend .bg-color-streamlio-cyan-shade-3
+      @extend .color-streamlio-cyan-tint-3
+    &.btn-justify
+      width: 100%

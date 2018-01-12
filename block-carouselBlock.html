@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap - Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<!-- Bootstrap - Optional theme -->
+<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+<!--<link href="css/bootstrapStreamlioTest/css/bootstrap.css" rel="stylesheet" type="text/css">-->
+<!--<link href="css/bootstrapStreamlioTest/css/bootstrap-theme.css" rel="stylesheet" type="text/css">-->
+
+<!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
+
+<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="css/streamlio-carouselBlock.css" type="text/css" rel="stylesheet" />
+<!--<link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Streamlio</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--<div class="container-fluid carouselBlock">-->
+<!--  <div class="row">-->
+<!--    <div class="col-sm-5 col-sm-offset-1">-->
+<!--      <h1>This is the title of the page</h1>-->
+<!--      <p>Lorem ipsum dolor sit amet, <a alt="a link" href="#">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet lectus proin nibh nisl condimentum id. Condimentum lacinia quis vel eros donec.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="well">
+        <div id="myCarousel" class="carousel fdi-Carousel slide"> 
+          <!-- Carousel items -->
+          <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+            <div class="carousel-inner onebyone-carosel">
+              <div class="item active">
+                <div class="col-xs-6 col-md-4"> <a href="#"><img src="http://placehold.it/250x250" class="img-responsive center-block"></a>
+                  <div class="text-center">1</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-6 col-md-4"> <a href="#"><img src="http://placehold.it/250x250" class="img-responsive center-block"></a>
+                  <div class="text-center">2</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-6 col-md-4"> <a href="#"><img src="http://placehold.it/250x250" class="img-responsive center-block"></a>
+                  <div class="text-center">3</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-6 col-md-4"> <a href="#"><img src="http://placehold.it/250x250" class="img-responsive center-block"></a>
+                  <div class="text-center">4</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-6 col-md-4"> <a href="#"><img src="http://placehold.it/250x250" class="img-responsive center-block"></a>
+                  <div class="text-center">5</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-6 col-md-4"> <a href="#"><img src="http://placehold.it/250x250" class="img-responsive center-block"></a>
+                  <div class="text-center">6</div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a> <a class="right carousel-control" href="#eventCarousel" data-slide="next"></a> </div>
+          <!--/carousel-inner--> 
+        </div>
+        <!--/myCarousel--> 
+      </div>
+      <!--/well--> 
+    </div>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+    $('#myCarousel').carousel({
+        interval: 10000
+    })
+    $('.fdi-Carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        }
+        else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+});
+    </script>
+
+<div class="col-md-12 text-center">
+  <h3>Multiple Item Product Carousel Bootstrap 3.3.7<br>
+    <a href="https://icons8.com">Icon pack by Icons8</a></h3>
+</div>
+<div class="col-md-10 col-md-offset-1">
+  <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myOtherCarousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Plants/pineapple-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Plants/paprika-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Plants/avocado-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Food/banana-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Plants/onion-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Food/asparagus-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Plants/watermelon-96.png" class="img-responsive"></a></div>
+      </div>
+      <div class="item">
+        <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://maxcdn.icons8.com/Color/PNG/96/Food/eggplant-96.png" class="img-responsive"></a></div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><em class="glyphicon glyphicon-chevron-left"></em></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><em class="glyphicon glyphicon-chevron-right"></em></a></div>
+</div>
+<script>
+$('.carousel[data-type="multi"] .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i=0;i<4;i++) {
+    next=next.next();
+    if (!next.length) {
+    	next = $(this).siblings(':first');
+  	}
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+</script> 
+
+<!--JavaScript for Bootstrap and jQuery--> 
+<!-- CDN Versions of the JavaScript for Bootstrap and jQuery --> 
+<!--Note: jQuery first, then Bootstrap--> 
+<!--jQuery--> 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+<!--Bootstrap--> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<!-- Local JavaScript for Bootstrap and jQuery --> 
+<!--<script type="text/javascript" src="js/jquery-1.8.0.js"></script>--> <!-- BUG: the jQuery.js file  is missing from the folder--> 
+<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>--> 
+<!--End JavaScript Imports-->
+
+</body>
+</html>

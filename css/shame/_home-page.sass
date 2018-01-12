@@ -1,0 +1,225 @@
+//  home-page.sass
+//  A Shameful file with CSS/SASS that needs to be vetted and intergrated into the source structure
+//  Used to quickly create and test HTML/CSS  components, elements, layout, and design decisions.
+@import "ssg-colors"
+
+//  CSS Placeholders
+//  Placeholders start with "%" and do not get compiled into the CSS output
+%clear-fix
+  clear: both
+
+%test-unit-block
+  height: $test-unit
+  width: $test-unit
+
+%clear-padding
+  padding: 0
+
+%small-uppercase
+  color: white
+  font-size: .75rem
+  letter-spacing: .25rem
+  line-height: .25rem
+  text-transform: uppercase
+
+%color-dark-gray
+  color: #5A5B5E
+%color-glacier
+  color: #6b9bc2
+%bg-color-dark-gray
+  background-color: #5A5B5E
+%bg-color-glacier
+  background-color: #6b9bc2
+
+%margin-1
+  margin-top: 2rem
+  margin-bottom: 2rem
+
+%padding-1
+  padding: 2rem
+
+%content-block-padding
+  padding-top: 3rem
+  padding-bottom: 3rem
+
+%content-block-padding-lg
+  padding-top: 5rem
+  padding-bottom: 5rem
+
+%global-navbar-settings
+  height: 3rem
+
+
+
+
+body
+  font-family: 'Heebo', sans-serif !important
+  //font-family: 'Martel', serif !important
+  //font-family: 'FontAwsome' !important
+  @extend %color-dark-gray
+
+h1
+  font-size: 3rem
+h2
+  font-size: 2.5rem
+h3
+  font-size: 2rem
+h4
+  font-size: 1.5rem
+h5
+  font-size: 1rem
+
+
+
+
+
+#homepage
+  //@extend %color-dark-gray
+  button
+    @extend %color-glacier
+    @extend %padding-1
+    @extend %margin-1
+    background-color: white
+    border-radius: 8px
+    border: 2px solid #6b9bc2
+
+
+.navbar-global
+  @extend %global-navbar-settings
+  font-size: 1.25rem
+  background-color: rgba(255, 255, 255, .92)
+
+.navbar-brand
+  padding: 0px
+
+.navbar-brand>img
+  height: 100%
+  padding: 5px
+  width: auto
+
+
+.jumbotron
+  //background-image: url("../media/plexus1f.png")
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 15rem
+  padding-bottom: 10rem
+  height: auto
+  &-header
+    background-color: darkcyan
+    color: white
+  &.jumbo-bg-1
+    background-image: url("../media/background/plexus1f.png")
+  h1
+    font-size: 4rem
+    //padding-top: 5rem
+  h2
+    font-size: 2rem
+    padding-bottom: 5rem
+
+.pad-content-block
+  padding-top: 3rem
+  padding-bottom: 3rem
+
+#Intro, #CaseStudies, #CallToAction
+  padding-top: 5rem
+  padding-bottom: 5rem
+
+  
+#Intro, .feature-list
+  h1, h2, h3
+    @extend %color-glacier
+  p
+    @extend %color-dark-gray
+
+.feature-list > div
+  > h3
+    font-size: 1.5rem
+    text-transform: uppercase
+    @extend %color-glacier
+  > p
+    font-size: 1.25rem
+    @extend %color-dark-gray
+
+#CaseStudies
+  @extend %bg-color-glacier
+  color: white
+  background-repeat: no-repeat
+  background-size: cover
+  background-image: url("../media/background/plexus1e.png")
+  text-align: left
+  h1
+    color: white
+  h2
+    color: white
+  h3
+    font-size: 2rem
+  h5
+    @extend %color-glacier
+  .panel
+    height: 100%
+    border-width: 1px
+    border-color: rgb(230, 230, 230)
+    border-style: solid
+    background-color: rgb(72, 105, 131)
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+    transition: box-shadow 0.15s ease-in-out
+    &:hover
+      background-color: darken(rgb(72, 105, 131), 15%)
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5)
+      z-index: 100
+  .panel-body
+    height: calc(100vh - 300px)
+    overflow-y: auto
+
+    h5
+      color: lighten(rgb(72, 105, 131), 15%)
+      text-transform: uppercase
+
+#CallToAction
+  h3
+    font-size: 2rem
+    text-transform: uppercase
+    @extend %color-glacier
+  p
+    font-size: 1.25rem
+    @extend %color-dark-gray
+
+#Footer
+  @extend .bg-color-dark-gray-shade-3
+  //background-color: rgb(33,33,33)
+  color: lightgray
+  padding-top: 3rem
+  padding-bottom: 1rem
+  a
+    color: lightgray
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: none
+  h5 a:hover
+    text-decoration: underline
+  [class~="icons"] a
+    margin-right: 1.25rem
+    &:last-of-type
+      margin-right: 0rem
+  span[class~="icon"]
+    padding: .3rem .35rem
+    //border-color: transparent
+    //border-width: 1px
+    //border-style: solid
+    border-radius: 2rem
+    //background-color: transparent
+    &:hover
+      //border-color: cyan
+      background-color: black
+  .footer-brand
+    padding: 0px
+    margin-left: 0
+  .footer-brand>img
+    height: 75%
+    padding: 5px
+    margin-left: 0
+    width: auto
+  .footerCopy
+    font-size: .75rem

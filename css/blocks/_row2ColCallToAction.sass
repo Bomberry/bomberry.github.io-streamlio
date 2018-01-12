@@ -1,0 +1,48 @@
+//  row2ColCallToAction.sass
+
+
+//@import "../shame/ssg-colors"
+//@import "../shame/backgroundImages"
+
+$global-block-padding: 5rem
+
+$color-primary: map-get($streamlio-colors, color-dark-gray)
+$color-accent: map-get($streamlio-colors, glacier)
+$text-title: $color-accent
+$text-body: $color-primary
+
+$background-color: map-get($streamlio-colors, streamlio-cyan)
+
+
+.callToAction2Col
+  padding-top: $global-block-padding
+  padding-bottom: $global-block-padding
+  @extend: .color-dark-gray
+  text-align: center
+  h1
+    color: $color-accent
+    font-size: 3rem
+    font-weight: 300
+  p:not(:last-child)
+    padding-bottom: ($global-block-padding/2)
+  a
+    color: $color-accent
+    text-decoration: none
+    &:hover
+      //color: $color-text-primary
+      text-decoration: underline
+  button
+    color: $color-accent
+    border-width: 1px
+    border-color: $color-accent
+    border-style: solid
+    background-color: rgba(white, 0.15)
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+    transition: box-shadow 0.15s ease-in-out
+    &:hover
+      color: white
+      background-color: rgba($color-accent,.82)
+      //@extend: .bg-color-light-gray
+      box-shadow: 0 5px 15px rgba(0,0,0,0.35)
+      z-index: 100
+
