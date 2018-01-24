@@ -1,0 +1,69 @@
+//  row3CardList.sass
+
+
+.mailingListBlock
+  @extend %global-block-padding
+  //color: $color-text-primary
+
+
+//TODO: Move to Layout
+.row-eq-height
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  @media (max-width: $global-breakpoint-small)
+    display: block
+    width: 100%
+
+
+.row3CardList
+  //@extend .color-dark-gray
+  //background-repeat: no-repeat
+  //background-size: cover
+  //background-image: url("../media/background/plexus1e.png")
+  text-align: left
+  
+  
+  .panel
+    //background-color: rgb(72, 105, 131)
+    background-color: rgba(255,255,255,0.15)
+    border-color: shade($color-white, $color-delta * 3)
+    border-style: solid
+    border-width: 1px
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+    //height: 100%
+    min-height: 200px
+    transition: box-shadow 0.15s ease-in-out
+    &:hover
+      background-color: rgba(0,0,0,0.05)
+      //@extend: .bg-color-light-gray
+      box-shadow: 0 5px 15px rgba(0,0,0,0.35)
+      z-index: 100
+    
+  .panel-body
+    height: 100%
+    min-height: $card-min-height
+    overflow-y: auto
+    padding-bottom: $global-block-padding-2
+    position: relative
+    h5, h6
+      //color: lighten(rgb(72, 105, 131), 15%)
+      font-size: $font-size-heading-smaller
+      font-weight: $font-weight-light
+      padding-bottom: $font-size-heading-smaller
+      text-transform: $font-all-cap
+    .image-link
+      padding-bottom: $global-block-padding-1
+      padding-right: 15px
+      padding-top: $global-block-padding-1
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      //max-height: $global-block-padding-2
+      img
+        display: block
+        height: auto
+        max-height: $global-block-padding
+

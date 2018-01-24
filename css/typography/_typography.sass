@@ -12,29 +12,326 @@ $font-sans: $font-heebo
 $font-martel: 'Martel', serif
 $font-serif: $font-martel
 
-$font-light: 300
-$font-normal: 400
-$font-bold: 700
+$font-weight-light: 300
+$font-weight-normal: 400
+$font-weight-heavy: 700
+
+$font-size-title-large: 2.5rem
+$font-size-title-small: 2.25rem
+$font-size-title-smaller: 2rem
+$font-size-subtitle-large: 2rem
+$font-size-subtitle-small: 1.75rem
+$font-size-subtitle-smaller: 1.55rem
+$font-size-heading-large: 1.5rem
+$font-size-heading-small: 1.25rem
+$font-size-heading-smaller: 1rem
+$font-size-body-largest: 1.5rem
+$font-size-body-larger: 1.25rem
+$font-size-body-large: 1rem
+$font-size-body-small: .75rem
+$font-size-body-smallest: .5rem
+
+$font-all-cap: uppercase
+
+
+//
+//$font-root-size: 14px
+//$font-size-scaler: 1
+$font-size-default: $font-root-size * $font-size-scaler
+
+//$font-line-height-default: 2
+//
+//$font-letter-spacing: 0.075rem
+//$font-word-spacing: 0.09rem
+
+
+
+//Following to be moved to, somewhere after mixins and before here
+$color-accent-default: get-color(glacier)
+$color-default: get-color(dark-gray)
+$color-white: white
+$background-color-default: white
+$background-color-accent-default: get-color(glacier)
+
+
+
+//  Define global color variables to be used for the Global Navbar
+$global-navbar-color-accent: get-color(glacier)
+$global-navbar-color-default: get-color(dark-gray)
+$global-navbar-background-color: white
+
+
+
+
+//Following used in :
+$font-color-accent-default: $color-accent-default
+$font-color-default: $color-default
+
+////Following used in : _rowFeatureList,
+//$color-text-primary: $color-default
+//$color-text-accent: $color-accent-default
+//
+
+
+%font-root-size-adjusted
+  font-size: $font-root-size
+  //@media #{$variable-screen-type-laptop}
+    font-size: $font-root-size * $font-size-scaler
+  //@media #{$variable-screen-type-laptop-retina}
+    font-size: $font-root-size * ($font-size-scaler * 2)
+  //@media #{$variable-screen-size}
+    font-size: $font-root-size * $font-size-scaler
+  //@media #{$variable-screen-resolution-100}
+    font-size: $font-root-size * 1
+  //@media #{$variable-screen-resolution-125}
+    font-size: $font-root-size * 1.25
+  //@media #{$variable-screen-resolution-150}
+    font-size: $font-root-size * 1.5
+  //@media #{$variable-screen-resolution-200}
+    font-size: $font-root-size * 1.75
+  //@media #{$variable-screen-resolution-300}
+    font-size: $font-root-size * 2
+  //@media #{$variable-screen-resolution-400}
+    font-size: $font-root-size * 2.5
+
+//TRY THIS: First, set the variables and call the identifier, add list/map of variables and reticulate over values for all.
+//Variables:
+//$test-media: screen
+//$test-feature: -webkit-min-device-pixel-ratio
+//$test-value: 1.5
+//CALL:
+//@media #{$test-media} and ($test-feature: $test-value)
+//  .sidebar
+//    width: 500px
+//RESULT:
+//@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+//  .sidebar {
+//    width: 500px; } }
+
+
+%global-typography-sizing
+  @extend %font-root-size-adjusted
+  line-height: $font-line-height-default
 
 %global-typography-spacing
-  letter-spacing: 0.075rem
-  word-spacing: 0.1rem
+  letter-spacing: $font-letter-spacing
+  word-spacing: $font-word-spacing
 
-// Global Typographic Styles
+
+//Degine HTML and Body Tags
+html
+  //font-size: $font-size-default
+  @extend %font-root-size-adjusted
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 body
   font-family: $font-heebo
-  font-weight: $font-light
+  @extend %global-typography-sizing
   @extend %global-typography-spacing
+  //font-size: $font-size-default //14px;
+  //line-height: $font-line-height-default //1.42857143;
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
+  font-weight: $font-weight-light
+  color: $font-color-default
+  background-color: $background-color-default
+
+//Define Heading Tag(s)
 h1, h2, h3, h4, h5, h6
-  font-family: $font-heebo
-  font-weight: $font-normal
+  //font-family: $font-heebo
+  font-weight: $font-weight-normal
+  //text-align: center
+// Heading Sizing
+h1
+  font-size: $font-size-title-large
+h2
+  font-size: $font-size-title-small
+h3
+  font-size: $font-size-subtitle-large
+h4
+  font-size: $font-size-subtitle-small
+h5
+  font-size: $font-size-heading-large
+h6
+  font-size: $font-size-heading-small
+
 h1, h2
   letter-spacing: 0.05rem
 
-.blockquote, .quote
+//Define Paragraph Tag(s)
+p
+  font-size: $font-size-body-large
+  font-weight: $font-weight-normal
+  text-align: left
+  //color: $font-color-default
+  &.body-small
+    font-size: $font-size-body-small
+  &.body-larger
+    font-size: $font-size-heading-small
+  &:not(:last-child)
+    padding-bottom: ($global-block-padding/2)
+
+//Define Link Tag(s)
+a
+  color: $font-color-accent-default
+  text-decoration: none
+  &:hover, &:focus, &:active
+    color: $font-color-accent-default
+    text-decoration: underline
+    //outline: 5px auto -webkit-focus-ring-color
+    //outline-offset: -2px
+
+
+blockquote, .blockquote, .quote
   font-family: $font-martel
-  font-weight: $font-light
-//.button
-  font-family: $font-heebo
-  font-weight: $font-bold
+  font-weight: $font-weight-light
+
+
+
+.text-thin
+  font-weight: $font-weight-light
+.text-normal
+  font-weight: $font-weight-normal
+.text-heavy
+  font-weight: $font-weight-heavy
+
+//Note: These can probably be removed if you want to use Bootstrap calls, however, if they change in bootstrap, you'll need to address them in the cuture.
+.text-align-left
+  text-align: left
+.text-align-right
+  text-align: right
+.text-align-center
+  text-align: center
+
+
+
+
+//pseudo classes for CSS tags
+.title-large
+  font-size: $font-size-title-large
+.title-small
+  font-size: $font-size-title-small
+.subtitle-large
+  font-size: $font-size-subtitle-large
+.subtitle-small
+  font-size: $font-size-subtitle-small
+.heading-large
+  font-size: $font-size-heading-large
+.heading-small
+  font-size: $font-size-heading-small
+.body-larger
+  font-size: $font-size-heading-small
+.body-large
+  font-size: $font-size-body-large
+.body-small
+  font-size: $font-size-heading-small
+.body-smallest
+  font-size: $font-size-body-smallest
+
+
+
+.button
+  //font-family: $font-heebo
+  font-weight: $font-weight-heavy
+
+
+
+.introTextBlock
+  @extend %global-block-padding
+  .introText-title, .introText-subtitle
+    padding-bottom: 2rem
+    &.title-extended
+      padding-bottom: 4rem
+    &.title-compressed
+      padding-bottom: 0.5rem
+    &.title-flush
+      padding-bottom: 0
+
+  .introText-subtitle
+    @extend .text-thin
+  //.introText-pubInfo
+    padding-bottom: $global-block-padding-4-em
+    text-size: $font-size-body-smallest
+    text-transform: capitalize
+    span.icon
+      padding-top: 3vh
+    .introText-date
+      padding-bottom: 0
+    .introText-author
+      padding-bottom: 0
+
+  .introText-body
+    @extend .body-large
+    &.body-larger
+      @extend .body-larger
+    &.body-small
+      @extend .body-small
+
+.pubInfo
+  text-size: $font-size-body-smallest
+  padding-bottom: $global-block-padding-4
+  //@extend %global-block-padding
+  p
+    margin: 0
+  .pubInfo-date
+    padding: 0
+  .pubInfo-author
+    padding: 0
+  .icon
+    float: left
+    padding-right: 1rem
+
+
+//  STYLING - TO MOVE AND COMPLETE
+/*    From: _block-introTextBlock.sass  */
+//.textBlock-accentColor-default
+//    h1, h2, h3, h4, h5
+//      color: $font-color-default
+//    p
+//      color: $color-primary
+//.textBlock-accentColor-default
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-default
+//    p
+//      color: $font-color-default
+//.textBlock-accentColor-currentTheme
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-accent-default
+//    p
+//      color: $font-color-default
+// .textBlock-accentColor-glacier
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-accent-default
+//.textBlock-accentColor-streamlio-cyan
+//    h1, h2, h3, h4, h5, a
+//      color: get-color(streamlio-cyan)
+//.textBlock-accentColor-streamlio-blue
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-accent-default
+//.textBlock-accentColor-streamlio-green
+//    h1, h2, h3, h4, h5, a
+//      @extend .color-streamlio-green
+
+
+.page-title
+  @extend .title-large
+  @extend .text-heavy
+.page-subtitle
+  @extend .subtitle-small
+.page-heading
+  @extend .heading-large
+.page-body
+  @extend .body-large
+
+
+.section-title
+  @extend .heading-large
+.section-subtitle
+  @extend .subtitle-small
+.section-heading
+  @extend .heading-large
+.section-body
+  @extend .body-large
+  
+
 

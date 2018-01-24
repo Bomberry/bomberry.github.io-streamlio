@@ -1,0 +1,70 @@
+//  buttons.sass
+
+
+
+//  References
+//  typography.sass
+//.button
+//  //font-family: $font-heebo
+//  font-weight: $font-weight-heavy
+//
+
+
+//  Variables: To Refactor
+$global-button-border: 1px solid transparent
+
+//  Page Intro Block
+//button
+  @extend .bg-color-streamlio-cyan
+  border: 1px solid white
+  &:hover
+    @extend .bg-color-streamlio-cyan-shade-3
+    @extend .color-streamlio-cyan-tint-3
+  &.btn-justify
+    width: 100%
+
+
+//  Button Composit Class
+button
+  border: $global-button-border
+  background-color: transparent
+  box-shadow: $global-box-shadow-small
+  transition: $global-transition
+  &:hover
+    background-color: transparent
+    box-shadow: $global-box-shadow
+    z-index: 100
+
+.button-default
+  color: $color-accent-default
+  border-color: $color-accent-default
+  background-color: transparentize($color-white,0.16)
+  &:hover
+    color: white
+    border-color: white
+    background-color: transparentize($color-accent-default,0.16)
+
+//.button-apple
+  @include set-button-color(apple)
+
+
+
+@include generate-button-classes-for-streamlio-colors
+
+
+
+//  Call to action 2 col useage:
+//button
+  color: $color-accent-default
+  border-width: 1px
+  border-color: $color-accent-default
+  border-style: solid
+  background-color: rgba(white, 0.15)
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+  transition: box-shadow 0.15s ease-in-out
+  &:hover
+    color: white
+    background-color: rgba($color-accent-default,.82)
+    //@extend: .bg-color-light-gray
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35)
+    z-index: 100

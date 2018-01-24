@@ -1,35 +1,25 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
-<!-- Bootstrap - Latest compiled and minified CSS -->
+<!-- Bootstrap/FontAwsome - CDN - Latest compiled and minified CSS -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Bootstrap - Optional theme -->
-<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-
-<!--<link href="css/bootstrapStreamlioTest/css/bootstrap.css" rel="stylesheet" type="text/css">-->
-<!--<link href="css/bootstrapStreamlioTest/css/bootstrap-theme.css" rel="stylesheet" type="text/css">-->
-
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<!-- Bootstrap/FontAwsome - LOCAL - Latest compiled and minified CSS -->
+<!-- Note: This is included/commented out in config.sass -->
 <!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
 <!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
 
+<!--Google Type - CDN - Fonts for use SASS/CSS-->
 <link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-<!--<link href="css/streamlio-globalNav.css" type="text/css" rel="stylesheet" />-->
-<!--<link href="css/streamlio-pageTitleBlock.css" type="text/css" rel="stylesheet" />-->
-<!--<link href="css/streamlio-introTextBlock.css" type="text/css" rel="stylesheet" />-->
-<!--<link href="css/streamlio-rowFeatureList.css" type="text/css" rel="stylesheet" />-->
-<!--<link href="css/streamlio-cardListBlock.css" type="text/css" rel="stylesheet" />-->
-<!--<link href="css/streamlio-row2ColCallToAction.css" type="text/css" rel="stylesheet" />-->
-<!--<link href="css/streamlio-globalFooter.css" type="text/css" rel="stylesheet" />-->
-<!-- Composit of above links -->
-<link href="css/streamlio-page-home.css" type="text/css" rel="stylesheet" />
+<!--Main SASS/CSS for Streamlio-->
+<link href="css/streamlio.css" type="text/css" rel="stylesheet" />
 
-
+<!--Favicon link block-->
 <!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">-->
 <!--<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">-->
 <!--<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">-->
@@ -43,13 +33,11 @@
 <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
 <!--<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">-->
 <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
-<!--<link rel="manifest" href="/manifest.json">-->
 <!--<meta name="msapplication-TileColor" content="#ffffff">-->
 <!--<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">-->
 <!--<meta name="theme-color" content="#ffffff">-->
-
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico">
+<!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
 
 
 <title>Streamlio</title>
@@ -61,8 +49,9 @@
 <![endif]-->
 </head>
 
-<body id="HomePage" class="">
 
+
+<body id="HomePage" class="">
 
 <!--block-globalNav-->
 <nav id="globalNavBar" class="navbar navbar-fixed-top navbar-global"> <!-- NOTE: Do you need nav-bar with the navbar-global overide?-->
@@ -106,24 +95,25 @@
       </form>
 -->
       <ul class="nav navbar-nav navbar-right">
-        
-        <li><a alt="What is Streamlio" href="#">What is Streamlio?</a></li>
+
+        <li><a alt="What is Streamlio" href="page-what-is-streamlio.html">What is Streamlio?</a></li>
         <li class="dropdown">
           <a alt="Features" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a alt="Feature 1" href="#">Feature 1</a></li>
-            <li><a alt="Feature 2" href="#">Feature 2</a></li>
-            <li><a alt="Feature 3" href="#">Feature 3</a></li>
+            <li><a alt="Feature 1" href="page-feature-1.html">Feature 1</a></li>
+            <li><a alt="Feature 2" href="page-feature-2.html">Feature 2</a></li>
+            <li><a alt="Feature 3" href="page-feature-3.html">Feature 3</a></li>
           </ul>
         </li>
-        <li><a alt="Getting Started" href="#">Getting Started</a></li>
-        <li><a alt="Learn" href="#">Learn</a></li>
-        <li><a alt="Company" href="#">Company</a></li>
-        
+        <li><a alt="Getting Started" href="page-getting-started.html">Getting Started</a></li>
+        <li><a alt="Learn" href="page-learn.html">Learn</a></li>
+        <li><a alt="Company" href="page-company.html">Company</a></li>
+
         <li><a alt="Search" href="#"><span class="fa fa-search"></span></a></li>
-        <li><a alt="Status" href="#"><span class="fa fa-cloud"></span></a></li>
-        <li><a alt="Dashboard" href="#"><span class="fa fa-user"></span></a></li>
-        <li><a alt="CDN" href="#"><span class="fa fa-rss"></span></a></li>
+<!--        <li><a alt="Status" href="#"><span class="fa fa-cloud"></span></a></li>-->
+<!--        <li><a alt="Dashboard" href="#"><span class="fa fa-user"></span></a></li>-->
+<!--        <li><a alt="CDN" href="#"><span class="fa fa-rss"></span></a></li>-->
+        <li><a alt="Try Now" href="page-try-now.html" class="btn-action" title="Try Now">Try Now</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -136,10 +126,12 @@
         <div class="col-sm-5 col-sm-offset-1">
           <h1>This is the title of the page</h1>
           <p>Lorem ipsum dolor sit amet, <a alt="a link" href="#">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet lectus proin nibh nisl condimentum id. Condimentum lacinia quis vel eros donec.</p>
-          <button class="btn btn-lg btn-justify">Call To Action</button>
+          <button class="btn btn-lg btn-justify" title="" type="button" data-toggle="modal" data-target="#myModal">Call To Action</button>
       </div>
     </div>
 </div>
+
+
 
 
 <!--block-baseIntroText-->
@@ -162,35 +154,35 @@
 <!--block-rowFeatureList-->
 <div class="container-fluid feature-list">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
+    <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
       <div class="row">
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Unique architecture</h3>
           <p>Modular architecture enables easy scalability without data redistribution</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Zero data loss</h3>
           <p>Data redundancy and multi-datacenter replication built in to protect data</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Microservices ready</h3>
           <p>Optimized for microservices applications including containers and [Kubernetes] (https://kubernetes.io) orchestration</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Real-time performance</h3>
           <p>High-performance processing to deliver end-to-end latencies as low as 30ms</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Self-healing</h3>
           <p>Processing engine that adapts automatically to data flow</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Lorem Ipsum with a title long enought to wrap</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce <a href="#">eleifend euismod</a> nibh ut sollicitudin. Morbi eget ullamcorper quam. Gravida ex tortor</p>
         </div>
@@ -249,40 +241,54 @@
 <!--block-row2ColCallToAction-->
 <div class="container-fluid callToAction2Col">
   <div class="row">
-    <div class="col-sm-3 col-sm-offset-2">
-      <h1>Learn more</h1>
-      <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
-      <button class="btn btn-lg">Call To Action</button>
-    </div>
-    <div class="col-sm-3 col-sm-offset-2">
-      <h1>Get Started</h1>
-      <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
-      <button class="jumbotron-button btn btn-lg">Call To Action</button>
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block-callToAction">
+            <div class="col-xs-10 col-xs-offset-1">
+              <span class="icon fa fa-4x fa-graduation-cap"></span>
+              <h1>Learn more</h1>
+              <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
+            <button class="btn btn-lg">Call To Action</button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block-callToAction">
+          <div class="col-xs-10 col-xs-offset-1">
+            <span class="icon fa fa-4x fa-handshake-o"></span>
+            <h1>Get Started</h1>
+            <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
+            <button class="btn btn-lg">Call To Action</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 
+
 <!--block-globalFooter-->
-<div id="Footer" class="container-fluid">
+<div id="Footer" class="container-fluid footer-global">
     <div class="row">
-        <div class="col-sm-3">
-          <a class="footer-brand" href="#"><img src="media/logo/Streamlio-Logo_Full_White.svg" alt="Streamlio logo"></a>
+        <div class="col-sm-2 col-sm-offset-1 footer-list">
+          <h4 class="list-title"><a>Product Overview</a></h4>
+          <h5 class="list-body"><a>Messaging</a></h5>
+          <h5 class="list-body"><a>Real-time processing</a></h5>
+          <h5 class="list-body"><a>Stream storage</a></h5>
         </div>
-        <div class="col-sm-2 col-sm-offset-1">
-          <h4><a>Product Overview</a></h4>
-          <h5><a>Messaging</a></h5>
-          <h5><a>Real-time processing</a></h5>
-          <h5><a>Stream storage</a></h5>
+        <div class="col-sm-2 col-sm-offset-1 footer-list">
+          <h4 class="list-title"><a>Product Overview</a></h4>
+          <h5 class="list-body"><a>Messaging</a></h5>
+          <h5 class="list-body"><a>Real-time processing</a></h5>
+          <h5 class="list-body"><a>Stream storage</a></h5>
         </div>
-        <div class="col-sm-2 col-sm-offset-1">
-          <h4><a>Resources</a></h4>
-          <h5><a>Getting Started</a></h5>
-          <h5><a>Learn</a></h5>
-          <h5><a>Blog</a></h5>
+        <div class="col-sm-2 col-sm-offset-1 footer-list">
+          <h4 class="list-title"><a>Resources</a></h4>
+          <h5 class="list-body"><a>Getting Started</a></h5>
+          <h5 class="list-body"><a>Learn</a></h5>
+          <h5 class="list-body"><a>Blog</a></h5>
         </div>
-        <div class="col-sm-2 col-sm-offset-1">
-          <h4 class="icons"><a><span class="icon fa fa-twitter"></span></a><a><span class="icon fa fa-github"></span></a><a><span class="icon fa fa-linkedin-square"></span></a><a><span class="icon fa fa-rss"></span></a></h4>
+        <div class="col-sm-2 col-sm-offset-1 footer-list">
+          <h4 class="icons"><a><span class="icon fa fa-2x fa-twitter"></span></a><a><span class="icon fa fa-2x fa-github"></span></a><a><span class="icon fa fa-2x fa-linkedin-square"></span></a><a><span class="icon fa fa-2x fa-rss"></span></a></h4>
           <h5>&nbsp;</h5>
           <h5><a>Privacy Policy</a></h5>
           <h5><a>Terms of Use</a></h5>
@@ -291,20 +297,20 @@
     </div>
     <div class="row">
         <div class="col-sm-2 col-sm-offset-1">
-          <p class="small"><strong>Streamlio, Inc.</strong><br />
-            XXX Alma Street, &#35;XX<br />
-            Palo Alto, CA XXXXX</p>
-          <p class="footerCopy">&copy;2018 Streamlio, Inc.</p>
+          <a class="footer-brand" href="#"><img src="media/logo/Streamlio-Logo_Full_White.svg" alt="Streamlio logo" class="img-responsive"></a>
+          <h4 class="footer-icons">
+            <a><span class="icon fa fa-2x fa-twitter"></span></a>
+            <a><span class="icon fa fa-2x fa-github"></span></a>
+            <a><span class="icon fa fa-2x fa-linkedin-square"></span></a>
+            <a><span class="icon fa fa-2x fa-rss"></span></a>
+          </h4>
+          <p class="footer-copyright">&copy;2018 Streamlio, Inc.</p>
         </div>
         <div class="col-sm-8 col-sm-offset-1">
-          <p class="footerCopy">*Apache Pulsar is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by Apache Incubator PMC. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.</p>
+          <p class="footer-footnote">*Apache Pulsar is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by Apache Incubator PMC. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.</p>
         </div>
     </div>
 </div>
-
-
-
-
 
 
 
@@ -319,6 +325,8 @@
 <!--<script type="text/javascript" src="js/jquery-1.8.0.js"></script>--> <!-- BUG: the jQuery.js file  is missing from the folder-->
 <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
 <!--End JavaScript Imports-->
+<!-- Local JavaScript TO BE MOVED TO JS FILES-->
+<!-- Navbar "compressed" Script -->
 <script type="text/javascript">
   $(document).ready(function () {
     $(window).on('scroll', function () {
@@ -330,5 +338,13 @@
     });
   });
 </script>
+<!-- Modal Popup Script -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#myModal").modal('show');
+});
+</script>
+
+
 </body>
 </html>

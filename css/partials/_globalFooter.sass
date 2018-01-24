@@ -1,0 +1,53 @@
+//  globalFooter.sass
+
+
+$variable-screen-size: "screen and (min-width: 767px)"
+
+%global-footer-brand-img-width
+  width: 60%
+  
+  @media #{$variable-screen-size}
+    width: 100%
+
+
+.footer-global
+  @extend .bg-color-dark-gray-shade-3
+  color: lightgray
+  padding-top: 3rem
+  padding-bottom: 1rem
+  > .row:not(:last-child) > div
+    padding-bottom: 3rem
+  a
+    color: lightgray
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: none
+  h4, h5, .list-title, .list-body
+    font-size: .75rem
+  h4, .list-title
+    text-transform: uppercase
+    > a
+      color: white
+  h5, .list-body
+    a:hover
+      text-decoration: underline
+  *[class~="icons"] a
+    margin-right: .5em
+    &:last-of-type
+      margin-right: 0rem
+  span[class~="icon"]
+    padding: .3rem .35rem
+    background-color: transparent
+    &:hover
+      background-color: black
+  .footer-brand
+    padding: 0 0 .25em 0
+    margin-left: 0
+  .footer-brand>img
+    //width: 60%
+    padding: 0px
+    margin-left: 0
+    @extend %global-footer-brand-img-width
+  .footer-footnote, .footer-copyright
+    font-size: .75rem

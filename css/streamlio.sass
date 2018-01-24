@@ -1,16 +1,49 @@
+@charset 'utf-8'
 /* CSS Document */
 
-//  Variable Overides
-//  Variable overides must go before variables declaired in the @import file(s)
-
-
-//  Import Files
-//  When importing "stubs" (fragements), the preceding "_" nor the ".sass" extension are required.
 
 //  Main Config Import File
 //  REQUIRED (loads all of the other main SASS components)
 @import "config"
+//  For debugging here is the config statement
+// @import "variables"
+// @import "bootstrap"
+// @import "functions"
+// @import "generators"
+// @import "mixins"
+// @import "overrides"
+// @import "typography"
+// @import "style"
 
-//@import "blocks/
+
+//  @import partials
+//  These provide additional formatting and styling 
+
+
+@import "variables/ssg-colors"
+@import "partials/backgroundGradients"
+@import "partials/backgroundImages"
+
+//  component partials
+@import "partials/buttons"
+
+//  styling partials
+@import "partials/cardList"
+@import "partials/cardListBlock"
+@import "partials/carouselBlock"
+@import "partials/featureList"
+@import "partials/globalFooter"
+@import "partials/globalNav"
+@import "partials/introTextBlock"
+@import "partials/modal-mediaList"
+@import "partials/pageTitleBlock"
+@import "partials/row2ColCallToAction"
+@import "partials/row3CardList"
+@import "partials/rowFeatureList"
+
+@import "partials/dev"
+
+//@import shame TODO: Remove SHAME to partials
 @import "shame/home-page"
-@import "shame/ssg-colors"
+//@import "shame/page-home"
+//@import "shame/ssg"

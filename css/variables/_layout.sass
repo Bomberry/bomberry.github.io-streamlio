@@ -1,0 +1,166 @@
+//  Variables
+//  Used to hold global layout variables, maps, lists, and other variable structural data.
+
+$element-list-blocks: () //use to contain block level elements
+$element-list-sections: () //use to contain section level elements
+$element-list-pages: () //use to contain page level elements
+$template-list: () //use to defint templates
+$composition-list: () //use to defint structural composition of pages
+
+
+//  Boostrap variable override
+$grid-float-breakpoint: 992px
+
+
+//Variable-screen-size is defined in _units, but you can override it here to test the @media directives
+$variable-screen-size: "screen and (min-width: 300px)"
+$variable-screen-size-test: "screen and (min-width: 600px) and (max-width: 1200px)"
+//Variables for Screen resolution in percentage of scale
+$variable-screen-dpr-100: "(-webkit-min-device-pixel-ratio: 1)"
+$variable-screen-dpr-125: "(-webkit-min-device-pixel-ratio: 1.25)"
+$variable-screen-dpr-150: "(-webkit-min-device-pixel-ratio: 1.5)"
+$variable-screen-dpr-200: "(-webkit-min-device-pixel-ratio: 2)"
+$variable-screen-dpr-300: "(-webkit-min-device-pixel-ratio: 3)"
+$variable-screen-dpr-400: "(-webkit-min-device-pixel-ratio: 4)"
+
+$variable-screen-resolution-70: "(min-resolution: 70dpi)"
+$variable-screen-resolution-140: "(min-resolution: 140dpi)"
+$variable-screen-resolution-220: "(min-resolution: 220dpi)"
+$variable-screen-resolution-260: "(min-resolution: 260dpi)"
+$variable-screen-resolution-320: "(min-resolution: 320dpi)"
+$variable-screen-resolution-400: "(min-resolution: 400dpi)"
+$variable-screen-resolution-500: "(min-resolution: 500dpi)"
+//$variable-screen-resolution-400: "(-webkit-min-device-pixel-ratio: 4), (min-resolution: 192dpi)"
+
+$variable-screen-type-laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)"
+$variable-screen-type-laptop-retina: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)"
+
+
+
+%global-block-margin
+  margin-top: $global-block-padding
+  margin-bottom: $global-block-padding
+
+.content-block
+  @extend %global-block-margin
+
+
+.row-eq-height
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  @media (max-width: $global-breakpoint-small)
+    display: block
+    width: 100%
+
+
+%global-block-padding
+  padding-top: $global-block-padding
+  padding-bottom: $global-block-padding
+
+//%pad-bottom-0
+//  padding-bottom: $global-block-padding-0
+//%pad-bottom-5
+//  padding-bottom: $global-block-padding
+//%pad-bottom-4
+//  padding-bottom: $global-block-padding-4
+//%pad-bottom-3
+//  padding-bottom: $global-block-padding-3
+//%pad-bottom-25
+//  padding-bottom: $global-block-padding-25
+//%pad-bottom-2
+//  padding-bottom: $global-block-padding-2
+//%pad-bottom-15
+//  padding-bottom: $global-block-padding-15
+//%pad-bottom-1
+//  padding-bottom: $global-block-padding-1
+//%pad-bottom-05
+//  padding-bottom: $global-block-padding-05
+//%pad-bottom-5-em
+//  padding-bottom: $global-block-padding-em
+//%pad-bottom-4-em
+//  padding-bottom: $global-block-padding-4-em
+//%pad-bottom-3-em
+//  padding-bottom: $global-block-padding-3-em
+//%pad-bottom-25-em
+//  padding-bottom: $global-block-padding-25-em
+//%pad-bottom-2-em
+//  padding-bottom: $global-block-padding-2-em
+//%pad-bottom-15-em
+//  padding-bottom: $global-block-padding-15-em
+//%pad-bottom-1-em
+//  padding-bottom: $global-block-padding-1-em
+//%pad-bottom-05-em
+//  padding-bottom: $global-block-padding-05-em
+.pad-bottom-0
+  padding-bottom: $global-block-padding-0
+.pad-bottom-5
+  padding-bottom: $global-block-padding
+.pad-bottom-4
+  padding-bottom: $global-block-padding-4
+.pad-bottom-3
+  padding-bottom: $global-block-padding-3
+.pad-bottom-25
+  padding-bottom: $global-block-padding-25
+.pad-bottom-2
+  padding-bottom: $global-block-padding-2
+.pad-bottom-15
+  padding-bottom: $global-block-padding-15
+.pad-bottom-1
+  padding-bottom: $global-block-padding-1
+.pad-bottom-05
+  padding-bottom: $global-block-padding-05
+.pad-bottom-5-em
+  padding-bottom: $global-block-padding-em
+.pad-bottom-4-em
+  padding-bottom: $global-block-padding-4-em
+.pad-bottom-3-em
+  padding-bottom: $global-block-padding-3-em
+.pad-bottom-25-em
+  padding-bottom: $global-block-padding-25-em
+.pad-bottom-2-em
+  padding-bottom: $global-block-padding-2-em
+.pad-bottom-15-em
+  padding-bottom: $global-block-padding-15-em
+.pad-bottom-1-em
+  padding-bottom: $global-block-padding-1-em
+.pad-bottom-05-em
+  padding-bottom: $global-block-padding-05-em
+
+
+
+
+%column-count-1
+  -webkit-column-gap: 0
+  -moz-column-gap: 0
+  column-gap: 0
+  -webkit-column-count: 1
+  -moz-column-count: 1
+  column-count: 1
+%column-count-2
+  -webkit-column-gap: 30px
+  -moz-column-gap: 30px
+  column-gap: 30px
+  -webkit-column-count: 2
+  -moz-column-count: 2
+  column-count: 2
+
+.columns-2
+  -webkit-column-gap: 30px
+  -moz-column-gap: 30px
+  column-gap: 30px
+  -webkit-column-count: 2
+  -moz-column-count: 2
+  column-count: 2
+  &:not(:last-child)
+    padding-bottom: $global-block-padding
+  @media screen and (max-width: $global-breakpoint-small)
+    -webkit-column-gap: 0
+    -moz-column-gap: 0
+    column-gap: 0
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1
+    &:not(:last-child)
+      padding-bottom: ($global-block-padding/2)

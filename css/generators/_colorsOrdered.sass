@@ -1,14 +1,8 @@
-/* CSS Document */
+/* Colors Ordered */
 
 //  Generators
 
-//  Generate Color Tabl (Based on the Streamlio Colors map)
-
-//  Variable(s)
-//  ColorDelta Variable: step for the color's Tint & Shade
-//  The colorDelta is set to 1.618, and is multuplied by 10 during each iteration of the loop
-//  IMPORTANT: This numner must remain 1.618, as does the 10x multipule.
-$color-delta: 1.618
+//  Generate Color Table (Based on the streamlio-colors map)
 
 //  Generates the following variable CSS classes
 //  .color-colorName
@@ -19,7 +13,7 @@ $color-delta: 1.618
 //  .bg-color-colorName-shade-shadeValue
 //  Structure:
 //  .color-#{$key}
-//  .color-#{index(($streamlio-colors), ($key $value))}
+//  .color-#{index(($streamlio-colors), ($key $value))}-tint-#{$i}
 //  .color-#{index(($streamlio-colors), ($key $value))}-shade-#{$i}
 @each $key, $value in $streamlio-colors
   //  "color" attribute
@@ -48,3 +42,4 @@ $color-delta: 1.618
     $increment: $i * 10
     .bg-color-#{$key}-shade-#{$i}
       background-color: shade($value, $increment * $color-delta)
+

@@ -1,12 +1,54 @@
+/* @charset 'utf-8' */ //move to root sass
 /* CSS Document */
 
 //  Config Import Files
-//  Improts all of the base SASS components - used by stubs.
+//  Improts all of the base SASS framework components - each is used to group partials.
 @import "variables"
-@import "bootstrap"
+
+//@import "bootstrap"
+
 @import "functions"
 @import "generators"
 @import "mixins"
+
 //@import "overrides"
 @import "typography"
-//@import "style"
+@import "style"
+
+
+
+
+//  Please use the following styling order
+//  Try and avoid using IDs and stick to Classes, Tags, and Pseudo selectors.
+//.class-name
+  //  Deflare local variables
+  $local-variable-name: white
+  //  List @extend(s) First
+  @extend %class-placeholder-mixin-etc
+  //  List @include(s) Next
+  @include transition(all 0.3s ease)
+  //  Properties Next
+  background: $local-variable-name
+  //  Media Queries Next
+  @media #{$mobile-large}
+    //  Use the same styling order when using nested selectors
+    @include transform(rotate(180deg))
+    border-bottom: 1px solid $local-variable-name
+  //  Pseudo Classes Next
+  &:hover
+    background: DarkGray
+  //  Pseudo Elements Next
+  &::before
+    content: ""
+    display: block
+  //  Nested Direct Selectors Next
+  > h3
+    //  Use the same styling order
+    @include background-image(#{$background-image-default})
+    font-weight: 400
+  //  Nested Selectors Last
+  h1
+    //  Use the same styling order 
+    @include transform(rotate(180deg))
+    border-bottom: 1px solid $local-variable-name
+

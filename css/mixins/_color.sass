@@ -33,3 +33,50 @@
   background-image: -o-linear-gradient(125deg, $base-color, $secondary-color)
   background-image: linear-gradient(125deg, $base-color, $secondary-color)
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$base-color}', end-colourStr='#{$secondary-color}', gradientType='1') /* IE6-9 */
+
+
+//@mixins for setting colors
+@mixin set-text-with-color ($streamlio-color)
+  $text-objects: (h1, h2, h3, h4, h5, h6, p, a, 'a:hover', 'a:visited', 'a:active')
+  @each $value in $text-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color}))
+
+@mixin set-text-with-colors ($streamlio-color-base, $streamlio-color-accent)
+  $base-color-objects: (p)
+  $accent-color-objects: (h1, h2, h3, h4, h5, h6, a, 'a:hover', 'a:visited', 'a:active')
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color-base}))
+  @each $value in $accent-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color-accent}))
+
+
+@mixin set-button-color ($streamlio-color)
+  color: (get-color($streamlio-color))
+  border-color: (get-color($streamlio-color))
+  background-color: transparentize($color-white,0.16)
+  &:hover
+    color: white
+    border-color: white
+    background-color: transparentize((get-color($streamlio-color)),0.16)
+
+//@mixin colorize-button($base-color, $accent-color)  color: $color-accent-default
+  border-color: $color-accent-default
+  background-color: transparentize($color-white,0.16)
+  &:hover
+    color: white
+    border-color: white
+    background-color: transparentize($color-accent-default,0.16)
+
+@mixin generate-button-classes-for-streamlio-colors
+  @each $key, $value in $streamlio-colors
+    .button-#{$key}
+      @include set-button-color($key)
+
+//@each $key, $value in $streamlio-colors
+  %color-#{$key}
+    color: #{$value}
+  %bg-color-#{$key}
+    background-color: #{$value}

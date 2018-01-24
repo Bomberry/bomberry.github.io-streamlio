@@ -3,23 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<!-- Bootstrap - Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Bootstrap - Optional theme -->
-<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-
-<!--<link href="css/bootstrapStreamlioTest/css/bootstrap.css" rel="stylesheet" type="text/css">-->
-<!--<link href="css/bootstrapStreamlioTest/css/bootstrap-theme.css" rel="stylesheet" type="text/css">-->
-
-<!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
-
-<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-<link href="css/streamlio-cardList.css" type="text/css" rel="stylesheet" />
-<!--<link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">-->
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Bootstrap/FontAwsome - CDN - Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<!-- Bootstrap/FontAwsome - LOCAL - Latest compiled and minified CSS -->
+<!-- Note: This is included/commented out in config.sass -->
+<!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
+<!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
+
+<!--Google Type - CDN - Fonts for use SASS/CSS-->
+<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">
+
+<!--Main SASS/CSS for Streamlio-->
+<link href="css/streamlio.css" type="text/css" rel="stylesheet" />
+
+<!--Favicon link block-->
+<!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">-->
+<!--<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">-->
+<!--<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">-->
+<!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">-->
+<!--<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">-->
+<!--<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">-->
+<!--<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">-->
+<!--<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">-->
+<!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">-->
+<!--<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">-->
+<!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+<!--<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">-->
+<!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+<!--<meta name="msapplication-TileColor" content="#ffffff">-->
+<!--<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">-->
+<!--<meta name="theme-color" content="#ffffff">-->
+<link rel="shortcut icon" href="favicon.ico">
+<!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+
+
 <title>Streamlio</title>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,24 +51,15 @@
 
 <body id="" class="">
 
-<div id="CardListBlock" class="container-fluid text-center">
-  <div class="row">
-    
-    <div class="col-sm-8 col-sm-offset-2 introTextBlock">
-      <h1>Title for the CardList Section</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend euismod nibh ut sollicitudin. Morbi eget ullamcorper quam. Gravida ex tortor: <a href="link" title="Streamlio on Twitter">Twitter</a></p>
-    </div>
-  
-  </div>
-  
-  <div class="row cardList">
+<div id="" class="container-fluid text-center cardList">
+  <div class="row row-eq-height">
     <div class="col-xs-10 col-xs-offset-1">
       <div class="row">
         <div class="col-sm-4 col-sm-offset-0 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-file-archive-o"></span></h5>
             <h5 class="card-catagory">Category</h5>
-            <h1 class="card-title">Messaging:<br />Apache Pulsar*</h1>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">January 2018</h5>
               <h5 class="card-author">Author</h5>
@@ -66,8 +77,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
-            <h5>Category</h5>
-            <h1>One Line</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">One line of text</h2>
             <div class="card-footer">
               <h5 class="card-date">October 2017</h5>
               <h5 class="card-author"><a>@AuthorTwitterLink</a></h5>
@@ -81,8 +92,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-television "></span></h5>
-            <h5>Category</h5>
-            <h1>This has more than two lines of text without a break.</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Several lines of text to show wrapping for the card's title, like this.</h2>
             <div class="card-footer">
               <h5 class="card-date">August 2017</h5>
               <h5 class="card-author">Author</h5>
@@ -97,8 +108,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-picture-o"></span></h5>
-            <h5>Category</h5>
-            <h1>Messaging:<br />Apache Pulsar*</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">June 2017</h5>
               <h5 class="card-author">Author</h5>
@@ -108,8 +119,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-newspaper-o"></span></h5>
-            <h5>Category</h5>
-            <h1>Messaging:<br />Apache Pulsar*</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">April 2017</h5>
               <h5 class="card-author">Author</h5>
@@ -119,8 +130,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-hand-spock-o"></span></h5>
-            <h5>Category</h5>
-            <h1>Messaging:<br />Apache Pulsar*</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">February 2017</h5>
               <h5 class="card-author">Author</h5>
@@ -130,8 +141,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-floppy-o"></span></h5>
-            <h5>Category</h5>
-            <h1>Messaging:<br />Apache Pulsar*</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">January 2017</h5>
               <h5 class="card-author">Author</h5>
@@ -141,8 +152,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-file-word-o"></span></h5>
-            <h5>Category</h5>
-            <h1>Messaging:<br />Apache Pulsar*</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">December 2016</h5>
               <h5 class="card-author">Author</h5>
@@ -152,8 +163,8 @@
         <div class="col-sm-4 panel">
           <div class="panel-body">
             <h5 class="card-icon"><span class="fa fa-3x fa-file-pdf-o"></span></h5>
-            <h5>Category</h5>
-            <h1>Messaging:<br />Apache Pulsar*</h1>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Messaging:<br />Apache Pulsar*</h2>
             <div class="card-footer">
               <h5 class="card-date">DATE</h5>
               <h5 class="card-author">Author</h5>

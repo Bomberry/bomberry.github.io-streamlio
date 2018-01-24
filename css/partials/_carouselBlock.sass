@@ -1,0 +1,124 @@
+//  carouselBlock.sass
+
+
+.carousel-block
+  @extend %global-block-margin
+  //@extend .bg-image
+  //@extend .plexus-8
+
+
+
+//  TODO: Complete the carousel styling, needs responsive test for layout and cover fill for image
+
+
+.carouselBlock
+  //@extend %global-block-margin
+  @extend %global-block-padding
+  //@extend .bg-image
+  //@extend .plexus-8
+  background-color: $background-color-accent-default
+  background-size: cover
+  color: $color-white
+  //@extend .bg-color-dark-gray-shade-3
+  //background-color: rgb(33,33,33)
+  h1
+    font-weight: $font-weight-heavy
+    letter-spacing: 0.1rem
+    line-height: 1.25
+    padding: 3rem 0 1.5rem 0
+    text-align: left
+    word-spacing: 0.1rem
+  p
+    font-size: 1.5rem
+    letter-spacing: 0.1rem
+    line-height: 1.5
+    word-spacing: 0.1rem
+  p:not(:last-child)
+    padding-bottom: ($global-block-padding/2)
+  a
+    color: $color-accent-default
+    text-decoration: none
+    &:hover
+      //color: $color-text-primary
+      text-decoration: underline
+
+
+//.carousel
+  height: 250px
+  overflow: hidden
+
+//.carousel-inner > .item
+  height: 30em
+
+//.carousel-inner > .item img
+  height: auto
+  position: absolute
+  top: 0
+  transform: translateY(-50%)
+  width: 100%
+
+
+
+.carousel-inner
+  margin: auto
+  width: 90%
+  //  Used to center the carousel caption
+  .carousel-caption
+    top: 50%
+    transform: translateY(-50%)
+  a
+    display: table-cell
+    height: 180px
+    width: 200px
+    vertical-align: middle
+  img
+    //max-height: 250px
+    //margin: auto auto
+    //max-width: 100%
+    object-fit: cover
+
+.carousel-control
+  width:  4%
+  &.left
+    background-image: none
+  &.right
+    background-image: none
+
+
+.glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right
+  color: $color-white
+  margin-top: -10px
+  margin-left: -10px
+
+
+
+@media (max-width: 767px)
+  .carousel-inner > .item.next, .carousel-inner > .item.active.right
+    left: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+  .carousel-inner > .item.prev, .carousel-inner > .item.active.left
+    left: 0
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+
+@media (min-width: 767px) and (max-width: 992px )
+  .carousel-inner > .item.next, .carousel-inner > .item.active.right
+    left: 0
+    -webkit-transform: translate3d(50%, 0, 0)
+    transform: translate3d(50%, 0, 0)
+  .carousel-inner > .item.prev, .carousel-inner > .item.active.left
+    left: 0
+    -webkit-transform: translate3d(-50%, 0, 0)
+    transform: translate3d(-50%, 0, 0)
+
+@media (min-width: 992px )
+  .carousel-inner > .item.next, .carousel-inner > .item.active.right
+    left: 0
+    -webkit-transform: translate3d(16.7%, 0, 0)
+    transform: translate3d(16.7%, 0, 0)
+  .carousel-inner > .item.prev, .carousel-inner > .item.active.left
+    left: 0
+    -webkit-transform: translate3d(-16.7%, 0, 0)
+    transform: translate3d(-16.7%, 0, 0)

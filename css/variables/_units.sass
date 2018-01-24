@@ -5,3 +5,79 @@
 //  Used to set global default variables.
 $test-unit: 15rem
 
+
+//  Font ROOT definition for HTML tag and used in @media overrides
+$font-root-size: 14px
+$font-size-scaler: 1
+$font-line-height-default: 2
+
+//  Font-Weight Variable: the definitions for @media overrides
+$font-weight-light: 300
+$font-weight-normal: 400
+$font-weight-heavy: 700
+
+//  Font Spacing Variable: the definitions for @media overrides
+$font-letter-spacing: 0.075rem
+$font-word-spacing: 0.09rem
+
+//  Global NavBar variables: the definitions for @media overrides
+$global-navbar-height-large: 100px
+$global-navbar-height-small: 50px
+$global-navbar-text-large: 1rem//1.25rem
+$global-navbar-text-small: 1rem
+$global-navbar-subnavbar-height: $global-navbar-height-small
+$global-navbar-subnavbar-text: $global-navbar-text-small
+
+//  Global layout variables: the definitions for @media overrides
+$global-block-padding: 5rem
+$global-block-padding-0: 0
+$global-block-padding-4: 4rem
+$global-block-padding-3: 3rem
+$global-block-padding-25: 2.5rem
+$global-block-padding-2: 2rem
+$global-block-padding-15: 1.5rem
+$global-block-padding-1: 1rem
+$global-block-padding-05: 0.5rem
+$global-block-padding-em: 5rem
+$global-block-padding-4-em: 4em
+$global-block-padding-3-em: 3rem
+$global-block-padding-25-em: 2.5em
+$global-block-padding-2-em: 2em
+$global-block-padding-15-em: 1.5em
+$global-block-padding-1-em: 1em
+$global-block-padding-05-em: 0.5em
+
+//  global-box-shadow variables: the definitions for @media overrides
+$global-box-shadow: 0 5px 15px rgba(0,0,0,0.35)
+$global-box-shadow-small: 0 1px 2px rgba(0,0,0,0.15)
+
+//  global-"transition" default: the definitions for @media overrides
+$global-transition-slow: all .32s ease
+$global-transition-default: all .16s ease
+$global-transition: all .16s ease-in-out
+$global-transition-box-shadow: box-shadow .16s ease-in-out
+
+//  global-border styles: the definitions for @media overrides
+$global-border-stroke-small: 1px solid rgb(230, 230, 230)
+$global-border-stroke-offset-small: -1px
+$global-border-stroke: 2px solid rgb(230, 230, 230)
+$global-border-stroke-offset: -2px
+
+//  variable-screen-size Variable: the definitions for @media overrides
+//  The variable-screen-size is used to set the state of the @media directives...
+//  TODO: Add additional units, not strings, and extact into a Mixin for processing.
+$global-breakpoint-768: 768px
+$global-breakpoint-992: 992px
+$global-breakpoint-1200: 1200px
+$global-breakpoint-small: $global-breakpoint-768
+$global-breakpoint-medium: $global-breakpoint-992
+$global-breakpoint-large: $global-breakpoint-1200
+
+$variable-screen-size: "screen and (min-width: 300px)"
+$variable-screen-ratio: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+
+
+//  global default Card variables
+$card-min-height: 250px
+$card-height: $card-min-height
+

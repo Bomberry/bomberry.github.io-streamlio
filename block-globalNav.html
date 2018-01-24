@@ -5,20 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- Bootstrap - Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Bootstrap - Optional theme -->
-<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-
-<!--<link href="css/bootstrapStreamlioTest/css/bootstrap.css" rel="stylesheet" type="text/css">-->
-<!--<link href="css/bootstrapStreamlioTest/css/bootstrap-theme.css" rel="stylesheet" type="text/css">-->
-
+<!-- Bootstrap/FontAwsome - CDN - Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<!-- Bootstrap/FontAwsome - LOCAL - Latest compiled and minified CSS -->
+<!-- Note: This is included/commented out in config.sass -->
 <!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
 <!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
 
+<!--Google Type - CDN - Fonts for use SASS/CSS-->
 <link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-<link href="css/streamlio-globalNav.css" type="text/css" rel="stylesheet" />
+
+<!--Main SASS/CSS for Streamlio-->
+<link href="css/streamlio.css" type="text/css" rel="stylesheet" />
+
+<!--Favicon link block-->
+<!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">-->
+<!--<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">-->
+<!--<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">-->
+<!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">-->
+<!--<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">-->
+<!--<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">-->
+<!--<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">-->
+<!--<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">-->
+<!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">-->
+<!--<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">-->
+<!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+<!--<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">-->
+<!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+<!--<meta name="msapplication-TileColor" content="#ffffff">-->
+<!--<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">-->
+<!--<meta name="theme-color" content="#ffffff">-->
+<link rel="shortcut icon" href="favicon.ico">
+<!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
 
 
 <title>Streamlio</title>
@@ -36,7 +55,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-navbar-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -50,7 +69,6 @@
 <!--
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">What is Streamlio? <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">What is Streamlio?</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -85,14 +103,32 @@
         <li><a alt="Getting Started" href="#">Getting Started</a></li>
         <li><a alt="Learn" href="#">Learn</a></li>
         <li><a alt="Company" href="#">Company</a></li>
-        <li><a alt="Search" href="#"><span class="fa fa-search"></span></a></li>
-        <li><a alt="Status" href="#"><span class="fa fa-cloud"></span></a></li>
-        <li><a alt="Dashboard" href="#"><span class="fa fa-user"></span></a></li>
-        <li><a alt="CDN" href="#"><span class="fa fa-rss"></span></a></li>
+        <li><a alt="Search" href="#"><span class="navbar-toggler navbar-toggler-icon fa fa-search" type="button" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle navigation"></span></a></li>
+<!--        <li><a alt="Status" href="#"><span class="fa fa-cloud"></span></a></li>-->
+<!--        <li><a alt="Dashboard" href="#"><span class="fa fa-user"></span></a></li>-->
+        <li><a alt="Try Now" href="#" class="btn-action">Try Now</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+<!-- Search Bar module -->
+<div class="pos-f-t">
+  <div class="collapse" id="navbar-search">
+    <div class="bg-inverse p-4">
+      <form class="search-form" id="" action="">
+      <div class="input-group">
+      <input type="text" name="search" class="search form-control" placeholder="Search">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
+      </span>
+      <span class="input-group-addon search-close" id="basic-addon2"><i class="fa fa-window-close" aria-hidden="true"></i>
+      </span>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- / Search Bar module -->
 </nav>
+
 
 <!--JavaScript for Bootstrap and jQuery-->
 <!-- CDN Versions of the JavaScript for Bootstrap and jQuery -->

@@ -1,5 +1,21 @@
 //  Variables
 //  Used to hold global variables, maps, lists, and other variable structural data.
 
-//  Streamlio Color Table: Prime Colors (3), Grays (2), and Alternate Colors (12)
-$streamlio-colors: ('streamlio-cyan': #56C5D0, 'streamlio-blue': #315B9D, 'streamlio-green': #6BC392, 'light-gray': #AEB0B3, 'dark-gray': #5A5B5E, 'chestnut-rose': #d06156, 'fuchsia-pink': #d058c6, 'tacha': #c6d058, 'indigo': #6258d0, 'luxor-gold': #9b7231, 'night-shadz': #9b315a, 'apple': #5a9b31, 'vivid-violet': #72319b, 'hopbush': #c26b9b, 'amethyst': #926bc2, 'twine': #c2926b, 'glacier': #6b9bc2)
+//  Streamlio Color Table: Prime Colors (3), Grays (2), and Alternate Colors (12), now with Black and White values!
+$streamlio-colors: ('streamlio-cyan': #56C5D0, 'streamlio-blue': #315B9D, 'streamlio-green': #6BC392, 'light-gray': #AEB0B3, 'dark-gray': #5A5B5E, 'chestnut-rose': #D06156, 'fuchsia-pink': #D058C6, 'tacha': #C6D058, 'indigo': #6258D0, 'luxor-gold': #9B7231, 'night-shadz': #9B315A, 'apple': #5A9B31, 'vivid-violet': #72319B, 'hopbush': #C26B9B, 'amethyst': #926BC2, 'twine': #C2926B, 'glacier': #6B9BC2, 'black': #000000, 'white': #FFFFFF)
+
+
+//  ColorDelta Variable: step for the color's Tint & Shade
+//  The colorDelta is set to 1.618, and is multuplied by 10 during each iteration of the loop
+//  IMPORTANT: This numner must remain 1.618 (as per Branding Guidelines), as does the 10x multipule.
+$color-delta: 1.618
+$color-delta-scaler: 10
+
+
+//  Define global color variables to be used in layout and design elements, as well as functions, mixins, and general SASS definitions.
+//$global-color-default: null
+//$global-color-accent: null
+//$global-color-page: null
+//$global-color-section: null
+
+

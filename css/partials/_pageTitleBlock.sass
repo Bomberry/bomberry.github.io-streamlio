@@ -1,0 +1,39 @@
+//  pageTitleBlock.sass
+
+$background-color: get-color(streamlio-cyan)
+
+
+.pageTitleBlock
+  padding-top: ($global-navbar-height-large * 1.5)
+  padding-bottom: $global-block-padding
+  //color: $text-body
+  background-color: $background-color
+  //font-family: $font-heebo
+  h1
+    @extend %global-typography-spacing
+    padding: 3rem 0 1.5rem 0
+    //text-align: left
+    //line-height: 1.25
+    font-weight: bold
+  p
+    @extend %global-typography-spacing
+    //font-size: 1.5rem
+    //line-height: 1.5
+  p:not(:last-child)
+    padding-bottom: ($global-block-padding/2)
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  //OVERRIDE/SET COLORS
+  @include set-text-with-color (white)
+  
+  //Move Button(s)  to seperate SASS partial
+  button
+    @extend .bg-color-streamlio-cyan
+    border: 1px solid white
+    &:hover
+      @extend .bg-color-streamlio-cyan-shade-3
+      @extend .color-streamlio-cyan-tint-3
+    &.btn-justify
+      width: 100%

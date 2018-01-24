@@ -1,6 +1,6 @@
 // Functions
 
-//  Color Helpwers
+//  Color Helpers
 //  tint: returns a 'tint' of a color at a certain percentage
 @function tint($color, $percentage)
   @return mix(white, $color, $percentage)
@@ -13,7 +13,27 @@
 @function get-color($key)
   @if map-has-key($streamlio-colors, $key)
     @return map-get($streamlio-colors, $key)
-
   @warn "Unknown `#{$key}` in $streamlio-colors."
   @return null
 
+
+//  get-RGB values from-color: returns the RGB value for a color's HEX value
+@function get-rgb-values-from-color($color)
+  $tempColor: get-color(#{$color})
+  @return "#round(red($tempColor)),round(green($tempColor)),round(blue($tempColor))"
+
+
+@function rbga-color($color, $opacity)
+  $red: red($color)
+  $green: green($color)
+  $blue: blus($color)
+  @return rgba($red, $green, $blue, $opacity)
+
+//@function hexToRGBString($hexColor)
+  @return "#{red($hexColor)},#{green($hexColor)},#{blue($hexColor)}"
+
+//You can pass in either a hex either explicity or from rgb() or rgba() with opacity as 1.
+//For example:
+//$color-white: hexToRGBString(#fff) // => "255,255,255"
+//$color-white: hexToRGBString(rgb(255,255,255)) // => "255,255,255"
+//$color-white: hexToRGBString(rgba(#fff,1)) // => "255,255,255"
