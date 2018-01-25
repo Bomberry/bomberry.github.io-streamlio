@@ -14,6 +14,25 @@
       display: block;
       width: 100%; } }
 
+.center-flex {
+  display: flex;
+  align-items: center; }
+
+.center-v {
+  position: relative;
+  transform: translateY(50%); }
+
+.center-v-2 {
+  position: relative;
+  transform: translateY(25%); }
+
+.block-seperator {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.block-seperator {
+  border-bottom: 1px solid #e6e6e6; }
+
 .pad-bottom-0 {
   padding-bottom: 0; }
 

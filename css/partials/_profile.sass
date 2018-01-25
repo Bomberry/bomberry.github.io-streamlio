@@ -1,0 +1,34 @@
+//  profile.sass
+
+
+.profile
+  //@extend %global-block-padding
+
+.profile-card
+  @extend %global-block-padding
+
+.profile-image
+  align-items: center
+  display: flex
+  justify-content: center
+  padding-bottom: $global-block-padding
+  > img
+    object-fit: cover
+
+.profile-title
+  color: $color-accent-default
+  font-size: $font-size-heading-smaller
+  font-weight: $font-weight-light
+  text-transform: $font-all-cap
+
+.profile-name
+  font-weight: $font-weight-heavy
+
+.profile-bio
+  color: $color-default-light
+  font-size: $font-size-body-large
+
+.profile-links
+  a:not(:last-child)
+    padding-right: $global-block-padding-1
+    

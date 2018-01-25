@@ -1,5 +1,5 @@
 /* CSS Document */
-/* @charset 'utf-8' */ //move to root sass */
+/* @charset 'utf-8' */
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700|Martel:300,400,700);
 .content-block {
@@ -16,9 +16,28 @@
       display: block;
       width: 100%; } }
 
+.center-flex {
+  display: flex;
+  align-items: center; }
+
+.center-v {
+  position: relative;
+  transform: translateY(50%); }
+
+.center-v-2 {
+  position: relative;
+  transform: translateY(25%); }
+
 .introTextBlock {
   padding-top: 5rem;
   padding-bottom: 5rem; }
+
+.block-seperator {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.block-seperator {
+  border-bottom: 1px solid #e6e6e6; }
 
 .pad-bottom-0 {
   padding-bottom: 0; }
@@ -1671,7 +1690,7 @@ a {
     color: #6B9BC2;
     text-decoration: underline; }
 
-blockquote, .blockquote, .quote {
+blockquote, figcaption, .blockquote, .quote, .caption {
   font-family: "Martel", serif;
   font-weight: 300; }
 

@@ -54,7 +54,7 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
         width: auto
   
   ul[class~="navbar-nav"]
-    margin: 0 !important
+    //margin: 0 !important
     > li
       background: $global-navbar-color-accent-linear-gradient
       background-color: transparent !important
@@ -80,6 +80,9 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
         &.btn-action
           background-color: $global-navbar-color-accent
           color: white
+          &:hover
+            background-color: $color-white
+            color: $global-navbar-color-accent
   
   .navbar-brand
     padding: 0 0 0 10px
@@ -92,10 +95,6 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
       width: auto
       transition: $global-transition-default
   
-  .navbar-search
-    box-shadow: $global-box-shadow
-    transition: $global-transition-default
-    z-index: 90
   
   
   //@media screen and (max-width: 920px) /*screen and (min-width: 600px) and (max-width: 920px)*/
@@ -152,3 +151,7 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
     ul[class~="navbar-nav"] > li > a
       color: maroon
   
+.navbar-search
+  box-shadow: $global-box-shadow
+  transition: $global-transition-default
+  z-index: 90

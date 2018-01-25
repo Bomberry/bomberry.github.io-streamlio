@@ -1,0 +1,44 @@
+Streamlio Web Dev Notes:
+
+
+TYPE
+Impliement @media on HTML tag for setting root font size
+Find and replace HEEBO and MARTEL with fonts that are similar but with Italic sets
+
+
+NAV
+Fix resizing on breakpoint.
+Fix "link" click area
+
+
+SEARCH
+Verify search pops properly
+
+
+FIX: section-row3CardList
+Fix the content blocks so they are algned, and don't scroll
+
+
+MODAL POPUP
+link JS and HTML object with demo page
+
+
+MEDIA LIST
+Create both media blocks (media-cards)/(content-card):
+  media block w/o image
+  media block w/ image
+Create a vertial single row stack cardList (img to left)
+
+
+MEDIA LIST POPUP (Modal)
+Fix media list display
+Check to see that it's presentation is proper
+
+
+POPUP FROM
+Create popup form
+
+
+THEME/STYLE
+Remove hardcoded values, or overright with styling so that content-blocks have the same easy to use callout as buttons
+cascade styling colors to buttons. Wont overright button styles that are hardcoded (class) inline

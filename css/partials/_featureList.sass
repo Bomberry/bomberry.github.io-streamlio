@@ -1,39 +1,73 @@
 //  rowFeatureList.sass
 
 
-$color-text-primary: map-get($streamlio-colors, streamlio-gray-dark)
-$color-text-accent: map-get($streamlio-colors, streamlio-cyan)
-$text-title: $color-text-accent
-$text-body: $color-text-primary
-
-$global-block-padding: 5rem
-
-
 .feature-list
   padding-top: $global-block-padding
   padding-bottom: $global-block-padding
 
 
+.feature-list-intro
+  padding-bottom: ($global-block-padding/2)
+
+.feature-list-title
+  font-weight: $font-weight-heavy
+
+.feature-list-body
+  color: $color-default-light
+  font-size: $font-size-body-large
+  .feature-list-A &
+    padding-right: $global-block-padding-2-em
+
 .card-feature
   padding-bottom: $global-block-padding/2
-  > h1, h2, h3, h4, h5
+  > h1, h2, h3, h4, h5, h6
     text-align: left
     letter-spacing: 0.1rem
     word-spacing: 0.1rem
-    line-height: 1.125
+    line-height: $font-line-height-tight
     font-weight: bold
     text-transform: uppercase
-    color: $text-title
+    color: $font-color-accent-default
   > h1, h2
-    font-size: 1.5rem
-  > h3,h4, h5
-    font-size: 1.25rem
+    font-size: $font-size-heading-large
+  > h3,h4, h5, h6
+    font-size: $font-size-heading-small
   > p
-    font-size: 1.125rem
-    line-height: 1.5
-    color: $color-text-primary
+    font-size: $font-size-body-larger
+    line-height: $font-line-height-standard
+    color: $font-color-default
     a
-      color: $color-text-accent
+      color: $font-color-accent-default
       text-decoration: none
       &:hover
         text-decoration: underline
+  // overrides
+  .feature-list-A &, .feature-list-B &
+    span.icon
+      color: $font-color-accent-default
+      padding-top: $global-block-padding-1-em
+    .feature-name
+      color: $font-color-accent-default
+      font-size: $font-size-body-small
+      margin-top: $global-block-padding-0
+    .feature-info
+      font-size: $font-size-body-small
+      font-weight: $font-weight-light
+      line-height: $font-line-height-standard
+  .feature-list-B &
+    background-color: transparent
+    //border: $global-button-border
+    //padding-bottom: $global-block-padding-1
+    //padding-top: $global-block-padding-1
+    box-shadow: $global-box-shadow-hidden
+    transition: $global-transition
+    span.icon
+      float: left
+      padding-right: $global-block-padding-1
+      padding-top: $global-block-padding-1
+    .feature-name
+      margin-top: $global-block-padding-1
+    &:hover
+      box-shadow: $global-box-shadow
+      z-index: 100
+    //  Note: Hover function is same as button...To Refactor. See: block-cardList

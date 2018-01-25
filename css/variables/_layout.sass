@@ -41,9 +41,9 @@ $variable-screen-type-laptop-retina: "screen and (min-device-width: 1200px) and 
   margin-top: $global-block-padding
   margin-bottom: $global-block-padding
 
+
 .content-block
   @extend %global-block-margin
-
 
 .row-eq-height
   display: -webkit-box
@@ -54,10 +54,33 @@ $variable-screen-type-laptop-retina: "screen and (min-device-width: 1200px) and 
     display: block
     width: 100%
 
+.center-flex
+  display: flex
+  align-items: center
+  //justify-content: center
+
+.center-v
+  position: relative
+  transform: translateY(50%)
+.center-v-2
+  position: relative
+  transform: translateY(25%)
 
 %global-block-padding
   padding-top: $global-block-padding
   padding-bottom: $global-block-padding
+%global-block-padding-small
+  padding-top: $global-block-padding-2
+  padding-bottom: $global-block-padding-2
+%global-block-padding-tiny
+  padding-top: $global-block-padding-05
+  padding-bottom: $global-block-padding-05
+
+
+.block-seperator
+  @extend %global-block-padding-small
+  border-bottom: $global-border-stroke-small
+
 
 //%pad-bottom-0
 //  padding-bottom: $global-block-padding-0
