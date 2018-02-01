@@ -1,26 +1,85 @@
 Streamlio Web Dev Notes:
 
 
+
+
+Media Block that was in
+Check content blocks for media height
+
+Poster Block with text on top
+
+Test Putting content blocks into carousel-item
+
+Filter for card-list
+
+block-featureList (3 features)
+Make a two column and 4 column version
+
+
+Content-Block
+√   Make 3 and 4 column versions
+
+
+Check for shirts for (embroydery )
+
+
+
+Check carousel autoplay by default (create toggle element in data-autoplay:false)
+
+
+
+
+URGENT:
+√   Send out snippets and instructions to Jon for Dreamweaver
+
+
+
 TYPE
-Impliement @media on HTML tag for setting root font size
-Find and replace HEEBO and MARTEL with fonts that are similar but with Italic sets
+√   Impliement @media on HTML tag for setting root font size
+√   Jon's laptop: 2dppx, 192dpi, screen (css.px: 1680x1050px) actual: 3360x2100px
+√   Kevin's laptop: 2dppx, 192dpi, screen (css.px: 1440x900px) actual: 2880x1800px
+√   Find and replace HEEBO with font that is similar but with Italic sets
+Find and replace MARTEL with font that is similar but with Italic sets
 
 
 NAV
-Fix resizing on breakpoint.
-Fix "link" click area
+√   Fix resizing on breakpoint.
+√   Fix "link" click area
+√   Change hover for Try Now to button
+Fix dropdown placement (moz/fox?)
+
+
+SUB NAV
+Add sub-nav bar with breadcrumb/inline links (anchors) for documents with several sections/parts
 
 
 SEARCH
-Verify search pops properly
-
+√   Verify search pops properly
+√   Unround seach input field and icon
+Fix Search in collapsed dropdown (inline)
 
 FIX: section-row3CardList
-Fix the content blocks so they are algned, and don't scroll
+√   Fix the content blocks so they are algned, and don't scroll
 
 
 MODAL POPUP
 link JS and HTML object with demo page
+Media browser
+Mailing list (signup)
+  POPUP FROM
+  Create popup form
+
+
+Blockquote - make one. Test font
+
+
+FOOTER
+√   Clear last row, use for additional linking
+√   increase icon size
+
+
+CARD LIST
+√   Fit type on info popover
 
 
 MEDIA LIST
@@ -35,8 +94,12 @@ Fix media list display
 Check to see that it's presentation is proper
 
 
-POPUP FROM
-Create popup form
+BLOG
+Create sample with full with responsive image, and one inline image.
+
+
+IMAGE PROCESSING
+√   Add back the image processing command for saturating an image using "streamlio colors"
 
 
 THEME/STYLE

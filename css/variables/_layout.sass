@@ -7,12 +7,27 @@ $element-list-pages: () //use to contain page level elements
 $template-list: () //use to defint templates
 $composition-list: () //use to defint structural composition of pages
 
+//  variable-screen-size Variable: the definitions for @media overrides
+//  The variable-screen-size is used to set the state of the @media directives...
+//  TODO: Add additional units, not strings, and extact into a Mixin for processing.
+$global-breakpoint-768: 768px
+$global-breakpoint-911: 911px
+$global-breakpoint-992: 992px
+$global-breakpoint-1200: 1200px
+$global-breakpoint-1440: 1440px
+$global-breakpoint-2660: 2660px
+$global-breakpoint-small: $global-breakpoint-768
+$global-breakpoint-medium: $global-breakpoint-992
+$global-breakpoint-large: $global-breakpoint-1200
+$global-breakpoint-larger: $global-breakpoint-1440
+$global-breakpoint-largest: $global-breakpoint-2660
 
 //  Boostrap variable override
-$grid-float-breakpoint: 992px
-
+$grid-float-breakpoint: $global-breakpoint-medium
+//$grid-float-breakpoint: 992px
 
 //Variable-screen-size is defined in _units, but you can override it here to test the @media directives
+$variable-screen-ratio: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
 $variable-screen-size: "screen and (min-width: 300px)"
 $variable-screen-size-test: "screen and (min-width: 600px) and (max-width: 1200px)"
 //Variables for Screen resolution in percentage of scale
@@ -32,18 +47,49 @@ $variable-screen-resolution-400: "(min-resolution: 400dpi)"
 $variable-screen-resolution-500: "(min-resolution: 500dpi)"
 //$variable-screen-resolution-400: "(-webkit-min-device-pixel-ratio: 4), (min-resolution: 192dpi)"
 
-$variable-screen-type-laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)"
-$variable-screen-type-laptop-retina: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)"
+$variable-screen-type-laptop: 'screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)'
+$variable-screen-type-laptop-retina: 'screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)'
+$variable-screen-type-laptop-4k: 'screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)'
 
+
+//  Global layout variables:
+$global-block-padding: 5rem
+$global-block-padding-0: 0
+$global-block-padding-4: 4rem
+$global-block-padding-3: 3rem
+$global-block-padding-25: 2.5rem
+$global-block-padding-2: 2rem
+$global-block-padding-15: 1.5rem
+$global-block-padding-1: 1rem
+$global-block-padding-05: 0.5rem
+$global-block-padding-em: 5em
+$global-block-padding-4-em: 4em
+$global-block-padding-3-em: 3em
+$global-block-padding-25-em: 2.5em
+$global-block-padding-2-em: 2em
+$global-block-padding-15-em: 1.5em
+$global-block-padding-1-em: 1em
+$global-block-padding-05-em: 0.5em
 
 
 %global-block-margin
   margin-top: $global-block-padding
   margin-bottom: $global-block-padding
 
-
 .content-block
   @extend %global-block-margin
+
+%global-block-padding
+  padding-top: $global-block-padding
+  padding-bottom: $global-block-padding
+%global-block-padding-small
+  padding-top: $global-block-padding-2
+  padding-bottom: $global-block-padding-2
+%global-block-padding-tiny
+  padding-top: $global-block-padding-05
+  padding-bottom: $global-block-padding-05
+
+
 
 .row-eq-height
   display: -webkit-box
@@ -53,6 +99,10 @@ $variable-screen-type-laptop-retina: "screen and (min-device-width: 1200px) and 
   @media (max-width: $global-breakpoint-small)
     display: block
     width: 100%
+
+.box-eq-height
+  flex: 1 0 auto
+
 
 .center-flex
   display: flex
@@ -66,92 +116,9 @@ $variable-screen-type-laptop-retina: "screen and (min-device-width: 1200px) and 
   position: relative
   transform: translateY(25%)
 
-%global-block-padding
-  padding-top: $global-block-padding
-  padding-bottom: $global-block-padding
-%global-block-padding-small
-  padding-top: $global-block-padding-2
-  padding-bottom: $global-block-padding-2
-%global-block-padding-tiny
-  padding-top: $global-block-padding-05
-  padding-bottom: $global-block-padding-05
-
-
 .block-seperator
   @extend %global-block-padding-small
   border-bottom: $global-border-stroke-small
-
-
-//%pad-bottom-0
-//  padding-bottom: $global-block-padding-0
-//%pad-bottom-5
-//  padding-bottom: $global-block-padding
-//%pad-bottom-4
-//  padding-bottom: $global-block-padding-4
-//%pad-bottom-3
-//  padding-bottom: $global-block-padding-3
-//%pad-bottom-25
-//  padding-bottom: $global-block-padding-25
-//%pad-bottom-2
-//  padding-bottom: $global-block-padding-2
-//%pad-bottom-15
-//  padding-bottom: $global-block-padding-15
-//%pad-bottom-1
-//  padding-bottom: $global-block-padding-1
-//%pad-bottom-05
-//  padding-bottom: $global-block-padding-05
-//%pad-bottom-5-em
-//  padding-bottom: $global-block-padding-em
-//%pad-bottom-4-em
-//  padding-bottom: $global-block-padding-4-em
-//%pad-bottom-3-em
-//  padding-bottom: $global-block-padding-3-em
-//%pad-bottom-25-em
-//  padding-bottom: $global-block-padding-25-em
-//%pad-bottom-2-em
-//  padding-bottom: $global-block-padding-2-em
-//%pad-bottom-15-em
-//  padding-bottom: $global-block-padding-15-em
-//%pad-bottom-1-em
-//  padding-bottom: $global-block-padding-1-em
-//%pad-bottom-05-em
-//  padding-bottom: $global-block-padding-05-em
-.pad-bottom-0
-  padding-bottom: $global-block-padding-0
-.pad-bottom-5
-  padding-bottom: $global-block-padding
-.pad-bottom-4
-  padding-bottom: $global-block-padding-4
-.pad-bottom-3
-  padding-bottom: $global-block-padding-3
-.pad-bottom-25
-  padding-bottom: $global-block-padding-25
-.pad-bottom-2
-  padding-bottom: $global-block-padding-2
-.pad-bottom-15
-  padding-bottom: $global-block-padding-15
-.pad-bottom-1
-  padding-bottom: $global-block-padding-1
-.pad-bottom-05
-  padding-bottom: $global-block-padding-05
-.pad-bottom-5-em
-  padding-bottom: $global-block-padding-em
-.pad-bottom-4-em
-  padding-bottom: $global-block-padding-4-em
-.pad-bottom-3-em
-  padding-bottom: $global-block-padding-3-em
-.pad-bottom-25-em
-  padding-bottom: $global-block-padding-25-em
-.pad-bottom-2-em
-  padding-bottom: $global-block-padding-2-em
-.pad-bottom-15-em
-  padding-bottom: $global-block-padding-15-em
-.pad-bottom-1-em
-  padding-bottom: $global-block-padding-1-em
-.pad-bottom-05-em
-  padding-bottom: $global-block-padding-05-em
-
-
 
 
 %column-count-1

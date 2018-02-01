@@ -2,19 +2,33 @@
 
 // Import Fonts from CDNs or local files
 // Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700|Martel:300,400,700)
+@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700)
+@import url(https://fonts.googleapis.com/css?family=Martel:300,400,700)
+
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,400i,700,700i&subset=latin-ext')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&subset=latin-ext')
 
 
 // Font Variables
 /* Standardise the font-family names, add appropriate values for weights and styles */
 $font-heebo: 'Heebo', sans-serif
-$font-sans: $font-heebo
 $font-martel: 'Martel', serif
+$font-cambay: 'Cambay', sans-serif
+$font-roboto: 'Roboto', sans-serif
+$font-robotoCondenced: 'Roboto Condensed', sans-serif
+
+
+$font-sans: $font-cambay
+$font-sans-alt: $font-roboto
+$font-sans-condensed: $font-robotoCondenced
 $font-serif: $font-martel
+
 
 $font-weight-light: 300
 $font-weight-normal: 400
 $font-weight-heavy: 700
+
 
 $font-size-title-large: 2.5rem
 $font-size-title-small: 2.25rem
@@ -37,13 +51,12 @@ $font-all-cap: uppercase
 //
 //$font-root-size: 14px
 //$font-size-scaler: 1
-$font-size-default: $font-root-size * $font-size-scaler
+$font-size-default: ($font-root-size * $font-size-scaler)
 
 //$font-line-height-default: 2
 //
 //$font-letter-spacing: 0.075rem
 //$font-word-spacing: 0.09rem
-
 
 
 //Following to be moved to, somewhere after mixins and before here
@@ -55,13 +68,10 @@ $background-color-default: white
 $background-color-accent-default: get-color(glacier)
 
 
-
 //  Define global color variables to be used for the Global Navbar
 $global-navbar-color-accent: get-color(glacier)
 $global-navbar-color-default: get-color(dark-gray)
 $global-navbar-background-color: white
-
-
 
 
 //Following used in :
@@ -76,6 +86,12 @@ $font-color-default: $color-default
 
 %font-root-size-adjusted
   font-size: $font-root-size
+  @media #{$variable-screen-type-laptop}
+    font-size: $font-root-size * $font-size-scaler
+  @media #{$variable-screen-type-laptop-retina}
+    font-size: $font-root-size * 1.25
+  @media #{$variable-screen-type-laptop-4k}
+    font-size: $font-root-size * 1.5
   //@media #{$variable-screen-type-laptop}
     font-size: $font-root-size * $font-size-scaler
   //@media #{$variable-screen-type-laptop-retina}
@@ -125,7 +141,7 @@ html
   @extend %font-root-size-adjusted
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 body
-  font-family: $font-heebo
+  font-family: $font-sans
   @extend %global-typography-sizing
   @extend %global-typography-spacing
   //font-size: $font-size-default //14px;
@@ -139,7 +155,7 @@ body
 
 //Define Heading Tag(s)
 h1, h2, h3, h4, h5, h6
-  //font-family: $font-heebo
+  font-family: $font-sans
   font-weight: $font-weight-normal
   //text-align: center
 // Heading Sizing
@@ -184,7 +200,7 @@ a
 
 
 blockquote, figcaption, .blockquote, .quote, .caption
-  font-family: $font-martel
+  font-family: $font-serif
   font-weight: $font-weight-light
 
 
@@ -203,8 +219,6 @@ blockquote, figcaption, .blockquote, .quote, .caption
   text-align: right
 .text-align-center
   text-align: center
-
-
 
 
 //pseudo classes for CSS tags
@@ -231,15 +245,17 @@ blockquote, figcaption, .blockquote, .quote, .caption
 
 
 
+button,
 .button
-  //font-family: $font-heebo
-  font-weight: $font-weight-heavy
+  font-family: $font-sans
+  //font-weight: $font-weight-heavy
 
 
 
 .introTextBlock
   @extend %global-block-padding
-  .introText-title, .introText-subtitle
+  .introText-title,
+  .introText-subtitle
     padding-bottom: 2rem
     &.title-extended
       padding-bottom: 4rem
@@ -262,11 +278,11 @@ blockquote, figcaption, .blockquote, .quote, .caption
       padding-bottom: 0
 
   .introText-body
-    @extend .body-large
+    @extend .body-larger
     &.body-larger
-      @extend .body-larger
+      @extend .heading-small
     &.body-small
-      @extend .body-small
+      @extend .body-large
 
 .pubInfo
   text-size: $font-size-body-smallest
@@ -333,6 +349,3 @@ blockquote, figcaption, .blockquote, .quote, .caption
   @extend .heading-large
 .section-body
   @extend .body-large
-  
-
-

@@ -22,17 +22,26 @@
 
 
 //  Button Composit Class
-button
-  border: $global-button-border
-  background-color: transparent
+%button-shadow
   box-shadow: $global-box-shadow-small
   transition: $global-transition
   &:hover
     background-color: transparent
     box-shadow: $global-box-shadow
+
+button
+  @extend %button-shadow
+  border: $global-button-border
+  background-color: transparent
+  //box-shadow: $global-box-shadow-small
+  //transition: $global-transition
+  &:hover
+    //background-color: transparent
+    //box-shadow: $global-box-shadow
     z-index: 100
 
 .button-default
+  @extend %button-shadow
   color: $color-accent-default
   border-color: $color-accent-default
   background-color: transparentize($color-white,0.16)
@@ -40,6 +49,16 @@ button
     color: white
     border-color: white
     background-color: transparentize($color-accent-default,0.16)
+
+.button-default-reverse
+  @extend %button-shadow
+  color: white
+  border-color: white
+  background-color: transparentize($color-accent-default,0.16)
+  &:hover
+    color: $color-accent-default
+    border-color: $color-accent-default
+    background-color: transparentize($color-white,0.16)
 
 //.button-apple
   @include set-button-color(apple)

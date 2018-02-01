@@ -27,9 +27,9 @@
   @if $type == string
     $class: $minWidth
     @if $class == xs
-     @media (max-width: 767px)
-      @content
-    @else if $class == sm {
+      @media (max-width: 767px)
+        @content
+    @else if $class == sm
       @media (min-width: 768px)
         @content
     @else if $class == md
@@ -40,7 +40,6 @@
         @content
     @else
       @warn "Breakpoint mixin supports: xs, sm, md, lg"
-  
   @else if $type == number
     $widthQuery: "all" !default
     // width
@@ -72,16 +71,12 @@
       @media #{$widthQuery}
         @content
 
-
-
-// Example useage:
+// Example useages:
 
 //  @include breakpoint($maxWidth: 700px, $minWidth: 500px, $maxHeight: 1500px, $minHeight: 600px)
 //
-//
 //  @include breakpoint($min: 400px, $max: 500px)
 //    background-color: red
-//
 //
 //  aside.primary
 //    @include breakpoint(md)
@@ -94,5 +89,11 @@
 //    @include breakpoint($min: 640px, $max: 767px)
 //      text-align: center
 //      font-style: italic
-//
-//
+
+
+
+@mixin border-radius($radius: 0px)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+

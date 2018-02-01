@@ -1,10 +1,22 @@
 /* CSS Document */
 /* @charset 'utf-8' */
 /* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700|Martel:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Martel:300,400,700);
+@import url("https://fonts.googleapis.com/css?family=Cambay:400,400i,700,700i&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&subset=latin-ext");
 .content-block {
   margin-top: 5rem;
   margin-bottom: 5rem; }
+
+.introTextBlock {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.block-seperator {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .row-eq-height {
   display: -webkit-box;
@@ -15,6 +27,9 @@
     .row-eq-height {
       display: block;
       width: 100%; } }
+
+.box-eq-height {
+  flex: 1 0 auto; }
 
 .center-flex {
   display: flex;
@@ -28,67 +43,8 @@
   position: relative;
   transform: translateY(25%); }
 
-.introTextBlock {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
-
-.block-seperator {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-
 .block-seperator {
   border-bottom: 1px solid #e6e6e6; }
-
-.pad-bottom-0 {
-  padding-bottom: 0; }
-
-.pad-bottom-5 {
-  padding-bottom: 5rem; }
-
-.pad-bottom-4 {
-  padding-bottom: 4rem; }
-
-.pad-bottom-3 {
-  padding-bottom: 3rem; }
-
-.pad-bottom-25 {
-  padding-bottom: 2.5rem; }
-
-.pad-bottom-2 {
-  padding-bottom: 2rem; }
-
-.pad-bottom-15 {
-  padding-bottom: 1.5rem; }
-
-.pad-bottom-1 {
-  padding-bottom: 1rem; }
-
-.pad-bottom-05 {
-  padding-bottom: 0.5rem; }
-
-.pad-bottom-5-em {
-  padding-bottom: 5rem; }
-
-.pad-bottom-4-em {
-  padding-bottom: 4em; }
-
-.pad-bottom-3-em {
-  padding-bottom: 3rem; }
-
-.pad-bottom-25-em {
-  padding-bottom: 2.5em; }
-
-.pad-bottom-2-em {
-  padding-bottom: 2em; }
-
-.pad-bottom-15-em {
-  padding-bottom: 1.5em; }
-
-.pad-bottom-1-em {
-  padding-bottom: 1em; }
-
-.pad-bottom-05-em {
-  padding-bottom: 0.5em; }
 
 .columns-2 {
   -webkit-column-gap: 30px;
@@ -1628,6 +1584,15 @@
 /* Standardise the font-family names, add appropriate values for weights and styles */
 body, html {
   font-size: 14px; }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 14px; } }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body, html {
+      font-size: 17.5px; } }
+  @media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body, html {
+      font-size: 21px; } }
 
 body {
   line-height: 2; }
@@ -1640,7 +1605,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: "Cambay", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -1649,6 +1614,7 @@ body {
   background-color: white; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Cambay", sans-serif;
   font-weight: 400; }
 
 h1 {
@@ -1676,9 +1642,9 @@ p {
   font-size: 1rem;
   font-weight: 400;
   text-align: left; }
-  p.body-small, .introTextBlock p.introText-body.body-small {
+  p.body-small {
     font-size: 0.75rem; }
-  p.body-larger, .introTextBlock p.introText-body.body-larger {
+  p.body-larger, .introTextBlock p.introText-body {
     font-size: 1.25rem; }
   p:not(:last-child) {
     padding-bottom: 2.5rem; }
@@ -1727,31 +1693,36 @@ blockquote, figcaption, .blockquote, .quote, .caption {
 .heading-large, .page-heading, .section-title, .section-heading {
   font-size: 1.5rem; }
 
-.heading-small {
+.heading-small, .introTextBlock .introText-body.body-larger, .introTextBlock .introText-body {
   font-size: 1.25rem; }
 
-.body-larger, .introTextBlock .introText-body.body-larger {
+.body-larger, .introTextBlock .introText-body {
   font-size: 1.25rem; }
 
-.body-large, .introTextBlock .introText-body, .page-body, .section-body {
+.body-large, .introTextBlock .introText-body.body-small, .page-body, .section-body {
   font-size: 1rem; }
 
-.body-small, .introTextBlock .introText-body.body-small {
+.body-small {
   font-size: 1.25rem; }
 
 .body-smallest {
   font-size: 0.5rem; }
 
+button,
 .button {
-  font-weight: 700; }
+  font-family: "Cambay", sans-serif; }
 
-.introTextBlock .introText-title, .introTextBlock .introText-subtitle {
+.introTextBlock .introText-title,
+.introTextBlock .introText-subtitle {
   padding-bottom: 2rem; }
-  .introTextBlock .introText-title.title-extended, .introTextBlock .introText-subtitle.title-extended {
+  .introTextBlock .introText-title.title-extended,
+  .introTextBlock .introText-subtitle.title-extended {
     padding-bottom: 4rem; }
-  .introTextBlock .introText-title.title-compressed, .introTextBlock .introText-subtitle.title-compressed {
+  .introTextBlock .introText-title.title-compressed,
+  .introTextBlock .introText-subtitle.title-compressed {
     padding-bottom: 0.5rem; }
-  .introTextBlock .introText-title.title-flush, .introTextBlock .introText-subtitle.title-flush {
+  .introTextBlock .introText-title.title-flush,
+  .introTextBlock .introText-subtitle.title-flush {
     padding-bottom: 0; }
 
 .pubInfo {
@@ -1768,14 +1739,17 @@ blockquote, figcaption, .blockquote, .quote, .caption {
     padding-right: 1rem; }
 
 /*    From: _block-introTextBlock.sass  */
-button {
-  border: 1px solid transparent;
-  background-color: transparent;
+button, .button-default, .button-default-reverse {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: all 0.16s ease-in-out; }
-  button:hover {
+  button:hover, .button-default:hover, .button-default-reverse:hover {
     background-color: transparent;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); }
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent; }
+  button:hover {
     z-index: 100; }
 
 .button-default {
@@ -1786,6 +1760,15 @@ button {
     color: white;
     border-color: white;
     background-color: rgba(107, 155, 194, 0.84); }
+
+.button-default-reverse {
+  color: white;
+  border-color: white;
+  background-color: rgba(107, 155, 194, 0.84); }
+  .button-default-reverse:hover {
+    color: #6B9BC2;
+    border-color: #6B9BC2;
+    background-color: rgba(255, 255, 255, 0.84); }
 
 .button-streamlio-cyan {
   color: #56C5D0;
@@ -1957,5 +1940,88 @@ button {
     color: white;
     border-color: white;
     background-color: rgba(255, 255, 255, 0.84); }
+
+.navbar-global {
+  background-color: indigo; }
+
+.navbar-global .navbar-brand {
+  color: white; }
+
+.navbar-global .navbar-user > li > a {
+  color: white; }
+
+.navbar-primary {
+  background-color: #333;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  top: 51px;
+  width: 200px;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+.navbar-primary.collapsed {
+  width: 60px; }
+
+.navbar-primary.collapsed .glyphicon {
+  font-size: 22px; }
+
+.navbar-primary.collapsed .nav-label {
+  display: none; }
+
+.btn-expand-collapse {
+  position: absolute;
+  display: block;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 0;
+  border-top: solid 1px #666;
+  color: grey;
+  font-size: 20px;
+  text-align: center; }
+
+.btn-expand-collapse:hover,
+.btn-expand-collapse:focus {
+  background-color: #222;
+  color: white; }
+
+.btn-expand-collapse:active {
+  background-color: #111; }
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  border-bottom: solid 1px #444;
+  color: #ccc; }
+
+.navbar-primary-menu li a:hover {
+  background-color: #000;
+  text-decoration: none;
+  color: white; }
+
+.navbar-primary-menu li a .glyphicon {
+  margin-right: 6px; }
+
+.navbar-primary-menu li a:hover .glyphicon {
+  color: orchid; }
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 200px;
+  padding: 20px; }
+
+.collapsed + .main-content {
+  margin-left: 60px; }
 
 /*# sourceMappingURL=streamlio-guide.css.map */

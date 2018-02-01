@@ -35,16 +35,21 @@
         transition: $global-transition-default
         //color: $color-accent
       h1, h2
-        font-size: $font-size-subtitle-large
+        //font-size: $font-size-subtitle-large
         //color: $color-primary
       h3, h4, h5
-        font-size: $font-size-body-large
+        //font-size: $font-size-body-large
         font-weight: $font-weight-light
       h5
         color: lighten($color-accent-default, 15%)
         text-transform: uppercase
       .card-title
         font-size: $font-size-heading-small
+      .card-icon,
+      .card-catagory,
+      .card-date,
+      .card-author
+        font-size: $font-size-heading-smaller
       .card-footer
         //display: inline-block
         width: 100%
@@ -58,6 +63,7 @@
       height: 0
       width: 100%
       overflow: auto
+      padding: 0rem 0.5rem
       position: absolute
       bottom: 0
       left: 0
@@ -73,7 +79,8 @@
       .panel-body
         h2, h3, h4, h5, p
           opacity: .35
-        h1
+        h1,
+        .card-title
           opacity: 1
       .panel-info
         //background-color: rgba($color-accent, 0.95)
@@ -81,12 +88,16 @@
         background-color: fade(get-color(streamlio-blue), 0.95)
         //display: block
         height: 100%
-        padding: 1.5rem 3rem
+        padding: 1.5rem 0.5rem
         h1, h2, h3, h4, h5, p, a, a:hover
           color: $color-white
-        h1, h2, h3, h4, h5
+        //h1, h2, h3, h4, h5
           font-size: $font-size-heading-large
           font-weight: $font-weight-heavy
+        .card-title
+          font-size: $font-size-heading-small
+        .card-author
+          font-size: $font-size-heading-smaller
         p, a, a:hover
           font-weight: $font-weight-light
         p
@@ -96,21 +107,22 @@
 
     //  TODO: move Button to noe partial
     button
+      @extend .button-default
       width: 100%
       margin: 1.5rem 0
-      color: $color-white
+      //color: $color-white
       font-size: 1.5rem
-      border-width: 1px
-      border-color: $color-white
-      border-style: solid
-      background-color: rgba($color-accent-default, 0.15)
+      //border-width: 1px
+      //border-color: $color-white
+      //border-style: solid
+      //background-color: rgba($color-accent-default, 0.15)
       box-shadow: $global-box-shadow-small
       transition: $global-transition-box-shadow
       &:not(:first-of-type)
         margin-top: 0
       &:hover
-        color: $color-white
-        background-color: rgba($color-accent-default,.82)
+        //color: $color-white
+        //background-color: rgba($color-accent-default,.82)
         //@extend: .bg-color-light-gray
         box-shadow: $global-box-shadow
         z-index: 100
