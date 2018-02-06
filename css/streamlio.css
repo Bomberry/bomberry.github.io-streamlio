@@ -2,7 +2,6 @@
 /* CSS Document */
 /* @charset 'utf-8' */
 /* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Martel:300,400,700);
 @import url("https://fonts.googleapis.com/css?family=Cambay:400,400i,700,700i&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext");
@@ -11,7 +10,7 @@
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
-.introTextBlock, .cardListBlock, .cardList-2Col, .carouselBlock, .content-2Col, .profile-card, .callToAction2Col, .mailingListBlock {
+.cardListBlock, .cardList-2Col, .carouselBlock, .content-2Col, .introTextBlock, .profile-card, .callToAction2Col, .mailingListBlock {
   padding-top: 5rem;
   padding-bottom: 5rem; }
 
@@ -1583,83 +1582,17 @@
 
 /* Typography: Heebo and Martel fonts (Google Fonts) */
 /* Standardise the font-family names, add appropriate values for weights and styles */
-body, html {
+.test-font-size {
   font-size: 14px; }
-  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    body, html {
-      font-size: 14px; } }
-  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    body, html {
-      font-size: 17.5px; } }
-  @media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    body, html {
-      font-size: 21px; } }
 
-body {
-  line-height: 2; }
+.test-font-size {
+  font-size: 21px; }
 
-body, .pageTitleBlock h1, .pageTitleBlock p {
-  letter-spacing: 0.075rem;
-  word-spacing: 0.09rem; }
+.test-font-size {
+  font-size: 42px; }
 
-html {
-  -webkit-tap-highlight-color: transparent; }
-
-body {
-  font-family: "Cambay", sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-weight: 300;
-  color: #5A5B5E;
-  background-color: white; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cambay", sans-serif;
-  font-weight: 400; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2.25rem; }
-
-h3 {
-  font-size: 2rem; }
-
-h4 {
-  font-size: 1.75rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h6 {
-  font-size: 1.25rem; }
-
-h1, h2 {
-  letter-spacing: 0.05rem; }
-
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left; }
-  p.body-small {
-    font-size: 0.75rem; }
-  p.body-larger, .introTextBlock p.introText-body {
-    font-size: 1.25rem; }
-  p:not(:last-child) {
-    padding-bottom: 2.5rem; }
-
-a {
-  color: #6B9BC2;
-  text-decoration: none; }
-  a:hover, a:focus, a:active {
-    color: #6B9BC2;
-    text-decoration: underline; }
-
-blockquote, figcaption, .blockquote, .quote, .caption {
-  font-family: "Martel", serif;
-  font-weight: 300; }
+.test-font-size {
+  font-size: 63px; }
 
 .text-thin, .introTextBlock .introText-subtitle {
   font-weight: 300; }
@@ -1683,48 +1616,114 @@ blockquote, figcaption, .blockquote, .quote, .caption {
   font-size: 2.5rem; }
 
 .title-small {
-  font-size: 2.25rem; }
+  font-size: 2rem; }
 
 .subtitle-large {
   font-size: 2rem; }
 
 .subtitle-small, .page-subtitle, .section-subtitle {
-  font-size: 1.75rem; }
+  font-size: 1.55rem; }
 
 .heading-large, .page-heading, .section-title, .section-heading {
   font-size: 1.5rem; }
 
 .heading-small, .introTextBlock .introText-body.body-larger, .introTextBlock .introText-body {
-  font-size: 1.25rem; }
-
-.body-larger, .introTextBlock .introText-body {
-  font-size: 1.25rem; }
-
-.body-large, .introTextBlock .introText-body.body-small, .page-body, .section-body {
   font-size: 1rem; }
 
-.body-small {
+.body-larger, .introTextBlock .introText-body {
+  font-size: 1rem; }
+
+.body-large, .page-body, .section-body, .introTextBlock .introText-body.body-small {
   font-size: 1.25rem; }
+
+.body-small {
+  font-size: 1rem; }
 
 .body-smallest {
   font-size: 0.5rem; }
 
+body, html {
+  font-size: 14px; }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 10.5px; } }
+  @media screen and (min-device-width: 1024) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 10.5px; } }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 15.75px; } }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body, html {
+      font-size: 21px; } }
+  @media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body, html {
+      font-size: 26.25px; } }
+
+body {
+  line-height: 1.5; }
+
+body, .pageTitleBlock h1, .pageTitleBlock p {
+  letter-spacing: normal;
+  font-kerning: normal;
+  word-spacing: normal; }
+
+html {
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Cambay", sans-serif;
+  font-weight: 300;
+  color: #5A5B5E;
+  background-color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cambay", sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.55rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: left; }
+  p.body-small {
+    font-size: 0.75rem; }
+  p.body-larger, .introTextBlock p.introText-body {
+    font-size: 1rem; }
+  p:not(:last-child) {
+    padding-bottom: 2.5rem; }
+
+a {
+  color: #6B9BC2;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #6B9BC2;
+    text-decoration: underline; }
+
+blockquote, figcaption, .blockquote, .quote, .caption {
+  font-family: "Martel", serif;
+  font-weight: 300; }
+
 button,
 .button {
   font-family: "Cambay", sans-serif; }
-
-.introTextBlock .introText-title,
-.introTextBlock .introText-subtitle {
-  padding-bottom: 2rem; }
-  .introTextBlock .introText-title.title-extended,
-  .introTextBlock .introText-subtitle.title-extended {
-    padding-bottom: 4rem; }
-  .introTextBlock .introText-title.title-compressed,
-  .introTextBlock .introText-subtitle.title-compressed {
-    padding-bottom: 0.5rem; }
-  .introTextBlock .introText-title.title-flush,
-  .introTextBlock .introText-subtitle.title-flush {
-    padding-bottom: 0; }
 
 .pubInfo {
   text-size: 0.5rem;
@@ -2292,7 +2291,7 @@ button {
   .media-card .card-info {
     padding-bottom: 3rem; }
   .media-card .card-catagory {
-    font-size: 1.25rem; }
+    font-size: 1rem; }
   .media-card .card-title {
     font-weight: 700; }
   .media-card .card-info span.icon {
@@ -2300,8 +2299,8 @@ button {
     position: absolute; }
   .media-card .card-info p.card-date,
   .media-card .card-info p.card-author {
-    font-size: 1.25rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.75;
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -2333,7 +2332,7 @@ button {
   display: table; }
   .cardList .panel {
     display: -webkit-flex;
-    min-height: 250px;
+    min-height: 20rem;
     margin-bottom: 0;
     border-width: 1px;
     border-color: #f3f3f3;
@@ -2399,7 +2398,7 @@ button {
         .cardList .panel:hover .panel-info h1, .cardList .panel:hover .panel-info h2, .cardList .panel:hover .panel-info h3, .cardList .panel:hover .panel-info h4, .cardList .panel:hover .panel-info h5, .cardList .panel:hover .panel-info p, .cardList .panel:hover .panel-info a, .cardList .panel:hover .panel-info a:hover {
           color: white; }
         .cardList .panel:hover .panel-info .card-title {
-          font-size: 1.25rem; }
+          font-size: 1rem; }
         .cardList .panel:hover .panel-info .card-author {
           font-size: 1rem; }
         .cardList .panel:hover .panel-info p, .cardList .panel:hover .panel-info a, .cardList .panel:hover .panel-info a:hover {
@@ -2459,12 +2458,12 @@ button {
     padding-bottom: 5rem; }
   .card-list-block h1, .card-list-block h2 {
     color: white; }
-  .card-list-block h3 {
-    font-size: 2rem; }
   .card-list-block h5 {
     color: #6B9BC2; }
+  .card-list-block .cardList {
+    display: table; }
   .card-list-block .panel {
-    height: 100%;
+    display: -webkit-flex;
     border-width: 1px;
     border-color: #e6e6e6;
     border-style: solid;
@@ -2476,35 +2475,30 @@ button {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
       z-index: 100; }
   .card-list-block .panel-body {
-    height: calc(100vh - 300px);
     overflow-y: auto; }
     .card-list-block .panel-body h5 {
       color: #6a90ad;
       text-transform: uppercase; }
+    .card-list-block .panel-body > p, .card-list-block .panel-body > li {
+      font-size: 1.25rem; }
+    .card-list-block .panel-body .card-title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      padding-bottom: 2rem; }
+    .card-list-block .panel-body .card-icon,
+    .card-list-block .panel-body .card-catagory,
+    .card-list-block .panel-body .card-date,
+    .card-list-block .panel-body .card-author {
+      font-size: 1rem; }
+    .card-list-block .panel-body .card-footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
 
 .carouselBlock {
   background-color: #6B9BC2;
   background-size: cover;
   color: white; }
-  .carouselBlock h1 {
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    line-height: 1.25;
-    padding: 3rem 0 1.5rem 0;
-    text-align: left;
-    word-spacing: 0.1rem; }
-  .carouselBlock p {
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
-    word-spacing: 0.1rem; }
-  .carouselBlock p:not(:last-child) {
-    padding-bottom: 2.5rem; }
-  .carouselBlock a {
-    color: #6B9BC2;
-    text-decoration: none; }
-    .carouselBlock a:hover {
-      text-decoration: underline; }
 
 .carousel-inner {
   margin: auto;
@@ -2592,7 +2586,7 @@ button {
 
 .feature-list-body {
   color: #AEB0B3;
-  font-size: 1rem; }
+  font-size: 1.25rem; }
   .feature-list-A .feature-list-body {
     padding-right: 2em; }
 
@@ -2609,10 +2603,8 @@ button {
   .card-feature > h1, .card-feature h2 {
     font-size: 1.5rem; }
   .card-feature > h3, .card-feature h4, .card-feature h5, .card-feature h6 {
-    font-size: 1.25rem; }
+    font-size: 1rem; }
   .card-feature > p {
-    font-size: 1.25rem;
-    line-height: 1.5;
     color: #5A5B5E; }
     .card-feature > p a {
       color: #6B9BC2;
@@ -2624,10 +2616,10 @@ button {
     padding-top: 1em; }
   .feature-list-A .card-feature .feature-name, .feature-list-B .card-feature .feature-name {
     color: #6B9BC2;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-top: 0; }
   .feature-list-A .card-feature .feature-info, .feature-list-B .card-feature .feature-info {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.5; }
   .feature-list-B .card-feature {
@@ -2645,10 +2637,12 @@ button {
       z-index: 100; }
 
 .footer-global .footer-brand > img {
-  width: 60%; }
-  @media screen and (min-width: 767px) {
+  width: 60%;
+  margin-left: -1em; }
+  @media screen and (min-width: 768px) {
     .footer-global .footer-brand > img {
-      width: 100%; } }
+      width: 100%;
+      margin-left: -3rem; } }
 
 .footer-global {
   color: lightgray;
@@ -2675,7 +2669,7 @@ button {
     .footer-global *[class~="icons"] a:last-of-type {
       margin-right: 0rem; }
   .footer-global span[class~="icon"] {
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 0.2rem 0.25rem;
     background-color: transparent; }
     .footer-global span[class~="icon"]:hover {
@@ -2684,12 +2678,20 @@ button {
     padding: 0 0 0.25em 0;
     margin-left: 0; }
   .footer-global .footer-brand > img {
-    padding: 0px;
-    margin-left: 0; }
+    padding: 0px; }
   .footer-global .footer-footnote, .footer-global .footer-copyright {
     font-size: 0.75rem; }
   .footer-global .footer-copyright {
     color: white; }
+  .footer-global .pos-rel {
+    position: relative; }
+  .footer-global .pos-ab-bottom {
+    position: inherit; }
+    @media screen and (min-width: 768px) {
+      .footer-global .pos-ab-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0; } }
 
 .navbar-global {
   background: linear-gradient(to right, white, white 20%, rgba(255, 255, 255, 0.82)); }
@@ -2832,35 +2834,18 @@ button {
 
   .collapse.in {
     display: block !important; } }
-.introTextBlock {
-  content: ""; }
-
-.feature-list {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
-
-.card-feature {
-  padding-bottom: 2.5rem; }
-  .card-feature > h1, .card-feature h2, .card-feature h3, .card-feature h4, .card-feature h5 {
-    text-align: left;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.1rem;
-    line-height: 1.125;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #56C5D0; }
-  .card-feature > h1, .card-feature h2 {
-    font-size: 1.5rem; }
-  .card-feature > h3, .card-feature h4, .card-feature h5 {
-    font-size: 1.25rem; }
-  .card-feature > p {
-    font-size: 1.125rem;
-    line-height: 1.5; }
-    .card-feature > p a {
-      color: #56C5D0;
-      text-decoration: none; }
-      .card-feature > p a:hover {
-        text-decoration: underline; }
+.introTextBlock .introText-title,
+.introTextBlock .introText-subtitle {
+  padding-bottom: 2rem; }
+  .introTextBlock .introText-title.title-extended,
+  .introTextBlock .introText-subtitle.title-extended {
+    padding-bottom: 4rem; }
+  .introTextBlock .introText-title.title-compressed,
+  .introTextBlock .introText-subtitle.title-compressed {
+    padding-bottom: 0.5rem; }
+  .introTextBlock .introText-title.title-flush,
+  .introTextBlock .introText-subtitle.title-flush {
+    padding-bottom: 0; }
 
 .pageTitleBlock {
   padding-top: 150px;
@@ -2926,7 +2911,7 @@ button {
 
 .profile-bio {
   color: #AEB0B3;
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 .profile-links a:not(:last-child) {
   padding-right: 1rem; }
@@ -2974,7 +2959,7 @@ button {
       z-index: 100; }
   .row3CardList .panel-body {
     height: 100%;
-    min-height: 250px;
+    min-height: 20rem;
     overflow-y: auto;
     padding-bottom: 2rem;
     position: relative; }
@@ -3011,9 +2996,9 @@ button {
   .card-feature > h1, .card-feature h2 {
     font-size: 1.5rem; }
   .card-feature > h3, .card-feature h4, .card-feature h5, .card-feature h6 {
-    font-size: 1.25rem; }
-  .card-feature > p {
     font-size: 1rem; }
+  .card-feature > p {
+    font-size: 1.25rem; }
     .card-feature > p a {
       text-decoration: none; }
       .card-feature > p a:hover {

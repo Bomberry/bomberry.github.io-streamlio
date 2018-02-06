@@ -2,36 +2,58 @@ Streamlio Web Dev Notes:
 
 
 
+Update Style Guide
+√   Create new asset for Glyph "BUG" RBG, CMYK, SPACING.
+
+
+Fonts sizes and spacing
+Footer
+
+
+Modal
+Generate and upate Snippets
+Update "pages" with new "Blocks"
+
 
 Media Block that was in
 Check content blocks for media height
 
+
 Poster Block with text on top
+
 
 Test Putting content blocks into carousel-item
 
+
 Filter for card-list
 
+
 block-featureList (3 features)
-Make a two column and 4 column version
+√   Make a two column and 4 column version
+
+
+Tighten up kerning, check fonts for kerning settings. Check Word spacing on fonts as well.
+
+
+Check Privic and terms fonts size.
+Moved text to under log in footer.
+
 
 
 Content-Block
 √   Make 3 and 4 column versions
 
 
-Check for shirts for (embroydery )
+Check for shirts for (embroydery)
+(Print 100, 4 impring, postup stand)
 
 
 
 Check carousel autoplay by default (create toggle element in data-autoplay:false)
 
 
-
-
 URGENT:
 √   Send out snippets and instructions to Jon for Dreamweaver
-
 
 
 TYPE
@@ -70,7 +92,7 @@ Mailing list (signup)
   Create popup form
 
 
-Blockquote - make one. Test font
+√   Blockquote - make one. Test font
 
 
 FOOTER

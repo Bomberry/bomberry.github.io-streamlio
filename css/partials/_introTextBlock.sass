@@ -2,7 +2,24 @@
 
 
 .introTextBlock
-  content: ''
-.introText
-  //p
-    text-size: $font-size-body-larger
+  @extend %global-block-padding
+  .introText-title,
+  .introText-subtitle
+    padding-bottom: 2rem
+    &.title-extended
+      padding-bottom: 4rem
+    &.title-compressed
+      padding-bottom: 0.5rem
+    &.title-flush
+      padding-bottom: 0
+
+  .introText-subtitle
+    @extend .text-thin
+
+  .introText-body
+    @extend .body-larger
+    &.body-larger
+      @extend .heading-small
+    &.body-small
+      @extend .body-large
+

@@ -1,7 +1,6 @@
 /* CSS Document */
 /* @charset 'utf-8' */
 /* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Martel:300,400,700);
 @import url("https://fonts.googleapis.com/css?family=Cambay:400,400i,700,700i&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext");
@@ -9,10 +8,6 @@
 .content-block {
   margin-top: 5rem;
   margin-bottom: 5rem; }
-
-.introTextBlock {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
 
 .block-seperator {
   padding-top: 2rem;
@@ -1582,85 +1577,19 @@
 
 /* Typography: Heebo and Martel fonts (Google Fonts) */
 /* Standardise the font-family names, add appropriate values for weights and styles */
-body, html {
+.test-font-size {
   font-size: 14px; }
-  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    body, html {
-      font-size: 14px; } }
-  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    body, html {
-      font-size: 17.5px; } }
-  @media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    body, html {
-      font-size: 21px; } }
 
-body {
-  line-height: 2; }
+.test-font-size {
+  font-size: 21px; }
 
-body {
-  letter-spacing: 0.075rem;
-  word-spacing: 0.09rem; }
+.test-font-size {
+  font-size: 42px; }
 
-html {
-  -webkit-tap-highlight-color: transparent; }
+.test-font-size {
+  font-size: 63px; }
 
-body {
-  font-family: "Cambay", sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-weight: 300;
-  color: #5A5B5E;
-  background-color: white; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cambay", sans-serif;
-  font-weight: 400; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2.25rem; }
-
-h3 {
-  font-size: 2rem; }
-
-h4 {
-  font-size: 1.75rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h6 {
-  font-size: 1.25rem; }
-
-h1, h2 {
-  letter-spacing: 0.05rem; }
-
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left; }
-  p.body-small {
-    font-size: 0.75rem; }
-  p.body-larger, .introTextBlock p.introText-body {
-    font-size: 1.25rem; }
-  p:not(:last-child) {
-    padding-bottom: 2.5rem; }
-
-a {
-  color: #6B9BC2;
-  text-decoration: none; }
-  a:hover, a:focus, a:active {
-    color: #6B9BC2;
-    text-decoration: underline; }
-
-blockquote, figcaption, .blockquote, .quote, .caption {
-  font-family: "Martel", serif;
-  font-weight: 300; }
-
-.text-thin, .introTextBlock .introText-subtitle {
+.text-thin {
   font-weight: 300; }
 
 .text-normal {
@@ -1682,48 +1611,114 @@ blockquote, figcaption, .blockquote, .quote, .caption {
   font-size: 2.5rem; }
 
 .title-small {
-  font-size: 2.25rem; }
+  font-size: 2rem; }
 
 .subtitle-large {
   font-size: 2rem; }
 
 .subtitle-small, .page-subtitle, .section-subtitle {
-  font-size: 1.75rem; }
+  font-size: 1.55rem; }
 
 .heading-large, .page-heading, .section-title, .section-heading {
   font-size: 1.5rem; }
 
-.heading-small, .introTextBlock .introText-body.body-larger, .introTextBlock .introText-body {
-  font-size: 1.25rem; }
-
-.body-larger, .introTextBlock .introText-body {
-  font-size: 1.25rem; }
-
-.body-large, .introTextBlock .introText-body.body-small, .page-body, .section-body {
+.heading-small {
   font-size: 1rem; }
 
-.body-small {
+.body-larger {
+  font-size: 1rem; }
+
+.body-large, .page-body, .section-body {
   font-size: 1.25rem; }
+
+.body-small {
+  font-size: 1rem; }
 
 .body-smallest {
   font-size: 0.5rem; }
 
+body, html {
+  font-size: 14px; }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 10.5px; } }
+  @media screen and (min-device-width: 1024) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 10.5px; } }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    body, html {
+      font-size: 15.75px; } }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body, html {
+      font-size: 21px; } }
+  @media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    body, html {
+      font-size: 26.25px; } }
+
+body {
+  line-height: 1.5; }
+
+body {
+  letter-spacing: normal;
+  font-kerning: normal;
+  word-spacing: normal; }
+
+html {
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Cambay", sans-serif;
+  font-weight: 300;
+  color: #5A5B5E;
+  background-color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cambay", sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.55rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: left; }
+  p.body-small {
+    font-size: 0.75rem; }
+  p.body-larger {
+    font-size: 1rem; }
+  p:not(:last-child) {
+    padding-bottom: 2.5rem; }
+
+a {
+  color: #6B9BC2;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #6B9BC2;
+    text-decoration: underline; }
+
+blockquote, figcaption, .blockquote, .quote, .caption {
+  font-family: "Martel", serif;
+  font-weight: 300; }
+
 button,
 .button {
   font-family: "Cambay", sans-serif; }
-
-.introTextBlock .introText-title,
-.introTextBlock .introText-subtitle {
-  padding-bottom: 2rem; }
-  .introTextBlock .introText-title.title-extended,
-  .introTextBlock .introText-subtitle.title-extended {
-    padding-bottom: 4rem; }
-  .introTextBlock .introText-title.title-compressed,
-  .introTextBlock .introText-subtitle.title-compressed {
-    padding-bottom: 0.5rem; }
-  .introTextBlock .introText-title.title-flush,
-  .introTextBlock .introText-subtitle.title-flush {
-    padding-bottom: 0; }
 
 .pubInfo {
   text-size: 0.5rem;

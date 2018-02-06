@@ -1,13 +1,13 @@
 //  globalFooter.sass
 
 
-$variable-screen-size: "screen and (min-width: 767px)"
-
 %global-footer-brand-img-width
   width: 60%
-  
-  @media #{$variable-screen-size}
+  margin-left: -1em
+  @media #{$variable-screen-size-footer}
     width: 100%
+    margin-left: -3rem
+
 
 
 .footer-global
@@ -24,7 +24,7 @@ $variable-screen-size: "screen and (min-width: 767px)"
       color: white
       text-decoration: none
   .list-title, .list-body
-    font-size: $font-size-body-large
+    font-size: $font-size-body-normal
   .list-title
     text-transform: $font-all-cap
     > a
@@ -48,9 +48,16 @@ $variable-screen-size: "screen and (min-width: 767px)"
   .footer-brand>img
     //width: 60%
     padding: 0px
-    margin-left: 0
     @extend %global-footer-brand-img-width
   .footer-footnote, .footer-copyright
     font-size: $font-size-body-small
   .footer-copyright
     color: $color-white
+  .pos-rel
+    position: relative
+  .pos-ab-bottom
+    position: inherit
+    @media #{$variable-screen-size-footer}
+      position: absolute
+      bottom: 0
+      right: 0
