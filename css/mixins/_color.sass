@@ -56,11 +56,20 @@
 @mixin set-button-color ($streamlio-color)
   color: (get-color($streamlio-color))
   border-color: (get-color($streamlio-color))
-  background-color: transparentize($color-white,0.16)
+  background-color: transparentize($color-white,0.1)
   &:hover
     color: white
     border-color: white
-    background-color: transparentize((get-color($streamlio-color)),0.16)
+    background-color: transparentize((get-color($streamlio-color)),0.1)
+
+@mixin set-button-color-reverse ($streamlio-color)
+  background-color: transparentize((get-color($streamlio-color)),0.1)
+  border-color: white
+  color: white
+  &:hover
+    background-color: transparentize($color-white,0.1)
+    border-color: (get-color($streamlio-color))
+    color: (get-color($streamlio-color))
 
 //@mixin colorize-button($base-color, $accent-color)  color: $color-accent-default
   border-color: $color-accent-default
@@ -74,6 +83,8 @@
   @each $key, $value in $streamlio-colors
     .button-#{$key}
       @include set-button-color($key)
+    .button-#{$key}-reverse
+      @include set-button-color-reverse($key)
 
 //@each $key, $value in $streamlio-colors
   %color-#{$key}

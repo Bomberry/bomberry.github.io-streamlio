@@ -4,9 +4,25 @@
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
-.block-seperator {
+.content-block-small {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.content-block-tiny {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.content-block-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.content-block-padding-small {
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.content-block-padding-tiny {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
 
 .row-eq-height {
   display: -webkit-box;
@@ -32,9 +48,6 @@
 .center-v-2 {
   position: relative;
   transform: translateY(25%); }
-
-.block-seperator {
-  border-bottom: 1px solid #e6e6e6; }
 
 .columns-2 {
   -webkit-column-gap: 30px;

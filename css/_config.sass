@@ -7,10 +7,11 @@
 @import "variables"
 
 //@import "bootstrap"
+//Bootstrap is now being loaded from a CDN. If source is local, uncomment above statement.
 
 @import "functions"
-@import "generators"
 @import "mixins"
+@import "generators"
 
 //@import "overrides"
 @import "typography"
@@ -18,8 +19,7 @@
 
 
 
-
-//  Please use the following styling order
+//  Try to use the following styling order
 //  Try and avoid using IDs and stick to Classes, Tags, and Pseudo selectors.
 //.class-name
   //  Deflare local variables
@@ -49,7 +49,6 @@
     font-weight: 400
   //  Nested Selectors Last
   h1
-    //  Use the same styling order 
+    //  Use the same styling order
     @include transform(rotate(180deg))
     border-bottom: 1px solid $local-variable-name
-

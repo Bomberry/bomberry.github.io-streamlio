@@ -4,20 +4,18 @@
 //$text-title: $color-text-accent
 //$text-body: $color-text-primary
 
-$background-color: get-color(streamlio-cyan)
-
 
 .card-list-block
   padding-top: $global-block-padding
   padding-bottom: $global-block-padding
-  @extend .bg-color-glacier
+  //@extend .bg-color-glacier
   color: $color-white
   background-repeat: no-repeat
   background-size: cover
   //background-image: url("../media/background/plexus1e.png")
   text-align: left
   > .row
-    padding-top: $global-block-padding
+    //padding-top: $global-block-padding
     padding-bottom: $global-block-padding
   h1, h2
     color: $color-white
@@ -44,7 +42,11 @@ $background-color: get-color(streamlio-cyan)
     h5
       color: lighten(rgb(72, 105, 131), 15%)
       text-transform: uppercase
-    > p, > li
+    p
+      font-size: $font-size-body-large
+    ul
+      padding-left: $base-unit-em
+    li
       font-size: $font-size-body-large
     .card-title
       font-size: $font-size-heading-large

@@ -30,13 +30,9 @@ $global-breakpoint-largest: $global-breakpoint-2660
 
 //  Boostrap variable override
 $grid-float-breakpoint: $global-breakpoint-medium
-//$grid-float-breakpoint: 992px
 
-//Variable-screen-size is defined in _units, but you can override it here to test the @media directives
-$variable-screen-ratio: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)'
-$variable-screen-size: 'screen and (min-width: 300px)'
-$variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200px)'
-//Variables for Screen resolution in percentage of scale
+
+//Variables for Screen DPXR
 $variable-screen-dpr-100: '(-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-dpr-125: '(-webkit-min-device-pixel-ratio: 1.25)'
 $variable-screen-dpr-150: '(-webkit-min-device-pixel-ratio: 1.5)'
@@ -44,73 +40,30 @@ $variable-screen-dpr-200: '(-webkit-min-device-pixel-ratio: 2)'
 $variable-screen-dpr-300: '(-webkit-min-device-pixel-ratio: 3)'
 $variable-screen-dpr-400: '(-webkit-min-device-pixel-ratio: 4)'
 
-$variable-screen-resolution-70: '(min-resolution: 70dpi)'
-$variable-screen-resolution-140: '(min-resolution: 140dpi)'
-$variable-screen-resolution-220: '(min-resolution: 220dpi)'
-$variable-screen-resolution-260: '(min-resolution: 260dpi)'
-$variable-screen-resolution-320: '(min-resolution: 320dpi)'
-$variable-screen-resolution-400: '(min-resolution: 400dpi)'
-$variable-screen-resolution-500: '(min-resolution: 500dpi)'
-//$variable-screen-resolution-400: '(-webkit-min-device-pixel-ratio: 4), (min-resolution: 192dpi)'
 
 //iPhone 4, 4S
-$variable-screen-type-iPhone-4: 'screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPhone 5, 5S, 5C and 5SE
+$variable-device-type-iPhone-4: 'screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)'
+//iPhone 5, 5Sdevice 5C and 5SE
 $variable-screen-type-iPhone-5: 'screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPhone 6, 6S, 7 and 8
+//iPhone 6, 6Sdevice 7 and 8
 $variable-screen-type-iPhone-678: 'screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)'
 //iPhone 6+, 7+ and 8+
-$variable-screen-type-iPhone-678p: 'screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)'
+$variable-device-type-iPhone-678p: 'screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)'
 //iPhone X
 $variable-screen-type-iPhone-X: 'screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)'
-
 
 //iPad 1, 2, Mini and Air
-$variable-screen-type-iPad-12miniAir: 'screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)'
+$variable-device-type-iPad-12miniAir: 'screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)'
 //iPad 3, 4 and Pro 9.7
-$variable-screen-type-iPad-345P97: 'screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)'
+$variable-device-type-iPad-345P97: 'screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)'
 //iPad Pro 10.5
-$variable-screen-type-iPad-P105: 'screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2)'
+$variable-device-type-iPad-P105: 'screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2)'
 //iPad Pro 12.9
-$variable-screen-type-iPad-P129: 'screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)'
+$variable-device-type-iPad-P129: 'screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)'
 //iPhone X
-$variable-screen-type-iPhone-X: 'screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)'
+$variable-device-type-iPhone-X: 'screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)'
 
-
-//  Mobile First Method
-//Custom, iPhone Retina - In Order
-$variable-screen-type-xxs: 'screen and (min-device-width: 320px)'
-//Extra Small Devices, Phones
-$variable-screen-type-xsd: 'screen and (min-device-width: 480px)'
-//Small Devices, Tablets
-$variable-screen-type-sd: 'screen and (min-device-width: 768px)'
-//Medium Devices, Desktops
-$variable-screen-type-md: 'screen and (min-device-width: 992px)'
-//Large Devices, Wide Screens
-$variable-screen-type-ld: 'screen and (min-device-width: 1200px)'
-//Extra Large Devices, Wide Screens
-$variable-screen-type-xld: 'screen and (min-device-width: 1440px)'
-//Custom, Super Wide Screens
-$variable-screen-type-xxld: 'screen and (min-device-width: 1600px)'
-
-//  Non-Mobile First Method - In Order
-//Custom, Super Wide Screens
-$variable-screen-type-xxld: 'screen and (max-device-width: 1600px)'
-//Extra Large Devices, Wide Screens
-$variable-screen-type-xld: 'screen and (max-device-width: 1440px)'
-//Large Devices, Wide Screens
-$variable-screen-type-ld: 'screen and (max-device-width: 1200px)'
-//Medium Devices, Desktops
-$variable-screen-type-md: 'screen and (max-device-width: 992px)'
-//Small Devices, Tablets
-$variable-screen-type-sd: 'screen and (max-device-width: 768px)'
-//Extra Small Devices, Phones
-$variable-screen-type-xsd: 'screen and (max-device-width: 480px)'
-//Custom, iPhone Retina
-$variable-screen-type-xxs: 'screen and (max-device-width: 320px)'
-
-
-
+//Computers and Displays
 $variable-screen-type-screen: 'screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-type-computer: 'screen and (min-device-width: 1024) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-type-laptop: 'screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)'
@@ -118,37 +71,57 @@ $variable-screen-type-laptop-retina: 'screen and (min-device-width: 1200px) and 
 $variable-screen-type-laptop-4k: 'screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)'
 
 
+//  Mobile First Method
+//Custom, iPhone Retina - In Order
+$variable-screen-size-xxs: 'screen and (min-device-width: 320px)'
+//Extra Small Devices, Phones
+$variable-screen-size-xsd: 'screen and (min-device-width: 480px)'
+//Small Devices, Tablets
+$variable-screen-size-sd: 'screen and (min-device-width: 768px)'
+//Medium Devices, Desktops
+$variable-screen-size-md: 'screen and (min-device-width: 992px)'
+//Large Devices, Wide Screens
+$variable-screen-size-ld: 'screen and (min-device-width: 1200px)'
+//Extra Large Devices, Wide Screens
+$variable-screen-size-xld: 'screen and (min-device-width: 1440px)'
+//Custom, Super Wide Screens
+$variable-screen-size-xxld: 'screen and (min-device-width: 1600px)'
+
+//  Non-Mobile First Method - In Order
+//Custom, Super Wide Screens
+//$variable-screen-size-xxld: 'screen and (max-device-width: 1600px)'
+//Extra Large Devices, Wide Screens
+//$variable-screen-size-xld: 'screen and (max-device-width: 1440px)'
+//Large Devices, Wide Screens
+//$variable-screen-size-ld: 'screen and (max-device-width: 1200px)'
+//Medium Devices, Desktops
+//$variable-screen-size-md: 'screen and (max-device-width: 992px)'
+//Small Devices, Tablets
+//$variable-screen-size-sd: 'screen and (max-device-width: 768px)'
+//Extra Small Devices, Phones
+//$variable-screen-size-xsd: 'screen and (max-device-width: 480px)'
+//Custom, iPhone Retina
+//$variable-screen-size-xxs: 'screen and (max-device-width: 320px)'
+
+
 //Custom size used for footer, check to see if can be refactored
 $variable-screen-size-footer: 'screen and (min-width: 768px)'
 
-
-//  Global layout variables:
-$global-block-padding: 5rem
-$global-block-padding-0: 0
-$global-block-padding-4: 4rem
-$global-block-padding-3: 3rem
-$global-block-padding-25: 2.5rem
-$global-block-padding-2: 2rem
-$global-block-padding-15: 1.5rem
-$global-block-padding-1: 1rem
-$global-block-padding-05: 0.5rem
-$global-block-padding-em: 5em
-$global-block-padding-4-em: 4em
-$global-block-padding-3-em: 3em
-$global-block-padding-25-em: 2.5em
-$global-block-padding-2-em: 2em
-$global-block-padding-15-em: 1.5em
-$global-block-padding-1-em: 1em
-$global-block-padding-05-em: 0.5em
+//Variable-screen-size is defined in _units, but you can override it here to test the @media directives
+$variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200px)'
 
 
-//  Global layout placeholders and classes:
+
+//  Global margin and padding placeholders and classes:
 %global-block-margin
   margin-top: $global-block-padding
   margin-bottom: $global-block-padding
-
-.content-block
-  @extend %global-block-margin
+%global-block-margin-small
+  margin-top: $global-block-padding-2
+  margin-bottom: $global-block-padding-2
+%global-block-margin-tiny
+  margin-top: $global-block-padding-05
+  margin-bottom: $global-block-padding-05
 
 %global-block-padding
   padding-top: $global-block-padding
@@ -159,6 +132,19 @@ $global-block-padding-05-em: 0.5em
 %global-block-padding-tiny
   padding-top: $global-block-padding-05
   padding-bottom: $global-block-padding-05
+
+.content-block
+  @extend %global-block-margin
+.content-block-small
+  @extend %global-block-margin-small
+.content-block-tiny
+  @extend %global-block-margin-tiny
+.content-block-padding
+  @extend %global-block-padding
+.content-block-padding-small
+  @extend %global-block-padding-small
+.content-block-padding-tiny
+  @extend %global-block-padding-tiny
 
 
 //  Flex for row:
@@ -186,12 +172,6 @@ $global-block-padding-05-em: 0.5em
 .center-v-2
   position: relative
   transform: translateY(25%)
-
-
-//  Style for Seperator (can be moved to it's own partial):
-.block-seperator
-  @extend %global-block-padding-small
-  border-bottom: $global-border-stroke-small
 
 
 //  Global Column placeholders and classes:

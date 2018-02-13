@@ -1,6 +1,6 @@
 //  pageTitleBlock.sass
 
-$background-color: get-color(streamlio-cyan)
+$background-color: get-color(light-gray)
 
 
 .pageTitleBlock
@@ -20,10 +20,10 @@ $background-color: get-color(streamlio-cyan)
   p
     @extend %global-typography-spacing
     font-size: $font-size-subtitle-small
-    line-height: $font-line-height-default
+    line-height: $font-line-height-tight
     > a
       text-decoration: underline
-  p:not(:last-child)
+  //p:not(:last-child)
     padding-bottom: ($global-block-padding/2)
   a
     text-decoration: none
@@ -36,9 +36,11 @@ $background-color: get-color(streamlio-cyan)
   button
     @extend .button-default-reverse
     @extend %button-shadow
-    //border: 1px solid white
+    line-height: $font-line-height-tighter
+    padding-bottom: ($global-block-padding-1-em * 0.75)
+    padding-top: $global-block-padding-1-em
     //&:hover
       @extend .bg-color-streamlio-cyan-shade-3
       @extend .color-streamlio-cyan-tint-3
-    &.btn-justify
+    &.button-justify
       width: 100%

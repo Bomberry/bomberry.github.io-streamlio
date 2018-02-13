@@ -34,76 +34,73 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
 .navbar-global
   @extend %global-navbar-large-background
   box-shadow: $global-box-shadow
-  //height: $global-navbar-height-large
-  min-height: $global-navbar-height-large
+  height: $global-navbar-height-large
   transition: $global-transition-default
-  z-index: 1000
-
+  z-index: 100
+  
   &.navbar-compressed
     @extend %global-navbar-small-background
-    //height: $global-navbar-height-small
-    min-height: $global-navbar-height-small
+    height: $global-navbar-height-small
     transition: $global-transition-default
-    .nav > li
-      line-height: $global-navbar-height-small
-    .nav > li > a
-      font-size: $global-navbar-text-small
-      line-height: $global-navbar-height-small
-      &.btn-action
-        line-height: ($global-navbar-height-small / 1.5)
-        margin: ($global-navbar-height-small / 6) 0.5rem
-    span.icon
-      font-size: $global-navbar-text-small
-      line-height: $global-navbar-height-small
+    > ul[class~="navbar-nav"]
+      > li
+        > a, > span.icon
+          //padding-top: 0
+          //padding-bottom: 0
+          //padding-left: 1em
+          //padding-right: 1em
+          font-size: $global-navbar-text-small
+          line-height: $global-navbar-height-small
     .navbar-brand
-      //padding: 0 0 0 20px
-      //line-height: $global-navbar-text-small
+      padding: 0 0 0 20px
+      line-height: $global-navbar-text-small
       > img
         height: $global-navbar-height-small
         padding: 0
-
-  .nav.navbar-right
-    padding-right: $global-navbar-text-large
-  .nav > li
-    background: $global-navbar-color-accent-linear-gradient
-    background-color: transparent
-    background-size: 0% 2px
-    transition: $global-transition-default
-    &:hover
+        width: auto
+  
+  > ul[class~="navbar-nav"]
+    //margin: 0 !important
+    > li
       background: $global-navbar-color-accent-linear-gradient
       background-color: transparent
-      background-size: 100% 2px
-      > a
-        text-decoration: underline
-        &.btn-action
-          box-shadow: $global-box-shadow-medium
-  .nav > li > a
-    color: $global-navbar-color-default
-    font-size: $global-navbar-text-large
-    line-height: $global-navbar-height-large
-    padding: 0 $global-navbar-text-large
-    transition: $global-transition-default
-    @media (max-width: 911px)
-      line-height: $global-navbar-height-small
-    &:focus,
-    &:hover
-      color: $global-navbar-color-accent
-      background-color: transparent
-    &.btn-action
-      @extend .button-default-reverse
-      border-radius: .5rem
-      line-height: ($global-navbar-height-large / 2)
-      margin: ($global-navbar-height-large / 4) 0.5rem
-      box-shadow: $global-box-shadow-small
-      transition: $global-transition
-      &:hover
-        box-shadow: $global-box-shadow
-    span.icon
-      color: $global-navbar-color-accent
-      font-size: $global-navbar-text-large
-      line-height: $global-navbar-height-large
-      //padding: 0 $global-navbar-text-large/2
-
+      background-size: 0% 2px
+      transition: $global-transition-default
+      &:hover,
+      &:active
+        background: $global-navbar-color-accent-linear-gradient
+        background-color: transparent
+        background-size: 100% 2px
+        > a,
+        > span.icon
+          background-color: transparent
+          color: $global-navbar-color-accent
+          text-decoration: underline
+        .button-action
+          background-color: $color-white
+          color: $global-navbar-color-accent
+          box-shadow: $global-box-shadow
+      &:focus,
+        background-size: 100% 100%
+      > a,
+      > span.icon
+        color: $global-navbar-color-default
+        font-size: $global-navbar-text-large
+        line-height: $global-navbar-height-large
+        //padding-top: 0
+        //padding-bottom: 0
+        //padding-left: 1em
+        //padding-right: 1em
+        padding: 0 0.75em
+        transition: $global-transition-default
+      .button-action
+        border-radius: .5rem
+        background-color: $global-navbar-color-accent
+        color: $color-white
+        line-height: ($global-navbar-height-large/2)
+        margin: ($global-navbar-height-large/4) 1rem
+        box-shadow: $global-box-shadow-small
+  
   .navbar-brand
     padding: 0 0 0 10px
     height: auto
@@ -111,29 +108,28 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
     transition: $global-transition-default
     > img
       height: $global-navbar-height-large
-      //padding: $global-navbar-text-large 0
-      padding: $global-navbar-text-small 0
+      padding: $global-navbar-text-large 0
       width: auto
       transition: $global-transition-default
-
-  .navbar-toggle
-    margin: ($global-navbar-height-large/4) 1rem
+  
+  button[class~='navbar-toggle']
+    //font-size: $global-navbar-text-large
+    //line-height: $global-navbar-height-large
+    .navbar-toggle
+      margin: ($global-navbar-height-large/4) 1rem
     .icon-bar
       background-color: $global-navbar-color-default
     &:hover
+      .navbar-toggle
       .icon-bar
         background-color: $global-navbar-color-accent
-
+  
   .navbar-collapse
-    //@extend %global-navbar-large-background
-    max-height: max-content
-    //> .navbar-right
+    @extend %global-navbar-large-background
+    > .navbar-right
       margin-right: 0
-    //&.collapse.in
-      .nav > li > a
-        line-height: $global-navbar-height-small
 
-
+  
   //@media screen and (max-width: 920px) /*screen and (min-width: 600px) and (max-width: 920px)*/
     ul[class~="navbar-nav"]
       > li
@@ -187,7 +183,7 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
   //@media screen and (min-width: 1400px) and (max-width: 1499px) /*(min-width: 600px) and (max-width: 920px)*/
     ul[class~="navbar-nav"] > li > a
       color: maroon
-
+  
 #navbar-search
   box-shadow: $global-box-shadow
   color: $global-navbar-color-accent
@@ -200,27 +196,21 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
     color: $global-navbar-color-accent
     &::-moz-placeholder
       color: $global-navbar-color-accent
-  .input-group-addon
-    color: $global-navbar-color-accent
-    &:hover
-      color: $color-white
-      background-color: $global-navbar-color-accent
+
 
 @media (max-width: 911px)
   .navbar-header
     float: none
   .navbar-left,.navbar-right
     float: none !important
-  .navbar-right .dropdown-menu
-    left: 0
   .navbar-toggle
     display: block
   .navbar-collapse
-    //border-top: 1px solid transparent
+    border-top: 1px solid transparent
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
-  .navbar-fixed-top
+  .navbar-fixed-top 
     top: 0
-    border-width: 0 0 0px
+    border-width: 0 0 1px
   .navbar-collapse.collapse
     display: none!important
   .navbar-nav
@@ -229,9 +219,9 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
   .navbar-nav>li
     float: none
   .navbar-nav>li>a
-    //padding-top: 10px
-    //padding-bottom: 10px
-  .btn-action
-    margin: 0
+    padding-top: 10px
+    padding-bottom: 10px
   .collapse.in
     display: block !important
+
+

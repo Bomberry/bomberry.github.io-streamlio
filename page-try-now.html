@@ -14,7 +14,7 @@
 <!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
 
 <!--Google Type - CDN - Fonts for use SASS/CSS-->
-<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">-->
 
 <!--Main SASS/CSS for Streamlio-->
 <link href="css/streamlio.css" type="text/css" rel="stylesheet" />
@@ -50,76 +50,58 @@
 </head>
 
 
+
 <body id="HomePage" class="">
 
-
-<!--block-globalNav-->
-<nav id="globalNavBar" class="navbar navbar-fixed-top navbar-global"> <!-- NOTE: Do you need nav-bar with the navbar-global overide?-->
+<!-- Global Nav -->
+<nav id="globalNavBar" class="navbar navbar-fixed-top navbar-global" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="media/logo/Streamlio-Logo.svg" alt="Streamlio logo"></a>
+      <a class="navbar-brand" href="#"><img class="brand" src="media/logo/Streamlio-Logo.svg" alt="Streamlio logo"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<!--
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">What is Streamlio? <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">What is Streamlio?</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Feature 1</a></li>
-            <li><a href="#">Feature 2</a></li>
-            <li><a href="#">Feature 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Getting Started</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">Company</a></li>
-      </ul>
--->
-<!--
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
--->
+    <div class="collapse navbar-collapse" id="global-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-
-        <li><a alt="What is Streamlio" href="page-what-is-streamlio.html">What is Streamlio?</a></li>
+<!--        <li><a alt="What is Streamlio" href="#">What is Streamlio?</a></li>-->
         <li class="dropdown">
-          <a alt="Features" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+          <a alt="Product" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a alt="Feature 1" href="page-feature-1.html">Feature 1</a></li>
-            <li><a alt="Feature 2" href="page-feature-2.html">Feature 2</a></li>
-            <li><a alt="Feature 3" href="page-feature-3.html">Feature 3</a></li>
+            <li><a alt="Overview" href="#">Overview</a></li>
+            <li><a alt="Messaging &amp; queuing" href="#">Messaging &amp; queuing</a></li>
+            <li><a alt="Real-time processing" href="#">Real-time processing</a></li>
+            <li><a alt="Stream storage" href="#">Stream storage</a></li>
           </ul>
         </li>
-        <li><a alt="Getting Started" href="page-getting-started.html">Getting Started</a></li>
-        <li><a alt="Learn" href="page-learn.html">Learn</a></li>
-        <li><a alt="Company" href="page-company.html">Company</a></li>
-
-        <li><a alt="Search" href="#"><span class="fa fa-search"></span></a></li>
-<!--        <li><a alt="Status" href="#"><span class="fa fa-cloud"></span></a></li>-->
-<!--        <li><a alt="Dashboard" href="#"><span class="fa fa-user"></span></a></li>-->
-<!--        <li><a alt="CDN" href="#"><span class="fa fa-rss"></span></a></li>-->
-        <li><a alt="Try Now" href="page-try-now.html" class="btn-action" title="Try Now">Try Now</a></li>
+        <li class="dropdown">
+          <a alt="Resources" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a alt="Resource library" href="#">Resource library</a></li>
+            <li><a alt="Video tutorials" href="#">Video tutorials</a></li>
+            <li><a alt="Getting started" href="#">Getting started</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a alt="About" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a alt="Company" href="#">Company</a></li>
+            <li><a alt="News and events" href="#">News and events</a></li>
+            <li><a alt="Community" href="#">Community</a></li>
+          </ul>
+        </li>
+        <li class="navbar-toggler" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle navigation"><a alt="Search"><span class="navbar-toggler-icon fa fa-search"></span></a></li>
+        <li><a alt="Try Now" href="#" class="button-action button-glacier-reverse">Try Now</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-  
 <!-- Search Bar module -->
-<div class="">
   <div class="collapse" id="navbar-search">
     <div class="">
       <form class="search-form" id="" action="">
@@ -131,10 +113,7 @@
       </form>
     </div>
   </div>
-</div>
 <!-- / Search Bar module -->
-
-  
 </nav>
 
 
@@ -142,9 +121,9 @@
 <div class="container-fluid pageTitleBlock bg-image plexus-5">
     <div class="row">
         <div class="col-sm-5 col-sm-offset-1">
-          <h1>Try Streamlio Now</h1>
+          <h1>This is the title of the page</h1>
           <p>Lorem ipsum dolor sit amet, <a alt="a link" href="#">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet lectus proin nibh nisl condimentum id. Condimentum lacinia quis vel eros donec.</p>
-          <button class="btn btn-lg btn-justify" title="" type="button" data-toggle="modal" data-target="#myModal">Call To Action</button>
+          <button class="button" title="" type="button" data-toggle="modal" data-target="#myModal">Call To Action</button>
       </div>
     </div>
 </div>
@@ -167,40 +146,50 @@
     </div>
 </div>
 
-
+<!--Content Block: Example with image and caption-->
+<div class="container-fluid image-block">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <figure>
+        <img class="img-responsive" src="media/images/placeholder-16x9.png" alt="placeholder" />
+        <figcaption>Caption for the image, with a <a href="linkto:">link</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
 
 <!--block-rowFeatureList-->
 <div class="container-fluid feature-list">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
+    <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
       <div class="row">
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Unique architecture</h3>
           <p>Modular architecture enables easy scalability without data redistribution</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Zero data loss</h3>
           <p>Data redundancy and multi-datacenter replication built in to protect data</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Microservices ready</h3>
           <p>Optimized for microservices applications including containers and [Kubernetes] (https://kubernetes.io) orchestration</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Real-time performance</h3>
           <p>High-performance processing to deliver end-to-end latencies as low as 30ms</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Self-healing</h3>
           <p>Processing engine that adapts automatically to data flow</p>
         </div>
         <!-- Feature Block -->
-        <div class="card-feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="card-feature col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 ">
           <h3>Lorem Ipsum with a title long enought to wrap</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce <a href="#">eleifend euismod</a> nibh ut sollicitudin. Morbi eget ullamcorper quam. Gravida ex tortor</p>
         </div>
@@ -210,28 +199,27 @@
 </div>
 
 
-<!--article-articleCardList-->
-<div id="" class="container-fluid card-list-block text-center">
+<div id="" class="container-fluid card-list-block bg-color-glacier">
   <div class="row">
     <h1 class="col-sm-8 col-sm-offset-2">Enterprise-grade, unified, end-to-end real-time solution</h1>
-    <p class="jumbotron-subtitle col-sm-8 col-sm-offset-2">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
+    <p class="col-sm-8 col-sm-offset-2">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
 <!--    <button class="jumbotron-button btn btn-lg col-sm-8 col-sm-offset-2">Call To Action</button>-->
   </div>
-  <div class="row">
+  <div class="row row-eq-height">
     <div class="col-sm-10 col-sm-offset-1">
-      <div class="row">
+      <div class="row row-eq-height">
         <div class="col-sm-4 panel">
           <div class="panel-body">
-            <h5>Category</h5>
-            <h2>Event-driven architecture</h2>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Event-driven architecture</h2>
             <p>Break apart monolithic applications to build a new generation of applications enabled by microservices.</p>
             <p>These services can be independently developed and maintained, paving the way to lower development and operations costs and faster time to market.</p>
           </div>
         </div>
         <div class="col-sm-4 panel">
           <div class="panel-body">
-            <h5>Category</h5>
-            <h2>Anomaly detection</h2>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Anomaly detection</h2>
             <p>Use event-driven actions to detect unusual patterns in real time. These events can include:</p>
             <ul>
               <li>fraud detection for the finance and the insurance industries</li>
@@ -241,8 +229,8 @@
         </div>
         <div class="col-sm-4 panel">
           <div class="panel-body">
-            <h5>Category</h5>
-            <h2>Predictive modeling</h2>
+            <h5 class="card-catagory">Category</h5>
+            <h2 class="card-title">Predictive modeling</h2>
             <p>Machine learning in real time—with no humans in the loop—to build intelligent applications. Uses of machine learning include:</p>
             <ul>
               <li>smart homes and cities to preserve scarce resources like water and electricity</li>
@@ -256,23 +244,30 @@
 </div>
 
 
+
 <!--block-row2ColCallToAction-->
 <div class="container-fluid callToAction2Col">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
       <div class="row">
-    <div class="col-sm-4 col-sm-offset-1">
-      <h1>Learn more</h1>
-      <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
-      <button class="btn btn-lg">Call To Action</button>
-    </div>
-    <div class="col-sm-4 col-sm-offset-2">
-      <h1>Get Started</h1>
-      <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
-      <button class="jumbotron-button btn btn-lg">Call To Action</button>
-    </div>
+        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block-callToAction">
+            <div class="col-xs-10 col-xs-offset-1">
+              <span class="icon fa fa-4x fa-graduation-cap"></span>
+              <h1>Learn more</h1>
+              <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
+            <button class="button button-default-reverse">Call To Action</button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block-callToAction">
+          <div class="col-xs-10 col-xs-offset-1">
+            <span class="icon fa fa-4x fa-handshake-o"></span>
+            <h1>Get Started</h1>
+            <p class="">Founded by co-creators of best-of-breed open source messaging, compute, and stream storage technologies proven in production at Twitter and Yahoo scale</p>
+            <button class="button button-default-reverse">Call To Action</button>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
   </div>
 </div>
 
@@ -299,6 +294,10 @@
           <h5 class="list-body"><a>Blog</a></h5>
         </div>
         <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+          <h4 class="list-title"><a>About</a></h4>
+          <h5 class="list-body"><a>Company</a></h5>
+          <h5 class="list-body"><a>Team</a></h5>
+          <h5 class="list-body"><a>Contact</a></h5>
         </div>
     </div>
     <div class="row pos-rel">
@@ -348,6 +347,9 @@
     });
   });
 </script>
+  
+  
+  
 <!-- Modal Popup Script -->
 <script type="text/javascript">
 $(document).ready(function(){

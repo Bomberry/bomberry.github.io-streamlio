@@ -1,26 +1,6 @@
 //  buttons.sass
 
 
-
-//  References
-//  typography.sass
-//.button
-//  //font-family: $font-heebo
-//  font-weight: $font-weight-heavy
-//
-
-
-//  Page Intro Block
-//button
-  @extend .bg-color-streamlio-cyan
-  border: 1px solid white
-  &:hover
-    @extend .bg-color-streamlio-cyan-shade-3
-    @extend .color-streamlio-cyan-tint-3
-  &.btn-justify
-    width: 100%
-
-
 //  Button Composit Class
 %button-shadow
   box-shadow: $global-box-shadow-small
@@ -29,34 +9,40 @@
     background-color: transparent
     box-shadow: $global-box-shadow
 
-button
+button,
+.button
   @extend %button-shadow
   border: $global-button-border
+  border-radius: .5em
   background-color: transparent
-  //box-shadow: $global-box-shadow-small
-  //transition: $global-transition
+  //font-size: $base-unit-rem*1.5
+  //padding: $base-unit-rem $base-unit-rem $base-unit-rem*.75
+  line-height: 1
+  padding: 1em 1em .75em
+  z-index: 100
   &:hover
-    //background-color: transparent
-    //box-shadow: $global-box-shadow
-    z-index: 100
+    z-index: 101
+
+.button-action
+  @extend button
 
 .button-default
-  @extend %button-shadow
-  color: $color-accent-default
+  @extend button
+  color: $color-accent-default !important
   border-color: $color-accent-default
   background-color: transparentize($color-white,0.16)
   &:hover
-    color: white
+    color: white !important
     border-color: white
     background-color: transparentize($color-accent-default,0.16)
 
 .button-default-reverse
-  @extend %button-shadow
-  color: white
+  @extend button
+  color: white !important
   border-color: white
   background-color: transparentize($color-accent-default,0.16)
   &:hover
-    color: $color-accent-default
+    color: $color-accent-default !important
     border-color: $color-accent-default
     background-color: transparentize($color-white,0.16)
 

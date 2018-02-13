@@ -1,8 +1,14 @@
 //  Variables
 //  Used to hold global variables, maps, lists, and other variable structural data.
 
-//  Named Variables
-//  Used to set global default variables.
+
+//  DEBUG FLAG
+$global-debug: false
+
+//  Testing Variables: used to set test elements with dynamically set variables.
+$base-unit-em: 1em
+$base-unit-rem: 1rem
+
 $test-unit-em: 1em
 $test-unit-rem: 1rem
 $test-unit-1rem: 1rem
@@ -12,24 +18,19 @@ $test-value-2: #000000
 $test-value-3: #7F7F7F
 $test-value-3: #FFFFFF
 
-//  Global NavBar variabless:
-$global-navbar-height-large: 100px
-$global-navbar-height-small: 50px
-$global-navbar-text-large: 1rem //1.25rem
-$global-navbar-text-small: 1rem
-$global-navbar-subnavbar-height: $global-navbar-height-small
-$global-navbar-subnavbar-text: $global-navbar-text-small
 
 //  global-box-shadow variables:
 $global-box-shadow: 0 5px 15px rgba(0,0,0,0.35)
 $global-box-shadow-medium: 0 3px 5px rgba(0,0,0,0.15)
 $global-box-shadow-small: 0 1px 2px rgba(0,0,0,0.15)
+$global-box-shadow-small-white: 0 1px 2px rgba(255,255,255,0.62)
 $global-box-shadow-hidden: 0 0px 0px rgba(0,0,0,0.0)
 
 //  global-box-shadow variables:
 $global-text-shadow: $global-box-shadow
 $global-text-shadow-medium: $global-box-shadow-medium
 $global-text-shadow-small: $global-box-shadow-small
+$global-text-shadow-small-white: $global-box-shadow-small-white
 $global-text-shadow-hidden: $global-box-shadow-hidden
 $global-text-shadow-heavy: 0 5px 15px rgba(0,0,0,0.62)
 $global-text-shadow-heavy-medium: 0 3px 5px rgba(0,0,0,0.62)
@@ -42,15 +43,44 @@ $global-transition-default: all .16s ease
 $global-transition-slow: all .32s ease
 $global-transition-box-shadow: box-shadow .16s ease-in-out
 
+
+//  Global block-padding variables:
+$global-block-padding: 5rem
+$global-block-padding-0: 0
+$global-block-padding-4: 4rem
+$global-block-padding-3: 3rem
+$global-block-padding-25: 2.5rem
+$global-block-padding-2: 2rem
+$global-block-padding-15: 1.5rem
+$global-block-padding-1: 1rem
+$global-block-padding-05: 0.5rem
+$global-block-padding-em: 5em
+$global-block-padding-4-em: 4em
+$global-block-padding-3-em: 3em
+$global-block-padding-25-em: 2.5em
+$global-block-padding-2-em: 2em
+$global-block-padding-15-em: 1.5em
+$global-block-padding-1-em: 1em
+$global-block-padding-05-em: 0.5em
+
 //  global-border styles:
 $global-border-stroke: 2px solid rgb(230, 230, 230)
 $global-border-stroke-small: 1px solid rgb(230, 230, 230)
+$global-border-stroke-small-dotted: 1px dotted rgb(230, 230, 230)
 $global-border-stroke-offset: -2px
 $global-border-stroke-offset-small: -1px
 
 //  global-button-border styles:
 $global-button-border: 1px solid transparent
 
+//  Global NavBar variabless:
+$global-navbar-height-large: 100px
+$global-navbar-height-small: 50px
+$global-navbar-text-large: 1.25rem //1rem
+$global-navbar-text-small: 1rem
+$global-navbar-subnavbar-height: $global-navbar-height-small
+$global-navbar-subnavbar-text: $global-navbar-text-small
+
 //  global default Card variables
-$card-min-height: 20rem
+$card-min-height: $base-unit-rem * 20
 $card-height: $card-min-height

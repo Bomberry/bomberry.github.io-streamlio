@@ -1,6 +1,33 @@
 //  BackgroundImages.sass
-//  A Shameful file with CSS/SASS that needs to be vetted and intergrated into the source structure
-//  Used to quickly create and test HTML/CSS  components, elements, layout, and design decisions.
+//  Used to style IMG (image) elements.
+
+
+
+//Image filters for coloring image/media assets
+//NOTE: Check out www.cssfilters.co/ to create additional filters
+%image-filter-dark
+  -webkit-filter: contrast(62%) brightness(38%) saturate(200%) //sepia(38%)
+  filter: contrast(62%) brightness(38%) saturate(200%) //sepia(38%)
+%image-filter-light
+  -webkit-filter: contrast(32%) brightness(162%) saturate(200%) //sepia(38%)
+  filter: contrast(32%) brightness(162%) saturate(200%) //sepia(38%)
+%image-filter-gs-dark
+  -webkit-filter: grayscale(60%) sepia(0.3) saturate(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
+  filter: grayscale(60%) sepia(0.3) saturate(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
+%image-filter-gs-light
+  -webkit-filter: grayscale(60%) sepia(0.3) saturate(0.3) opacity(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
+  filter: grayscale(60%) sepia(0.3) saturate(0.3) opacity(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
+
+.img-fx
+  &-darken
+    @extend %image-filter-dark
+  &-lighten
+    @extend %image-filter-light
+  &-gs-darken
+    @extend %image-filter-gs-dark
+  &-gs-lighten
+    @extend %image-filter-gs-light
+
 
 
 %image-backing
@@ -18,14 +45,6 @@
   opacity: .2
   //-webkit-filter: opacity(0.3)
   //filter: opacity(0.3)
-
-//Image filters for coloring image/media assets
-%image-filter-light
-  -webkit-filter: grayscale(60%) sepia(0.3) saturate(0.3) opacity(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
-  filter: grayscale(60%) sepia(0.3) saturate(0.3) opacity(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
-%image-filter-dark
-  -webkit-filter: grayscale(60%) sepia(0.3) saturate(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
-  filter: grayscale(60%) sepia(0.3) saturate(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
 
 
 //background images
@@ -83,3 +102,5 @@
   &.plexus-10-subtle:before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-10)}")
+
+

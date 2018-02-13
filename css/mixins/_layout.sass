@@ -91,7 +91,39 @@
 //      font-style: italic
 
 
+//Flexbox helpers
+@mixin flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
 
+@mixin flex($values)
+  -webkit-box-flex: $values
+  -moz-box-flex:  $values
+  -webkit-flex:  $values
+  -ms-flex:  $values
+  flex:  $values
+
+@mixin order($value)
+  -webkit-box-ordinal-group: $value
+  -moz-box-ordinal-group: $value
+  -ms-flex-order: $value
+  -webkit-order: $value
+  order: $value
+
+// Example useages:
+
+//.wrapper
+  @include flexbox()
+
+//.item
+  @include flex(1 200px)
+  @include order(2)
+
+
+//Set border radius and add  prefixes
 @mixin border-radius($radius: 0px)
   -webkit-border-radius: $radius
   -moz-border-radius: $radius

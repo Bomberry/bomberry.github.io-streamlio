@@ -29,27 +29,26 @@ $font-root-size: 14px
 //$font-size-scaler: 1
 $font-size-scaler: 1.5
 
-@mixin font-scale ($font-scale-value)
+@mixin font-size-scaler ($font-scale-value)
   @if $font-scale-value != 0
     font-size: $font-root-size * ($font-size-scaler * $font-scale-value)
   @else
     font-size: $font-root-size
 
-
-.test-font-size
-  @include font-scale(0)
-.test-font-size
-  @include font-scale(1)
-.test-font-size
-  @include font-scale(2)
-.test-font-size
-  @include font-scale(3)
-
+.test-font-size-0
+  @include font-size-scaler(0)
+.test-font-size-1
+  @include font-size-scaler(1)
+.test-font-size-2
+  @include font-size-scaler(2)
+.test-font-size-3
+  @include font-size-scaler(3)
 
 $font-size-small: 1rem / $font-size-scaler      //tiny text
 $font-size-default: 1rem        //body text
 $font-size-medium: 1rem * $font-size-scaler     //heading text
 $font-size-large: 1rem * $font-size-scaler * $font-size-scaler  //title text
+
 
 $font-size-title-large: 2.5rem
 $font-size-title-normal: 2.25rem
@@ -68,7 +67,6 @@ $font-size-body-large: 1.25rem
 $font-size-body-normal: 1rem
 $font-size-body-small: .75rem
 $font-size-body-smaller: .5rem
-
 
 //  Line-Height Variables: the definitions for @media overrides
 $font-line-height-gappy: 2.5
@@ -105,13 +103,6 @@ $font-all-cap: uppercase
   font-size: $font-size-large
 
 
-.text-thin
-  font-weight: $font-weight-light
-.text-normal
-  font-weight: $font-weight-normal
-.text-heavy
-  font-weight: $font-weight-heavy
-
 //Note: These can probably be removed if you want to use Bootstrap calls, however, if they change in bootstrap, you'll need to address them in the cuture.
 .text-align-left
   text-align: left
@@ -120,7 +111,13 @@ $font-all-cap: uppercase
 .text-align-center
   text-align: center
 
-//pseudo classes for CSS tags
+.text-thin
+  font-weight: $font-weight-light
+.text-normal
+  font-weight: $font-weight-normal
+.text-heavy
+  font-weight: $font-weight-heavy
+
 .title-large
   font-size: $font-size-title-large
 .title-small
@@ -183,14 +180,13 @@ $font-color-default: $color-default
     font-size: $font-root-size * $font-size-scaler * .5
   @media #{$variable-screen-type-computer}
     font-size: $font-root-size * $font-size-scaler * .5
-  //@media #{$variable-screen-type-laptop}
-    font-size: $font-root-size * $font-size-scaler * .75
   @media #{$variable-screen-type-laptop}
     font-size: $font-root-size * $font-size-scaler * .75
   @media #{$variable-screen-type-laptop-retina}
-    font-size: $font-root-size * $font-size-scaler * 1
+    font-size: $font-root-size * $font-size-scaler * .75
   @media #{$variable-screen-type-laptop-4k}
-    font-size: $font-root-size * $font-size-scaler * 1.25
+    font-size: $font-root-size * $font-size-scaler
+
 
 //Placeholder for base Sizing and Spacing
 %global-typography-sizing
@@ -209,15 +205,14 @@ html
   @extend %font-root-size-adjusted
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 body
-  font-family: $font-sans
-  @extend %global-typography-sizing //Is this causing a bug with  globalNav on certain browers when clicking SEARCH icon
+  //@extend %global-typography-sizing //Is this causing a bug with  globalNav on certain browers when clicking SEARCH icon
   @extend %global-typography-spacing
-  //-webkit-text-size-adjust: 100%
-  //-ms-text-size-adjust: 100%
-  //text-size-adjust: 100%
-  font-weight: $font-weight-light
-  color: $font-color-default
   background-color: $background-color-default
+  color: $font-color-default
+  font-family: $font-sans
+  font-size: $base-unit-rem
+  font-weight: $font-weight-light
+  line-height: $font-line-height-default
 
 //Define Heading Tag(s)
 h1, h2, h3, h4, h5, h6

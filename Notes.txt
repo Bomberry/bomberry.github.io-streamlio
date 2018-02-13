@@ -1,114 +1,66 @@
-Streamlio Web Dev Notes:
+Streamlio Web Dev Notes
 
 
-
-Update Style Guide
-√   Create new asset for Glyph "BUG" RBG, CMYK, SPACING.
-
-
-Fonts sizes and spacing
-Footer
+Note Styling:
+CATAGORY
+Item Incomplete (before completion)
+√   Item complete (before deletion)
 
 
-Modal
-Generate and upate Snippets
-Update "pages" with new "Blocks"
+TYPOGRAPHY
+Changing in Chrome at 100% and 90% (resolution)
 
 
-Media Block that was in
-Check content blocks for media height
-
-
-Poster Block with text on top
-
-
-Test Putting content blocks into carousel-item
-
-
-Filter for card-list
-
-
-block-featureList (3 features)
-√   Make a two column and 4 column version
-
-
-Tighten up kerning, check fonts for kerning settings. Check Word spacing on fonts as well.
-
-
-Check Privic and terms fonts size.
-Moved text to under log in footer.
-
-
-
-Content-Block
-√   Make 3 and 4 column versions
-
-
-Check for shirts for (embroydery)
-(Print 100, 4 impring, postup stand)
-
-
-
-Check carousel autoplay by default (create toggle element in data-autoplay:false)
-
-
-URGENT:
-√   Send out snippets and instructions to Jon for Dreamweaver
-
-
-TYPE
-√   Impliement @media on HTML tag for setting root font size
-√   Jon's laptop: 2dppx, 192dpi, screen (css.px: 1680x1050px) actual: 3360x2100px
-√   Kevin's laptop: 2dppx, 192dpi, screen (css.px: 1440x900px) actual: 2880x1800px
-√   Find and replace HEEBO with font that is similar but with Italic sets
-Find and replace MARTEL with font that is similar but with Italic sets
-
-
-NAV
-√   Fix resizing on breakpoint.
-√   Fix "link" click area
-√   Change hover for Try Now to button
-Fix dropdown placement (moz/fox?)
-
-
-SUB NAV
-Add sub-nav bar with breadcrumb/inline links (anchors) for documents with several sections/parts
-
-
-SEARCH
-√   Verify search pops properly
-√   Unround seach input field and icon
-Fix Search in collapsed dropdown (inline)
-
-FIX: section-row3CardList
-√   Fix the content blocks so they are algned, and don't scroll
+STYLE GUIDE
+Include Glyph "BUG" SPACING.
+Include backgrounds (plexus)
+Include styling (image)
 
 
 MODAL POPUP
 link JS and HTML object with demo page
 Media browser
-Mailing list (signup)
-  POPUP FROM
-  Create popup form
 
 
-√   Blockquote - make one. Test font
+MEDIA BLOCKS
+Check content blocks for media height
 
 
-FOOTER
-√   Clear last row, use for additional linking
-√   increase icon size
+CAROUSEL
+Test Putting content blocks into carousel-item
+Check carousel autoplay by default (create toggle element in data-autoplay:false)
+Create an example with content-2col with test on left and image on right
+
+
+TYPOGRAPHY
+Find and replace MARTEL with font that is similar but with Italic sets or generate a new family
+
+
+NAV (GLOBAL)
+Fix dropdown placement (moz/fox?)
+Fix Search in collapsed dropdown (inline)
+Add sub-nav bar with breadcrumb/inline links (anchors) for documents with several sections/parts
+Font sizes are crazy tall/big in Chrome
+Try Now button not centered vertical (see BUTTONS)
+
+
+BUTTONS
+text isn't centered
+callToAction
+Button text is tiny, enlarge
+globalNav
+text isn't centered
 
 
 CARD LIST
-√   Fit type on info popover
+Filter(s) for card-list Category and Keywords (multi-dimension) Submit buttons
+One for Category and one for Keywords
+sample Categories and Keywords need to be data-attribute for each card.
+Sample with image for info inline.
 
 
 MEDIA LIST
-Create both media blocks (media-cards)/(content-card):
-  media block w/o image
-  media block w/ image
-Create a vertial single row stack cardList (img to left)
+Create a vertical single row stack cardList (img to left)
 
 
 MEDIA LIST POPUP (Modal)
@@ -116,14 +68,17 @@ Fix media list display
 Check to see that it's presentation is proper
 
 
-BLOG
-Create sample with full with responsive image, and one inline image.
-
-
-IMAGE PROCESSING
-√   Add back the image processing command for saturating an image using "streamlio colors"
+MISCELLANEOUS
+Create sample blog post with full with responsive image, and one inline image.
+Update "pages" with new "Blocks"
+Include updated snippets for Dreamweaver in the source root folder
 
 
 THEME/STYLE
 Remove hardcoded values, or overright with styling so that content-blocks have the same easy to use callout as buttons
 cascade styling colors to buttons. Wont overright button styles that are hardcoded (class) inline
+
+
+MISCELLANEOUS
+Check for shirts for (embroydery)
+(Print100.com, 4imprint.com, postupstand.com)
