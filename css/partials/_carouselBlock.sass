@@ -9,9 +9,89 @@
 
 
 //  TODO: Complete the carousel styling, needs responsive test for layout and cover fill for image
+.carousel
+  height: $global-block-padding * 8
+  &.carousel-fullscreen
+    .carousel-inner .item
+      height: 100vh
+      min-height: 600px
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
+    .carousel-caption
+      top: 50%
+      bottom: auto
+      -webkit-transform: translate(0, -50%)
+      -ms-transform: translate(0, -50%)
+      transform: translate(0, -50%)
+
+.carousel-indicators
+  .active
+    background-color: $color-accent-default
+    box-shadow: $global-text-shadow-heavy-medium
+    height: calc(#{$base-unit-rem} + 2px)
+    margin: 0 $global-block-padding-05 -1px
+    width: calc(#{$base-unit-rem} + 2px)
+  li
+    background-color: transparent
+    border: $global-border-stroke
+    border-radius: $base-unit-rem
+    box-shadow: $global-text-shadow-heavy-small
+    cursor: pointer
+    display: inline-block
+    height: $base-unit-rem
+    margin: 0 $global-block-padding-05
+    text-indent: -999px
+    transition: $global-transition-default
+    width: $base-unit-rem
+.carousel-inner
+  height: 100%
+  .item
+    background-position: 50% 50%
+    background-size: cover
+    height: 100%
+    width: 100%
+    img
+      //width: 100%
+      //height: auto
+    .carousel-caption
+
+.item
+  .panel
+    @extend .box-eq-height
+
+.carousel-control
+
+  &.left
+
+  &.right
 
 
-.carouselBlock
+
+.carousel-fade
+  .carousel-inner
+    .item
+      -webkit-transition-property: opacity
+      transition-property: opacity
+    .item,
+    .active.left,
+    .active.right
+      opacity: 0
+    .active,
+    .next.left,
+    .prev.right
+      opacity: 1
+    .next,
+    .prev,
+    .active.left,
+    .active.right
+      left: 0
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
+  .carousel-control
+    z-index: 2
+
+//.carouselBlock
   //@extend %global-block-margin
   @extend %global-block-padding
   //@extend .bg-image
@@ -59,7 +139,7 @@
 
 
 
-.carousel-inner
+//.carousel-inner
   margin: auto
   width: 90%
   //  Used to center the carousel caption
@@ -77,7 +157,7 @@
     //max-width: 100%
     object-fit: cover
 
-.carousel-control
+//.carousel-control
   width:  4%
   &.left
     background-image: none
@@ -85,14 +165,14 @@
     background-image: none
 
 
-.glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right
+//.glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right
   color: $color-white
   margin-top: -10px
   margin-left: -10px
 
 
 
-@media (max-width: 767px)
+//@media (max-width: 767px)
   .carousel-inner > .item.next, .carousel-inner > .item.active.right
     left: 0
     -webkit-transform: translate3d(100%, 0, 0)
@@ -103,7 +183,7 @@
     transform: translate3d(-100%, 0, 0)
 
 
-@media (min-width: 767px) and (max-width: 992px )
+//@media (min-width: 767px) and (max-width: 992px )
   .carousel-inner > .item.next, .carousel-inner > .item.active.right
     left: 0
     -webkit-transform: translate3d(50%, 0, 0)
@@ -113,7 +193,7 @@
     -webkit-transform: translate3d(-50%, 0, 0)
     transform: translate3d(-50%, 0, 0)
 
-@media (min-width: 992px )
+//@media (min-width: 992px )
   .carousel-inner > .item.next, .carousel-inner > .item.active.right
     left: 0
     -webkit-transform: translate3d(16.7%, 0, 0)

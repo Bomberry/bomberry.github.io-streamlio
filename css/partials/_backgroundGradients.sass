@@ -3,7 +3,23 @@
 //  Used to quickly create and test HTML/CSS  components, elements, layout, and design decisions.
 
 
+//  Define global color variables to be used for the Global Navbar
+$global-navbar-color-accent: get-color(glacier)
+$global-navbar-color-default: get-color(dark-gray)
+$global-navbar-background-color: white
 
+//Gradients for the Global NavBar
+//Backgound gradient
+$global-navbar-large-background: linear-gradient(to right, rgba($global-navbar-background-color,1), rgba($global-navbar-background-color,1) 20%, rgba($global-navbar-background-color,0.82))
+$global-navbar-small-background: linear-gradient(to right, rgba($global-navbar-background-color,1), rgba($global-navbar-background-color,1) 20%, rgba($global-navbar-background-color,1))
+//Hover gradient
+$global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-color-accent, $global-navbar-color-accent) top no-repeat
+
+
+//  Create any series of gradients you'd like using the following convention...
+//  Use: Add an GRADIENT-ID and then an @include bg-gradient(STREAMLIO-COLOR-PRIMARY, STREAMLIO-COLOR-SECONDARY)
+//  Example:
+//  @include bg-gradient(streamlio-blue, streamlio-cyan)
 .bg-gradient
   background-size: cover
   &.gradient-1
@@ -26,7 +42,8 @@
     @include bg-gradient(streamlio-blue, night-shadz)
   &.gradient-10
     @include bg-gradient(vivid-violet, glacier)
-  
+//NOTE: TODO: Add transparent images with background gradients
+//MOVE: Move this to the _backgroundImages.sass file. Make sure gradients come before images.
 //  &.plexus-1
 //    background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-1)}")
 //  &.plexus-2

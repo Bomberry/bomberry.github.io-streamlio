@@ -2,9 +2,9 @@
 
 
 //  Define global color variables to be used for the Global Navbar
-$global-navbar-color-accent: get-color(glacier)
-$global-navbar-color-default: get-color(dark-gray)
-$global-navbar-background-color: white
+//$global-navbar-color-accent: get-color(glacier)
+//$global-navbar-color-default: get-color(dark-gray)
+//$global-navbar-background-color: white
 
 //Gradients for the Global NavBar
 //Backgound gradient
@@ -87,12 +87,12 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
     transition: $global-transition-default
     @media (max-width: 911px)
       line-height: $global-navbar-height-small
-    &:not([class*="button-action"])
+    &:not([class~="button-action"])
       color: $global-navbar-color-default
     &:focus,
     &:hover
       background-color: transparent
-      &:not([class*="button-action"])
+      &:not([class~="button-action"])
         color: $global-navbar-color-accent
     &.button-action
       line-height: 50px
@@ -135,60 +135,6 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
       .nav > li > a
         line-height: $global-navbar-height-small
 
-
-  //@media screen and (max-width: 920px) /*screen and (min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"]
-      > li
-        > a
-          padding-top: 0
-          padding-bottom: 0
-          font-size: $global-navbar-text-small
-          line-height: $global-navbar-height-large
-        //li
-          display: none /* hahaha */
-  //@media screen and (min-width: 300px) and (max-width: 399) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: red
-  //@media screen and (min-width: 400px) and (max-width: 499px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: green
-  //@media screen and (min-width: 500px) and (max-width: 599px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: blue
-  //@media screen and (min-width: 600px) and (max-width: 699px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: black
-  //@media screen and (min-width: 600px) and (max-width: 699px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: magenta
-      padding-left: 1rem
-      padding-right: 1rem
-  //@media screen and (min-width: 700px) and (max-width: 799px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: yellow
-  //@media screen and (min-width: 800px) and (max-width: 899px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: cyan
-  //@media screen and (min-width: 900px) and (max-width: 999px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: maroon
-  //@media screen and (min-width: 1000px) and (max-width: 1099px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: black
-  //@media screen and (min-width: 1100px) and (max-width: 1199px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: magenta
-      padding-left: 1rem
-      padding-right: 1rem
-  //@media screen and (min-width: 1200px) and (max-width: 1299px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: yellow
-  //@media screen and (min-width: 1300px) and (max-width: 1399px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: cyan
-  //@media screen and (min-width: 1400px) and (max-width: 1499px) /*(min-width: 600px) and (max-width: 920px)*/
-    ul[class~="navbar-nav"] > li > a
-      color: maroon
 
 #navbar-search
   box-shadow: $global-box-shadow

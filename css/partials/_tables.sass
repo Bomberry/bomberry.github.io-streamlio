@@ -1,0 +1,25 @@
+//  tables.sass
+
+
+//  Table helper class
+//%button-shadow
+  box-shadow: $global-box-shadow-small
+  transition: $global-transition
+  &:hover
+    //background-color: transparent
+    box-shadow: $global-box-shadow
+
+table, .table, .table-condenced
+  overflow-x: auto
+  tbody > tr > td:first-child
+    //text-align: right
+    font-weight: 700
+  thead
+    font-weight: $font-weight-heavy
+.table-hover
+  tbody tr:hover
+    color: $color-accent-default
+    background-color: transparent
+    box-shadow: $global-box-shadow
+    transition: $global-transition-box-shadow
+  

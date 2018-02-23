@@ -3,7 +3,7 @@
 // Import Fonts from CDNs or local files
 // Google Fonts
 //@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700)
-@import url(https://fonts.googleapis.com/css?family=Martel:300,400,700)
+@import url('https://fonts.googleapis.com/css?family=Martel:300,400,700')
 
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,400i,700,700i&subset=latin-ext')
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext')
@@ -44,31 +44,20 @@ $font-size-scaler: 1.5
 .test-font-size-3
   @include font-size-scaler(3)
 
-$font-size-small: 1rem / $font-size-scaler      //tiny text
-$font-size-default: 1rem        //body text
-$font-size-medium: 1rem * $font-size-scaler     //heading text
-$font-size-large: 1rem * $font-size-scaler * $font-size-scaler  //title text
+//  Font-Weight Variable
+$font-weight-light: 300
+$font-weight-normal: 400
+$font-weight-heavy: 700
 
+//  Font-Weight Classes
+.text-thin
+  font-weight: $font-weight-light
+.text-normal
+  font-weight: $font-weight-normal
+.text-heavy
+  font-weight: $font-weight-heavy
 
-$font-size-title-large: 2.5rem
-$font-size-title-normal: 2.25rem
-$font-size-title-small: 2rem
-
-$font-size-subtitle-large: 2rem
-$font-size-subtitle-normal: 1.75rem
-$font-size-subtitle-small: 1.55rem
-
-$font-size-heading-large: 1.5rem
-$font-size-heading-normal: 1.25rem
-$font-size-heading-small: 1rem
-
-$font-size-body-larger: 1.5rem
-$font-size-body-large: 1.25rem
-$font-size-body-normal: 1rem
-$font-size-body-small: .75rem
-$font-size-body-smaller: .5rem
-
-//  Line-Height Variables: the definitions for @media overrides
+//  Line-Height Variables
 $font-line-height-gappy: 2.5
 $font-line-height-loosest: 2.25
 $font-line-height-looser: 2
@@ -79,28 +68,70 @@ $font-line-height-tighter: 1
 $font-line-height-tightest: 0.75
 $font-line-height-squished: 0.5
 
-//  Font-Weight Variable: the definitions for @media overrides
-$font-weight-light: 300
-$font-weight-normal: 400
-$font-weight-heavy: 700
-
 //  Font Spacing Variables:
 $font-kerning: normal
 $font-letter-spacing: normal
 $font-word-spacing: normal
 
-
+//  Font transformation Variables:
 $font-all-cap: uppercase
 
+//  Semantic Font Size Variables
+$font-size-small: 1rem / $font-size-scaler      //tiny text
+$font-size-default: 1rem        //body text
+$font-size-medium: 1rem * $font-size-scaler     //heading text
+$font-size-large: 1rem * $font-size-scaler * $font-size-scaler  //title text
 
+//  Semantic Font Size variables, placeholders, and classes
+$font-size-title-large: 2.5rem
+$font-size-title-normal: 2.25rem
+$font-size-title-small: 2rem
+$font-size-title: $font-size-title-normal
+%font-title
+  font-size: $font-size-large
+.title-large
+  font-size: $font-size-title-large
+.title-small
+  font-size: $font-size-title-small
+
+$font-size-subtitle-large: 2rem
+$font-size-subtitle-normal: 1.75rem
+$font-size-subtitle-small: 1.55rem
+$font-size-subtitle: $font-size-subtitle-normal
+.subtitle-large
+  font-size: $font-size-subtitle-large
+.subtitle-small
+  font-size: $font-size-subtitle-small
+
+$font-size-heading-large: 1.5rem
+$font-size-heading-normal: 1.25rem
+$font-size-heading-small: 1rem
+$font-size-heading: $font-size-heading-normal
+%font-heading
+  font-size: $font-size-medium
+.heading-large
+  font-size: $font-size-heading-large
+.heading-small
+  font-size: $font-size-heading-small
+
+$font-size-body-larger: 1.5rem
+$font-size-body-large: 1.25rem
+$font-size-body-normal: 1rem
+$font-size-body-small: .75rem
+$font-size-body-smaller: .5rem
+$font-size-body: $font-size-body-normal
 %font-body-small
   font-size: $font-size-small
 %font-body
   font-size: $font-size-default
-%font-heading
-  font-size: $font-size-medium
-%font-title
-  font-size: $font-size-large
+.body-larger
+  font-size: $font-size-heading-small
+.body-large
+  font-size: $font-size-body-large
+.body-small
+  font-size: $font-size-heading-small
+.body-smallest
+  font-size: $font-size-body-smaller
 
 
 //Note: These can probably be removed if you want to use Bootstrap calls, however, if they change in bootstrap, you'll need to address them in the cuture.
@@ -111,33 +142,6 @@ $font-all-cap: uppercase
 .text-align-center
   text-align: center
 
-.text-thin
-  font-weight: $font-weight-light
-.text-normal
-  font-weight: $font-weight-normal
-.text-heavy
-  font-weight: $font-weight-heavy
-
-.title-large
-  font-size: $font-size-title-large
-.title-small
-  font-size: $font-size-title-small
-.subtitle-large
-  font-size: $font-size-subtitle-large
-.subtitle-small
-  font-size: $font-size-subtitle-small
-.heading-large
-  font-size: $font-size-heading-large
-.heading-small
-  font-size: $font-size-heading-small
-.body-larger
-  font-size: $font-size-heading-small
-.body-large
-  font-size: $font-size-body-large
-.body-small
-  font-size: $font-size-heading-small
-.body-smallest
-  font-size: $font-size-body-smaller
 
 .page-title
   @extend .title-large
@@ -157,6 +161,7 @@ $font-all-cap: uppercase
   @extend .heading-large
 .section-body
   @extend .body-large
+
 
 
 //Following to be moved to, somewhere after mixins and before here
@@ -203,7 +208,7 @@ $font-color-default: $color-default
 html
   //font-size: $font-size-default
   @extend %font-root-size-adjusted
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  //-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 body
   //@extend %global-typography-sizing //Is this causing a bug with  globalNav on certain browers when clicking SEARCH icon
   @extend %global-typography-spacing
@@ -251,10 +256,10 @@ p
 
 //Define Link Tag(s)
 a
-  color: $font-color-accent-default
+  //color: $font-color-accent-default
   text-decoration: none
   &:hover, &:focus, &:active
-    color: $font-color-accent-default
+    //color: $font-color-accent-default
     text-decoration: underline
 
 //Define Blockquote Tag(s)
@@ -337,4 +342,3 @@ button,
 //.textBlock-accentColor-streamlio-green
 //    h1, h2, h3, h4, h5, a
 //      @extend .color-streamlio-green
-

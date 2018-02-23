@@ -6,17 +6,17 @@
 // option 1
 //  .debug
 //    @include print-map($map)
-//  
+//
 // option 2
 //  @include print-map($map, "body")
 
-@function print-map ( $map, $str: "" )
-  @each $k, $v in $map
+@function print-map ( $map, $string: "" )
+  @each $key, $value in $map
     @if type-of($v) == map
-      $str: "#{$str} \000D\000A #{$k}: ( #{print-map($v)} \000D\000A ), "
+      $string: "#{$string} \000D\000A #{$key}: ( #{print-map($value)} \000D\000A ), "
     @else
-      $str: "#{$str} \000D\000A \0009 #{$k}: #{$v}, " // each
-  @return $str
+      $string: "#{$string} \000D\000A \0009 #{$key}: #{$value}, " // each
+  @return $string
 // @function print-map
 
 @mixin print-map ( $map, $tag: "&" )

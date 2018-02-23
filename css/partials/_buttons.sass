@@ -6,7 +6,7 @@
   box-shadow: $global-box-shadow-small
   transition: $global-transition
   &:hover
-    background-color: transparent
+    //background-color: transparent
     box-shadow: $global-box-shadow
 
 button,
@@ -46,12 +46,18 @@ button,
     border-color: $color-accent-default
     background-color: transparentize($color-white,0.16)
 
-//.button-apple
-  @include set-button-color(apple)
-
-
+.button-disabled
+  opacity: .62
+  cursor: default
+  pointer-events: none
 
 @include generate-button-classes-for-streamlio-colors
+//.button-apple
+  @include set-button-color(apple)
+//.button-apple-reverse
+  @include set-button-color-reverse(apple)
+//.button-streamlio-cyan
+  @include set-button-color(streamlio-cyan)
 
 
 

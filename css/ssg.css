@@ -12,6 +12,15 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
+.content-block-all {
+  margin: 5rem; }
+
+.content-block-small-all {
+  margin: 2rem; }
+
+.content-block-tiny-all {
+  margin: 0.5rem; }
+
 .content-block-padding {
   padding-top: 5rem;
   padding-bottom: 5rem; }
@@ -23,6 +32,15 @@
 .content-block-padding-tiny {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
+
+.content-block-padding-all {
+  padding: 5rem; }
+
+.content-block-padding-small-all {
+  padding: 2rem; }
+
+.content-block-padding-tiny-all {
+  padding: 0.5rem; }
 
 .row-eq-height {
   display: -webkit-box;

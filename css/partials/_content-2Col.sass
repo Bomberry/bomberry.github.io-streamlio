@@ -5,9 +5,9 @@
 .content-2Col
   @extend %global-block-padding
   text-align: center
-  
+
   //@media (min-width: $global-breakpoint-small)
-    .block-callToAction:not(:last-child):after
+    .block-callToAction:not(:last-child)::after
       content: ''
       display: block
       width: 0
@@ -17,7 +17,7 @@
       bottom: -$global-block-padding-2
       //left: 0
       border-right: $global-border-stroke-small
-  
+
   h1
     font-weight: $font-weight-light
     padding-bottom: $global-block-padding-0
@@ -34,4 +34,3 @@
     text-decoration: none
     &:hover
       text-decoration: underline
-

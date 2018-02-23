@@ -2,7 +2,6 @@
 //  Used to style IMG (image) elements.
 
 
-
 //Image filters for coloring image/media assets
 //NOTE: Check out www.cssfilters.co/ to create additional filters
 %image-filter-dark
@@ -18,6 +17,7 @@
   -webkit-filter: grayscale(60%) sepia(0.3) saturate(0.3) opacity(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
   filter: grayscale(60%) sepia(0.3) saturate(0.3) opacity(0.3) brightness(60%) contrast(60%) hue-rotate(180deg)
 
+//USE: Add .img-fx-FX-NAME to an img class to lighten/darken the image
 .img-fx
   &-darken
     @extend %image-filter-dark
@@ -27,8 +27,6 @@
     @extend %image-filter-gs-dark
   &-gs-lighten
     @extend %image-filter-gs-light
-
-
 
 %image-backing
   display: block
@@ -48,6 +46,9 @@
 
 
 //background images
+//NOTE: Additional background images can be added by adding the elemnt to the $streamlio-background-images MAP
+//USE: Add .bg-image followed by .plexus-NUMBER to add a background image to any element.
+//USE: Add .bg-image followed by .plexus-NUMBER-subtle to add a background image with 20% opacity behind any element.
 .bg-image
   background-size: cover
   //full color/opacity
@@ -72,35 +73,33 @@
   &.plexus-10
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-10)}")
   //lower opacity and placed before CSS object
-  &.plexus-1-subtle:before
+  &.plexus-1-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-1)}")
-  &.plexus-2-subtle:before
+  &.plexus-2-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-2)}")
-  &.plexus-3-subtle:before
+  &.plexus-3-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-3)}")
-  &.plexus-4-subtle:before
+  &.plexus-4-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-4)}")
-  &.plexus-5-subtle:before
+  &.plexus-5-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-5)}")
-  &.plexus-6-subtle:before
+  &.plexus-6-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-6)}")
-  &.plexus-7-subtle:before
+  &.plexus-7-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-7)}")
-  &.plexus-8-subtle:before
+  &.plexus-8-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-8)}")
-  &.plexus-9-subtle:before
+  &.plexus-9-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-9)}")
-  &.plexus-10-subtle:before
+  &.plexus-10-subtle::before
     @extend %image-subtle
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-10)}")
-
-

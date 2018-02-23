@@ -2,13 +2,13 @@ Streamlio Web Dev Notes
 
 
 Note Styling:
-CATAGORY
+CATAGORY/ITEM
 Item Incomplete (before completion)
 √   Item complete (before deletion)
 
 
 TYPOGRAPHY
-Changing in Chrome at 100% and 90% (resolution)
+√   Changing in Chrome at 100% and 90% (resolution)
 
 
 STYLE GUIDE
@@ -18,12 +18,16 @@ Include styling (image)
 
 
 MODAL POPUP
-link JS and HTML object with demo page
-Media browser
+√   link JS and HTML object with demo page
+√   Media browser
 
 
 MEDIA BLOCKS
-Check content blocks for media height
+?   Check content blocks for media height
+
+
+CONTENT BLOCK
+block-content-2col.html the first caption should have light text on the dark background.
 
 
 CAROUSEL
@@ -38,19 +42,10 @@ Find and replace MARTEL with font that is similar but with Italic sets or genera
 
 NAV (GLOBAL)
 Fix dropdown placement (moz/fox?)
-Fix Search in collapsed dropdown (inline)
 Add sub-nav bar with breadcrumb/inline links (anchors) for documents with several sections/parts
-Font sizes are crazy tall/big in Chrome
-Try Now button not centered vertical (see BUTTONS)
 
 
 BUTTONS
-text isn't centered
-callToAction
-Button text is tiny, enlarge
-globalNav
-text isn't centered
-
 
 CARD LIST
 Filter(s) for card-list Category and Keywords (multi-dimension) Submit buttons
@@ -60,7 +55,7 @@ Sample with image for info inline.
 
 
 MEDIA LIST
-Create a vertical single row stack cardList (img to left)
+?   Create a vertical single row stack cardList (img to left)
 
 
 MEDIA LIST POPUP (Modal)
@@ -75,8 +70,8 @@ Include updated snippets for Dreamweaver in the source root folder
 
 
 THEME/STYLE
-Remove hardcoded values, or overright with styling so that content-blocks have the same easy to use callout as buttons
-cascade styling colors to buttons. Wont overright button styles that are hardcoded (class) inline
+Remove hardcoded values, or overwright with styling so that content-blocks have the same easy to use callout as buttons
+cascade styling colors to buttons. Wont overwright button styles that are hardcoded (class) inline
 
 
 MISCELLANEOUS

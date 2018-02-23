@@ -7,7 +7,7 @@
 
 
 //@mixin media-breakpoint($name)
-  
+
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint-name) {
     // Prints a media query based on the value
@@ -57,7 +57,7 @@
       $heightQuery: "(min-height: #{$minHeight})"
     @else if $minHeight == 0 and $maxHeight != 0
       $heightQuery: "(max-height: #{$maxHeight})"
-    
+
     @if $minHeight != 0
       @media #{$widthQuery} and #{$heightQuery}
         @content
@@ -72,7 +72,6 @@
         @content
 
 // Example useages:
-
 //  @include breakpoint($maxWidth: 700px, $minWidth: 500px, $maxHeight: 1500px, $minHeight: 600px)
 //
 //  @include breakpoint($min: 400px, $max: 500px)
@@ -82,10 +81,8 @@
 //    @include breakpoint(md)
 //      float: right
 //      width: 350px
-//    
 //    @include breakpoint(480px)
 //      display: none
-//    
 //    @include breakpoint($min: 640px, $max: 767px)
 //      text-align: center
 //      font-style: italic
@@ -114,10 +111,8 @@
   order: $value
 
 // Example useages:
-
 //.wrapper
   @include flexbox()
-
 //.item
   @include flex(1 200px)
   @include order(2)
@@ -128,4 +123,3 @@
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
   border-radius: $radius
-

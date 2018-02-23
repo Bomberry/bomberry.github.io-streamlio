@@ -30,7 +30,7 @@
       //@extend: .bg-color-light-gray
       box-shadow: 0 5px 15px rgba(0,0,0,0.35)
       z-index: 100
-  
+
   .block-callToAction
     padding-top: $global-block-padding-2
     padding-bottom: $global-block-padding-2
@@ -38,7 +38,7 @@
     border-right: $global-border-stroke-small
     margin-right: $global-border-stroke-offset-small
   @media (min-width: $global-breakpoint-small)
-    .block-callToAction:not(:last-child):after
+    .block-callToAction:not(:last-child)::after
       content: ''
       display: block
       width: 0
@@ -48,5 +48,3 @@
       bottom: -$global-block-padding-2
       //left: 0
       border-right: $global-border-stroke-small
-
-  

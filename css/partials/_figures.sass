@@ -2,6 +2,7 @@
 
 
 figure
+  $caption-overlay-padding: $base-unit-rem * .75
   > img
     display: block
     //height: auto
@@ -13,16 +14,6 @@ figure
     position: relative
     padding: 0
     margin: 0
-    :after
-      content: ''
-      position: absolute
-      display: block
-      left: 0
-      top: 0
-      width: 100%
-      height: 100%
-      background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0
-      z-index: 1
     > figcaption
       display: block
       position: absolute
@@ -30,8 +21,8 @@ figure
       color: $color-white
       left: 0
       bottom: 0
-      padding: 1em
-      z-index: 2
+      padding: $base-unit-rem * 2
+      z-index: 1
       -webkit-box-sizing: border-box
       box-sizing: border-box
       text-shadow: $global-text-shadow-small
@@ -39,6 +30,92 @@ figure
       display: block
       max-width: 100%
       height: auto
+  &.caption-overlay-hover
+    display: block
+    position: relative
+    overflow: hidden
+    margin: 0
+    //margin: 0 1rem *2 1rem * 2 0
+    &::before
+      content: '?'
+      position: absolute
+      width: $base-unit-rem * 1.5
+      height: $base-unit-rem * 1.5
+      -webkit-border-radius: $base-unit-rem
+      -moz-border-radius: $base-unit-rem
+      border: $global-border-stroke-small
+      border-radius: $base-unit-rem * 2
+      background: rgba(0, 0, 0, 0.75)
+      color: $color-white
+      font-weight: $font-weight-heavy
+      text-align: center
+      font-size: $base-unit-rem * 1
+      line-height: $base-unit-rem * 1.625
+      -webkit-transition: $global-transition-slow
+      -moz-transition: $global-transition-slow
+      transition: $global-transition-slow
+      opacity: 0.75
+      z-index: 1
+    &:hover::before
+      opacity: 0
+    &.caption-left
+      &::before
+        bottom: $caption-overlay-padding
+        left: $caption-overlay-padding
+      &:hover > figcaption
+        left: 0
+      & figcaption
+        bottom: 0
+        left: -30%
+    &.caption-right
+      &::before
+        bottom: $caption-overlay-padding
+        right: $caption-overlay-padding
+      &:hover > figcaption
+        right: 0
+      & figcaption
+        bottom: 0
+        right: -30%
+    &.caption-top
+      &::before
+        top: $caption-overlay-padding
+        left: $caption-overlay-padding
+      &:hover > figcaption
+        top: 0
+      & figcaption
+        left: 0
+        top: -30%
+    &.caption-bottom
+      &::before
+        bottom: $caption-overlay-padding
+        left: $caption-overlay-padding
+      &:hover > figcaption
+        left: 0
+      & figcaption
+        bottom: 0
+        left: -30%
+    &.caption-wide figcaption
+      left: 0
+      right: 0
+    &.caption-fill figcaption
+      bottom: 0
+      left: 0
+      right: 0
+      top: 0
+  &.caption-shade
+    figcaption::before
+      content: ''
+      position: absolute
+      display: block
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      width: 100%
+      height: 100%
+      background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0
+      background-attachment: fixed !important
+      z-index: -1
   &.img-scale >
     display: flex
     justify-content: center
@@ -59,10 +136,26 @@ figcaption
   padding-top: $global-block-padding-1-em
   figure.caption-small > &
     font-size: $font-size-body-smaller
+  figure.caption-smaller & >
+    h1, h2, h3, h4, h5, h6, p
+      font-size-adjust: .75
   figure.caption-overlay-inverted > &,
   figure.caption-inverted > &
     color: $color-default
     text-shadow: $global-text-shadow-small-white
+  figure.caption-overlay-hover > &
+    position: absolute
+    background: black
+    background: rgba(0,0,0,0.75)
+    color: white
+    padding: $global-block-padding-2
+    opacity: 0
+    -webkit-transition: $global-transition-slow
+    -moz-transition: $global-transition-slow
+    transition: $global-transition-slow
+    z-index: 2
+    &:hover
+      opacity: 1
   a
     text-decoration: none
     &:hover
@@ -71,3 +164,22 @@ figcaption
     font-family: $font-sans
     padding-bottom: $global-block-padding-1-em
 
+.figure-list
+  figure.caption-overlay-hover figcaption
+    padding: $global-block-padding-1
+  &.caption-scroll figcaption,
+  figcaption
+    height: 100%
+    overflow-y: auto
+  figure:not(:last-child)
+    margin-bottom: 1rem
+  &.caption-small figure figcaption
+    h1, h2, h3, h4, h5, h6
+      font-size: $font-size-heading-normal
+    p, a
+      font-size: $font-size-body-normal
+  &.caption-smaller figure figcaption
+    h1, h2, h3, h4, h5, h6
+      font-size: $font-size-heading-small
+    p, a
+      font-size: $font-size-body-small

@@ -4,7 +4,7 @@
 $element-list-blocks: () //use to contain block level elements
 $element-list-sections: () //use to contain section level elements
 $element-list-pages: () //use to contain page level elements
-$template-list: () //use to defint templates
+$template-list: () //use to define templates
 $composition-list: () //use to defint structural composition of pages
 
 //  variable-screen-size Variable: the definitions for @media overrides
@@ -31,7 +31,6 @@ $global-breakpoint-largest: $global-breakpoint-2660
 //  Boostrap variable override
 $grid-float-breakpoint: $global-breakpoint-medium
 
-
 //Variables for Screen DPXR
 $variable-screen-dpr-100: '(-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-dpr-125: '(-webkit-min-device-pixel-ratio: 1.25)'
@@ -40,36 +39,35 @@ $variable-screen-dpr-200: '(-webkit-min-device-pixel-ratio: 2)'
 $variable-screen-dpr-300: '(-webkit-min-device-pixel-ratio: 3)'
 $variable-screen-dpr-400: '(-webkit-min-device-pixel-ratio: 4)'
 
-
-//iPhone 4, 4S
+//  iPhones
+//  iPhone 4, 4S
 $variable-device-type-iPhone-4: 'screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPhone 5, 5Sdevice 5C and 5SE
+//  iPhone 5, 5Sdevice 5C and 5SE
 $variable-screen-type-iPhone-5: 'screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPhone 6, 6Sdevice 7 and 8
+//  iPhone 6, 6Sdevice 7 and 8
 $variable-screen-type-iPhone-678: 'screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPhone 6+, 7+ and 8+
+//  iPhone 6+, 7+ and 8+
 $variable-device-type-iPhone-678p: 'screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)'
-//iPhone X
+//  iPhone X
 $variable-screen-type-iPhone-X: 'screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)'
-
-//iPad 1, 2, Mini and Air
+//  iPads
+//  iPad 1, 2, Mini and Air
 $variable-device-type-iPad-12miniAir: 'screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)'
-//iPad 3, 4 and Pro 9.7
+//  iPad 3, 4 and Pro 9.7
 $variable-device-type-iPad-345P97: 'screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPad Pro 10.5
+//  iPad Pro 10.5
 $variable-device-type-iPad-P105: 'screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPad Pro 12.9
+//  iPad Pro 12.9
 $variable-device-type-iPad-P129: 'screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)'
-//iPhone X
+//  iPhone X
 $variable-device-type-iPhone-X: 'screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)'
 
-//Computers and Displays
+//  Computers and Displays
 $variable-screen-type-screen: 'screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-type-computer: 'screen and (min-device-width: 1024) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-type-laptop: 'screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)'
 $variable-screen-type-laptop-retina: 'screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)'
 $variable-screen-type-laptop-4k: 'screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)'
-
 
 //  Mobile First Method
 //Custom, iPhone Retina - In Order
@@ -106,13 +104,12 @@ $variable-screen-size-xxld: 'screen and (min-device-width: 1600px)'
 
 //Custom size used for footer, check to see if can be refactored
 $variable-screen-size-footer: 'screen and (min-width: 768px)'
-
 //Variable-screen-size is defined in _units, but you can override it here to test the @media directives
 $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200px)'
 
 
-
-//  Global margin and padding placeholders and classes:
+//  Global margin and padding placeholders and classes
+//  Global Margins
 %global-block-margin
   margin-top: $global-block-padding
   margin-bottom: $global-block-padding
@@ -122,7 +119,13 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
 %global-block-margin-tiny
   margin-top: $global-block-padding-05
   margin-bottom: $global-block-padding-05
-
+%global-block-margin-all
+  margin: $global-block-padding
+%global-block-margin-small-all
+  margin: $global-block-padding-2
+%global-block-margin-tiny-all
+  margin: $global-block-padding-05
+//  Global Padding
 %global-block-padding
   padding-top: $global-block-padding
   padding-bottom: $global-block-padding
@@ -132,6 +135,12 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
 %global-block-padding-tiny
   padding-top: $global-block-padding-05
   padding-bottom: $global-block-padding-05
+%global-block-padding-all
+  padding: $global-block-padding
+%global-block-padding-small-all
+  padding: $global-block-padding-2
+%global-block-padding-tiny-all
+  padding: $global-block-padding-05
 
 .content-block
   @extend %global-block-margin
@@ -139,12 +148,25 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
   @extend %global-block-margin-small
 .content-block-tiny
   @extend %global-block-margin-tiny
+.content-block-all
+  @extend %global-block-margin-all
+.content-block-small-all
+  @extend %global-block-margin-small-all
+.content-block-tiny-all
+  @extend %global-block-margin-tiny-all
+
 .content-block-padding
   @extend %global-block-padding
 .content-block-padding-small
   @extend %global-block-padding-small
 .content-block-padding-tiny
   @extend %global-block-padding-tiny
+.content-block-padding-all
+  @extend %global-block-padding-all
+.content-block-padding-small-all
+  @extend %global-block-padding-small-all
+.content-block-padding-tiny-all
+  @extend %global-block-padding-tiny-all
 
 
 //  Flex for row:
@@ -156,10 +178,8 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
   @media (max-width: $global-breakpoint-small)
     display: block
     width: 100%
-
 .box-eq-height
   flex: 1 0 auto
-
 .center-flex
   display: flex
   align-items: center

@@ -35,7 +35,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$base-color}', end-colourStr='#{$secondary-color}', gradientType='1') /* IE6-9 */
 
 
-//@mixins for setting colors
+//@mixins for setting text colors
 @mixin set-text-with-color ($streamlio-color)
   $text-objects: (h1, h2, h3, h4, h5, h6, p, a, 'a:hover', 'a:visited', 'a:active')
   @each $value in $text-objects
@@ -52,24 +52,33 @@
     #{$value}
       color: (get-color(#{$streamlio-color-accent}))
 
-
+//@mixins for setting button colors
 @mixin set-button-color ($streamlio-color)
-  color: (get-color($streamlio-color))
-  border-color: (get-color($streamlio-color))
-  background-color: transparentize($color-white,0.1)
+  background-color: transparentize($color-white,0.1) !important
+  border-color: (get-color($streamlio-color)) !important
+  color: (get-color($streamlio-color)) !important
   &:hover
-    color: white
-    border-color: white
-    background-color: transparentize((get-color($streamlio-color)),0.1)
+    background-color: transparentize((get-color($streamlio-color)),0.1) !important
+    border-color: white !important
+    color: white !important
 
 @mixin set-button-color-reverse ($streamlio-color)
-  background-color: transparentize((get-color($streamlio-color)),0.1)
-  border-color: white
-  color: white
+  background-color: transparentize((get-color($streamlio-color)),0.1) !important
+  border-color: white !important
+  color: white !important
   &:hover
-    background-color: transparentize($color-white,0.1)
-    border-color: (get-color($streamlio-color))
-    color: (get-color($streamlio-color))
+    background-color: transparentize($color-white,0.1) !important
+    border-color: (get-color($streamlio-color)) !important
+    color: (get-color($streamlio-color)) !important
+
+@mixin set-button-colors ($streamlio-color-primary, $streamlio-color-secondary)
+  background-color: transparentize($streamlio-color-primary,0.1) !important
+  border-color: (get-color($streamlio-color-secondary)) !important
+  color: (get-color($streamlio-color-secondary)) !important
+  &:hover
+    background-color: transparentize((get-color($streamlio-color-secondary)),0.1) !important
+    border-color: $streamlio-color-primary !important
+    color: $streamlio-color-primary !important
 
 //@mixin colorize-button($base-color, $accent-color)  color: $color-accent-default
   border-color: $color-accent-default
