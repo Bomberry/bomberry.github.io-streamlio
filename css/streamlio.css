@@ -1692,6 +1692,9 @@ body, .pageTitleBlock h1, .pageTitleBlock p {
   font-kerning: normal;
   word-spacing: normal; }
 
+html {
+  -webkit-tap-highlight-color: transparent; }
+
 body {
   background-color: white;
   color: #5A5B5E;
