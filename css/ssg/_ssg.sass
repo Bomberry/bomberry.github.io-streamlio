@@ -1,0 +1,108 @@
+//  ssg.sass
+//  Used define styling guide elements.
+
+
+//  CSS Placeholders
+//  Placeholders start with "%" and do not get compiled into the CSS output
+%clear-fix
+  clear: both
+
+%test-unit-block
+  height: $base-unit-rem
+  width: $base-unit-rem
+
+%clear-margin
+  margin: 0
+%clear-padding
+  padding: 0
+%block-padding
+  padding: $base-unit-rem 0
+
+%small-uppercase
+  color: white
+  font-size: .75rem
+  letter-spacing: .25rem
+  line-height: .25rem
+  text-transform: uppercase
+
+
+
+//  ID/Class Assignment
+#TOC
+//  position: fixed
+
+#MAIN
+//  position: relative
+
+//  CSS Overides
+@media (min-width: 768px)
+  //.sidebar
+    position: fixed
+    top: 51px
+    bottom: 0
+    left: 0
+    z-index: 1000
+    display: block
+    padding: 20px
+    overflow-x: hidden
+    overflow-y: auto
+    background-color: #f5f5f5
+    border-right: 1px solid #eee
+  //.main
+    padding: 20px 40px
+
+
+article
+  section
+    @extend %global-block-padding-small
+
+//  CSS Definitions
+//.sidebar
+  ul
+    display: inline-block
+    list-style-type: none
+    margin: 0
+    padding: 0
+    padding-left: 0
+
+.color-block
+  //@extend %clear-fix
+  //@extend %test-unit-block
+  @extend %clear-margin
+  @extend %clear-padding
+  @extend %small-uppercase
+  ul
+    display: inline-block
+    list-style-type: none
+    margin: 0
+    padding: 0
+    li
+      @extend %block-padding
+      //@extend %small-uppercase
+      display: inline-block
+      width: 100%
+      height: $base-unit-rem
+      //padding: $base-unit-rem
+      //color: white
+      text-align: center
+
+.font-sans
+  font-family: $font-sans
+.font-sans-alt
+  font-family: $font-sans-alt
+.font-sans-condensed
+  font-family: $font-sans-condensed
+.font-serif
+  font-family: $font-serif
+
+.element-marker
+  &.marker-left
+    border-left: $global-border-stroke
+    &.marker-offset
+      margin-left: $global-border-stroke-offset
+      padding-left: $global-border-stroke-offset * -1
+  &.marker-right
+    border-right: $global-border-stroke
+    &.marker-offset
+      margin-right: $global-border-stroke-offset
+      padding-right: $global-border-stroke-offset * -1

@@ -38,35 +38,9 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
   //min-height: $global-navbar-height-large
   transition: $global-transition-default
   z-index: 1000
-  &.navbar-compressed
-    @extend %global-navbar-small-background
-    //height: $global-navbar-height-small
-    min-height: $global-navbar-height-small
-    transition: $global-transition-default
-    .nav > li
-      line-height: $global-navbar-height-small
-    .nav > li > a
-      font-size: $global-navbar-text-small
-      line-height: $global-navbar-height-small
-      &.button-action
-        line-height: 40px
-        margin-top: 2px
-        padding-top: 2px
-    span.icon
-      font-size: $global-navbar-text-small
-      line-height: $global-navbar-height-small
-    .navbar-brand
-      //padding: 0 0 0 20px
-      //line-height: $global-navbar-text-small
-      > img
-        height: $global-navbar-height-small
-        padding: 0
-        @media (max-width: 911px)
-          height: $global-navbar-height-large
-        @media (max-width: 375px)
-          height: $global-navbar-height-large*.8
   .dropdown-menu
     font-size: inherit
+    top: 5rem
   .nav.navbar-right
     padding-right: $global-navbar-text-large
   .nav > li
@@ -98,11 +72,15 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
       line-height: 50px
       margin-top: 20px
       padding-top: 5px
+    //&.fa
+      line-height: 90px
     span.icon
       color: $global-navbar-color-accent
       font-size: $global-navbar-text-large
       line-height: $global-navbar-height-large
       //padding: 0 $global-navbar-text-large/2
+    span.navbar-toggler-icon
+      line-height: 90px
   .navbar-brand
     padding: 0 0 0 10px
     height: auto
@@ -135,6 +113,39 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
       .nav > li > a
         line-height: $global-navbar-height-small
 
+  &.navbar-compressed
+    @extend %global-navbar-small-background
+    //height: $global-navbar-height-small
+    min-height: $global-navbar-height-small
+    transition: $global-transition-default
+    .nav > li
+      line-height: $global-navbar-height-small
+    .nav > li > a
+      font-size: $global-navbar-text-small
+      line-height: $global-navbar-height-small
+      &.button-action
+        line-height: 40px
+        margin-top: 2px
+        padding-top: 2px
+      //&.fa
+        line-height: 3.25rem
+    span.icon
+      font-size: $global-navbar-text-small
+      line-height: $global-navbar-height-small
+    span.navbar-toggler-icon
+      line-height: 45px
+    .navbar-brand
+      //padding: 0 0 0 20px
+      //line-height: $global-navbar-text-small
+      > img
+        height: $global-navbar-height-small
+        padding: 0
+        @media (max-width: 911px)
+          height: $global-navbar-height-large
+        @media (max-width: 375px)
+          height: $global-navbar-height-large*.8
+    .dropdown-menu
+      top: 2.5rem
 
 #navbar-search
   box-shadow: $global-box-shadow
@@ -151,7 +162,7 @@ $global-navbar-color-accent-linear-gradient: linear-gradient($global-navbar-colo
   .input-group-addon
     color: $global-navbar-color-accent
     &:hover
-      color: $color-white
+      color: $color-streamlio-white
       background-color: $global-navbar-color-accent
 
 @media (max-width: 911px)

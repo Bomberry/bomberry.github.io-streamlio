@@ -168,6 +168,20 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
 .content-block-padding-tiny-all
   @extend %global-block-padding-tiny-all
 
+.pad-top
+  padding-top: $global-block-padding
+.pad-top-small
+  padding-top: $global-block-padding-2
+.pad-top-tiny
+  padding-top: $global-block-padding-05
+
+.h-100
+  height: 100%
+.w-100
+  width: 100%
+.abs-bottom
+  position: absolute
+  bottom: $base-unit-em
 
 //  Flex for row:
 .row-eq-height
@@ -186,13 +200,17 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
   //justify-content: center
 
 //  center alignment:
+.center-h
+  margin-left: auto
+  margin-right: auto
 .center-v
   position: relative
   transform: translateY(50%)
 .center-v-2
   position: relative
   transform: translateY(25%)
-
+.center-v-a-m
+  vertical-align: middle
 
 //  Global Column placeholders and classes:
 %column-count-1
@@ -228,3 +246,7 @@ $variable-screen-size-test: 'screen and (min-width: 600px) and (max-width: 1200p
     column-count: 1
     &:not(:last-child)
       padding-bottom: ($global-block-padding/2)
+
+//  Styling for dropdown list items
+ul.dropdown-menu li > input[type='checkbox']
+  margin-left: $global-block-padding-05

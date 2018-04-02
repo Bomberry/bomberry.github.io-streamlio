@@ -4,34 +4,34 @@
 
 // Background Gradient
 @mixin bg-gradient($first-color, $last-color)
-  background: -webkit-gradient(linear, left bottom, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
-  background: -webkit-linear-gradient(left bottom, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
-  background: -moz-linear-gradient(left bottom, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
-  background: -ms-linear-gradient(left bottom, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
-  background: -o-linear-gradient(left bottom, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
-  background: linear-gradient(left bottom, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
+  background: -webkit-gradient(linear, 45deg, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
+  background: -webkit-linear-gradient(45deg, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
+  background: -moz-linear-gradient(45deg, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
+  background: -ms-linear-gradient(45deg, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
+  background: -o-linear-gradient(45deg, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
+  background: linear-gradient(45deg, #{map-get($streamlio-colors, $first-color)}, #{map-get($streamlio-colors, $last-color)})
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{map-get($streamlio-colors, $first-color)}', end-colourStr='#{map-get($streamlio-colors, $last-color)}', gradientType='1') /* IE6-9 */
 
 
 //@mixin bg-gradient-1($base-color, $secondary-color)
   background-color: rgba($base-color,1)
   background: @include filter-gradient($base-color, $secondary-color, horizontal)
-  background: @include background-image(linear-gradient(left bottom, rgba($base-color,1) 0%, rgba($secondary-color,1) 100%))
+  background: @include background-image(linear-gradient(45deg, rgba($base-color,1) 0%, rgba($secondary-color,1) 100%))
 
 //@mixin bg-gradient-2($base-color, $secondary-color, $opacity)
-  background: -moz-linear-gradient(left bottom, rgba($base-color, $opacity) 0%, rgba($secondary-color, $opacity) 100%)
-  background: -webkit-linear-gradient(left bottom, rgba($base-color, $opacity) 0%, rgba($secondary-color, $opacity) 100%)
+  background: -moz-linear-gradient(45deg, rgba($base-color, $opacity) 0%, rgba($secondary-color, $opacity) 100%)
+  background: -webkit-linear-gradient(45deg, rgba($base-color, $opacity) 0%, rgba($secondary-color, $opacity) 100%)
   background: linear-gradient(to right top, rgba($base-color, $opacity) 0%, rgba($secondary-color, $opacity) 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str(rgba($base-color, $opacity))}', endColorstr='#{ie-hex-str(rgba($secondary-color, $opacity))}',GradientType=0 ) /* IE6-9 */
 
 //@mixin bg-gradient-3($base-color, $secondary-color)
   background-color: $base-color
   background-image: -webkit-gradient(linear, left bottom, right top, from($base-color), to($secondary-color))
-  background-image: -webkit-linear-gradient(125deg, $base-color, $secondary-color)
-  background-image: -moz-linear-gradient(125deg, $base-color, $secondary-color)
-  background-image: -ms-linear-gradient(125deg, $base-color, $secondary-color)
-  background-image: -o-linear-gradient(125deg, $base-color, $secondary-color)
-  background-image: linear-gradient(125deg, $base-color, $secondary-color)
+  background-image: -webkit-linear-gradient(45deg, $base-color, $secondary-color)
+  background-image: -moz-linear-gradient(45deg, $base-color, $secondary-color)
+  background-image: -ms-linear-gradient(45deg, $base-color, $secondary-color)
+  background-image: -o-linear-gradient(45deg, $base-color, $secondary-color)
+  background-image: linear-gradient(45deg, $base-color, $secondary-color)
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$base-color}', end-colourStr='#{$secondary-color}', gradientType='1') /* IE6-9 */
 
 
@@ -41,6 +41,107 @@
   @each $value in $text-objects
     #{$value}
       color: (get-color(#{$streamlio-color}))
+
+@mixin set-text-with-color-theme ($streamlio-color)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $shade-color-objects: (h1, h2, h3)
+  $tint-color-objects: (h4, h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color}))
+  @each $value in $tint-color-objects-1
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 3))
+  @each $value in $tint-color-objects-2
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 3))
+
+@mixin set-text-with-color-theme-alt ($streamlio-color)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $shade-color-objects: (h1, h2, h3)
+  $tint-color-objects: (h4, h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color}))
+  @each $value in $tint-color-objects-1
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 3))
+  @each $value in $tint-color-objects-2
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 3))
+
+@mixin set-text-with-color-theme-light ($streamlio-color)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $tint-color-objects-1: (h1, h2)
+  $tint-color-objects-2: (h3, h4)
+  $tint-color-objects-3: (h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(streamlio-white))
+  @each $value in $tint-color-objects-1
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 1))
+  @each $value in $tint-color-objects-2
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 2))
+  @each $value in $tint-color-objects-3
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 3))
+
+@mixin set-text-with-color-theme-light-mono ($streamlio-color)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $tint-color-objects-1: (h1, h2)
+  $tint-color-objects-2: (h3, h4)
+  $tint-color-objects-3: (h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color}))
+  @each $value in $tint-color-objects-1
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 3))
+  @each $value in $tint-color-objects-2
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 2))
+  @each $value in $tint-color-objects-3
+    #{$value}
+      color: (get-tint(#{$streamlio-color}, 1))
+
+@mixin set-text-with-color-theme-dark ($streamlio-color)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $tint-color-objects-1: (h1, h2)
+  $tint-color-objects-2: (h3, h4)
+  $tint-color-objects-3: (h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-shade(dark-gray, 3))
+  @each $value in $tint-color-objects-1
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 3))
+  @each $value in $tint-color-objects-2
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 2))
+  @each $value in $tint-color-objects-3
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 1))
+
+@mixin set-text-with-color-theme-dark-mono ($streamlio-color)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $tint-color-objects-1: (h1, h2)
+  $tint-color-objects-2: (h3, h4)
+  $tint-color-objects-3: (h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color}))
+  @each $value in $tint-color-objects-1
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 3))
+  @each $value in $tint-color-objects-2
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 2))
+  @each $value in $tint-color-objects-3
+    #{$value}
+      color: (get-shade(#{$streamlio-color}, 1))
+
 
 @mixin set-text-with-colors ($streamlio-color-base, $streamlio-color-accent)
   $base-color-objects: (p)
@@ -52,13 +153,24 @@
     #{$value}
       color: (get-color(#{$streamlio-color-accent}))
 
+@mixin set-text-with-colors-alt ($streamlio-color-base, $streamlio-color-accent)
+  $base-color-objects: (p, a, 'a:hover', 'a:visited', 'a:active')
+  $accent-color-objects: (h1, h2, h3, h4, h5, h6)
+  @each $value in $base-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color-base}))
+  @each $value in $accent-color-objects
+    #{$value}
+      color: (get-color(#{$streamlio-color-accent}))
+
+
 //@mixins for setting button colors
 @mixin set-button-color ($streamlio-color)
-  background-color: transparentize($color-white,0.1) !important
+  background-color: transparentize(get-color(streamlio-white),0.1) !important
   border-color: (get-color($streamlio-color)) !important
   color: (get-color($streamlio-color)) !important
   &:hover
-    background-color: transparentize((get-color($streamlio-color)),0.1) !important
+    background-color: transparentize(get-color($streamlio-color),0.1) !important
     border-color: white !important
     color: white !important
 
@@ -67,7 +179,7 @@
   border-color: white !important
   color: white !important
   &:hover
-    background-color: transparentize($color-white,0.1) !important
+    background-color: transparentize(get-color(streamlio-white),0.1) !important
     border-color: (get-color($streamlio-color)) !important
     color: (get-color($streamlio-color)) !important
 
@@ -82,7 +194,7 @@
 
 //@mixin colorize-button($base-color, $accent-color)  color: $color-accent-default
   border-color: $color-accent-default
-  background-color: transparentize($color-white,0.16)
+  background-color: transparentize($color-streamlio-white,0.16)
   &:hover
     color: white
     border-color: white
@@ -100,3 +212,11 @@
     color: #{$value}
   %bg-color-#{$key}
     background-color: #{$value}
+
+@mixin set-separator-color($streamlio-color)
+  border-bottom-color: get-color($streamlio-color)
+
+@mixin generate-separator-colors-for-streamlio-colors
+  @each $key, $value in $streamlio-colors
+    .separator-color-#{$key}
+      @include set-separator-color($key)

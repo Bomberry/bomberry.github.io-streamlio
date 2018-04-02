@@ -16,6 +16,19 @@
   @warn "Unknown `#{$key}` in $streamlio-colors."
   @return null
 
+@function get-tint($color, $value)
+  @if map-has-key($streamlio-colors, $color)
+    @return tint(get-color($color), $value * $color-delta * 10)
+  @warn "Unknown `#{$color}` in $streamlio-colors."
+  @return null
+
+@function get-shade($color, $value)
+  @if map-has-key($streamlio-colors, $color)
+    @return shade(get-color($color), $value * $color-delta * 10)
+  @warn "Unknown `#{$color}` in $streamlio-colors."
+  @return null
+
+
 
 //  get-RGB values from-color: returns the RGB value for a color's HEX value
 @function get-rgb-values-from-color($color)
@@ -34,6 +47,6 @@
 
 //You can pass in either a hex either explicity or from rgb() or rgba() with opacity as 1.
 //For example:
-//$color-white: hexToRGBString(#fff) // => "255,255,255"
-//$color-white: hexToRGBString(rgb(255,255,255)) // => "255,255,255"
-//$color-white: hexToRGBString(rgba(#fff,1)) // => "255,255,255"
+//$streamlio-color-white: hexToRGBString(#ffffff) // => "255,255,255"
+//$streamlio-color-white: hexToRGBString(rgb(255,255,255)) // => "255,255,255"
+//$streamlio-color-white: hexToRGBString(rgba(#ffffff,1)) // => "255,255,255"

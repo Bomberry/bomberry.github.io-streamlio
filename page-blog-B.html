@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Bootstrap/FontAwsome - CDN - Latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <!-- Bootstrap/FontAwsome - LOCAL - Latest compiled and minified CSS -->
+  <!-- Note: This is included/commented out in config.sass -->
+  <!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
+  <!--Google Type - CDN - Fonts for use SASS/CSS-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">-->
+  <!--Main SASS/CSS for Streamlio-->
+  <link href="css/streamlio.css" type="text/css" rel="stylesheet" />
+  <!--Favicon link block-->
+  <!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">-->
+  <!--<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">-->
+  <!--<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">-->
+  <!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">-->
+  <!--<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">-->
+  <!--<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">-->
+  <!--<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">-->
+  <!--<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">-->
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">-->
+  <!--<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">-->
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+  <!--<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">-->
+  <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+  <!--<meta name="msapplication-TileColor" content="#ffffff">-->
+  <!--<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">-->
+  <!--<meta name="theme-color" content="#ffffff">-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+  <title>Streamlio</title>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="BlogHomePage" class="">
+  <!-- Global Nav -->
+  <nav id="globalNavBar" class="navbar navbar-fixed-top navbar-global" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#"><img class="brand" src="media/logo/Streamlio-Logo.svg" alt="Streamlio logo"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="global-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <!--        <li><a alt="What is Streamlio" href="#">What is Streamlio?</a></li>-->
+          <li class="dropdown">
+            <a alt="Product" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a alt="Overview" href="#">Overview</a></li>
+              <li><a alt="Messaging &amp; queuing" href="#">Messaging &amp; queuing</a></li>
+              <li><a alt="Real-time processing" href="#">Real-time processing</a></li>
+              <li><a alt="Stream storage" href="#">Stream storage</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a alt="Resources" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a alt="Resource library" href="#">Resource library</a></li>
+              <li><a alt="Video tutorials" href="#">Video tutorials</a></li>
+              <li><a alt="Getting started" href="#">Getting started</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a alt="About" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a alt="Company" href="#">Company</a></li>
+              <li><a alt="News and events" href="#">News and events</a></li>
+              <li><a alt="Community" href="#">Community</a></li>
+            </ul>
+          </li>
+          <li class="navbar-toggler" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle navigation"><a alt="Search"><span class="navbar-toggler-icon fa fa-search"></span></a></li>
+          <li><a alt="Try Now" href="#" class="button-action button-glacier-reverse">Try Now</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Search Bar module -->
+    <div class="collapse" id="navbar-search">
+      <div class="">
+        <form class="search-form" id="" action="">
+          <div class="input-group input-group-lg">
+            <input type="text" name="search" class="search form-control" placeholder="Search">
+            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <!--      <span class="input-group-addon search-close" id="basic-addon2"><i class="fa fa-window-close" aria-hidden="true"></i></span>-->
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- / Search Bar module -->
+  </nav>
+  <!--block-pageTitleBlock-->
+  <div id="pageTitleBlock" class="container-fluid pageTitleBlock bg-image plexus-5">
+
+
+  	<div class="row">
+  		<div class="col-sm-5 col-sm-offset-1">
+  			<h1>Streamlio Blog</h1>
+  			<p>Perspectives, tutorials, and technical deep dives on technology for streaming data</p>
+
+  		</div>
+
+
+
+  	</div>
+  </div>
+
+
+  <!-- Blog card-list -->
+  <div class="container-fluid content-2Col blog-card-list">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+
+        <div class="row row-eq-height">
+          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+  					<div class="card-heading">
+  						<h2 class="card-title">A developer&#39;s introduction to Apache Pulsar Functions</h2>
+  					</div>
+  					<div class="card-info">
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sanjeev_Kulkarni_17K0143_Square_Web.jpg">
+  						<p class="card-date">March 26, 2018</p>
+  						<p class="card-author">Sanjeev Kulkarni</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Pulsar Functions is a stream processing capability for Apache Pulsar which makes it very easy for developers to write applications that need fast data processing.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-functions-for-developers/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+            <img class="card-image" src="https://streaml.io/media/img//blog/openmessaging-clouds.png" alt="placeholder"/>
+            <div class="card-heading">
+  						<h2 class="card-title">The extensibility of OpenMessaging benchmarks</h2>
+  					</div>
+  					<div class="card-info">
+              <img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+              <p class="card-date">March 16, 2018</p>
+  						<p class="card-author">Matteo Merli and Luc Perkins</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Creating and running a new cross-platform messaging benchmark workload from scratch</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/openmessaging-benchmarks/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+        </div>
+
+        <div class="row row-eq-height">
+          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+            <img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+            <div class="card-heading">
+  						<h2 class="card-title">The first meetup for Apache Pulsar</h2>
+  					</div>
+  					<div class="card-info">
+              <img class="icon img-circle" src="https://streaml.io/media/img/Christian_Hasker_Crop_Web.jpg">
+              <p class="card-date">March 9, 2018</p>
+  						<p class="card-author">Christian Hasker</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Last month we held our first Apache Pulsar meetup. In this post we&rsquo;ll outline the presentations and include the videos from the event.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-meetup/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+            <img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+            <div class="card-heading">
+  						<h2 class="card-title">Introducing Pulsar Functions</h2>
+  					</div>
+  					<div class="card-info">
+              <img class="icon img-circle" src="https://streaml.io/media/img/Sanjeev_Kulkarni_17K0143_Square_Web.jpg">
+              <p class="card-date">March 6, 2018</p>
+  						<p class="card-author">Jerry Peng, Sanjeev Kulkarni, Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">A lightweight compute platform for Apache Pulsar</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-functions/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+        </div>
+
+
+
+  			<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">How Apache Pulsar ensures no messages lost and no messages duplicated</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Ivan_Kelly_Crop_Web.jpg">
+
+
+  						<p class="card-date">February 23, 2018</p>
+  						<p class="card-author">Ivan Kelly</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this post we examine different delivery guarantees and explain how they are provided by Apache Pulsar (incubating), the messaging system at the heart of Streamlio’s intelligent platform.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-effectively-once-end-to-end/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/josh-fischer.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Friend of the Heron Community: an interview with Joshua Fischer</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Christian_Hasker_Crop_Web.jpg">
+
+
+  						<p class="card-date">February 22, 2018</p>
+  						<p class="card-author">Christian Hasker</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this post we talk with Josh Fischer of 1904Labs about how he got involved with the Heron community.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-eco-interview/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Effectively-once semantics in Apache Pulsar</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+
+
+  						<p class="card-date">February 20, 2018</p>
+  						<p class="card-author">Matteo Merli</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">&ldquo;Exactly-once&rdquo; is a controversial term in the messaging landscape. In this post we&rsquo;ll offer a detailed look at effectively-once delivery semantics in Apache Pulsar and how this is achieved without sacrificing performance.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-effectively-once/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/messaging-storage.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Microservices: from system of record to system of action
+  </h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/JJ_Jeyappragash_Crop_Web.jpg">
+
+
+  						<p class="card-date">February 13, 2018</p>
+  						<p class="card-author">Christian Hasker and JJ Jeyappragash</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">This is the next post in our series about microservices and the enterprise. Microservices expert JJ Jeyappragash discusses the evolution of data in enterprise systems from systems of record to systems of action, as well as the importance of both the data layer and event layer for microservices-based applications.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/microservices-from-record-to-action/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">How to add and remove nodes in Apache Pulsar</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">January 23, 2018</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Adding and removing nodes is a common operation when managing a distributed system. In this post and accompanying video we’ll show how easy it is to add and remove nodes in Apache Pulsar without the need to rebalance data like other messaging systems such as Apache Kafka.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-node-admin/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-subscriptions.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">An introduction to unified queuing and streaming</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sanjeev_Kulkarni_17K0143_Square_Web.jpg">
+
+
+  						<p class="card-date">January 18, 2018</p>
+  						<p class="card-author">Christian Hasker and Sanjeev Kulkarni</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In the past, architects and developers have needed to learn and deploy separate systems for queuing and streaming. Now, thanks to Apache Pulsar, the next-generation distributed pub-sub system developed and open sourced by Yahoo, there is a single system that can span both use cases, making it easy for enterprises to both develop and operate at scale. In this post and videos Sanjeev Kulkarni discuss the difference between queuing and streaming, and provide use case examples of when a developer would choose a work queue vs a stream.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/unified-queuing-streaming/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/microservice-medley.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Microservices: perceptions and myths</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/JJ_Jeyappragash_Crop_Web.jpg">
+
+
+  						<p class="card-date">January 10, 2018</p>
+  						<p class="card-author">Christian Hasker and JJ Jeyappragash</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Let’s face it: microservices are hot! Enterprises are increasingly looking to break up monolithic applications and adopt microservice-based architectures à la Netflix, Google, and Twitter. But there remain a lot of misperceptions and knowledge gaps to fill in. In this short post (with accompanying videos) JJ Jeyappragash explains what microservices are, offers some guidelines on how to do microservices right, and talks about security from a microservice perspective.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/microservices-perceptions-and-myths/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">How to migrate Apache Kafka applications to Apache Pulsar</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">January 8, 2018</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this post and accompanying video tutorial, Streamlio engineer and co-founder Sijie Guo shows you how to migrate an Apache Kafka application to Apache Pulsar with no code changes using the Kafka API wrapper.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/kafka-pulsar-migration/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why you should adopt a multi-tenant solution for real-time applications</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Luc_Perkins_Crop_Web.jpg">
+
+
+  						<p class="card-date">January 4, 2018</p>
+  						<p class="card-author">Luc Perkins</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Single-tenant systems simply don’t cut it in large enterprises with exacting requirements and dozens of teams working on massive applications. In this post I&rsquo;ll talk about what multi-tenancy is, why it&rsquo;s so important, and why Apache Pulsar provides an extremely compelling model of multi-tenancy.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/apache-pulsar-multi-tenancy-enterprise/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">How Apache Pulsar saved the holidays: A story for the most magical time of the year</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sanjeev_Kulkarni_17K0143_Square_Web.jpg">
+
+
+  						<p class="card-date">December 18, 2017</p>
+  						<p class="card-author">Sanjeev Kulkarni</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this festive time of year, pour yourself a glass of eggnog, read this post, watch the videos, and learn how to code a queuing and streaming application using Apache Pulsar.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-saved-the-holidays/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/bookkeeper-logo.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Scaling out Total Order Atomic Broadcast with Apache BookKeeper</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Ivan_Kelly_Crop_Web.jpg">
+
+
+  						<p class="card-date">December 14, 2017</p>
+  						<p class="card-author">Ivan Kelly</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Total Order Atomic Broadcast (TOAB) is an essential property of any distributed system that wants to provide effectively-once semantics. Many systems can serve as a foundation for TOAB but here we&rsquo;ll see why BookKeeper is by far the most scalable.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/bookkeeper-toab/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Introducing Heron Streamlets</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Jerry_Peng_Crop_Web.jpg">
+
+
+  						<p class="card-date">December 12, 2017</p>
+  						<p class="card-author">Jerry Peng and Luc Perkins</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">A new higher-level API for creating Heron topologies.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-streamlet-api/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Comparing Pulsar and Kafka: how a segment-based architecture delivers better performance, scalability, and resilience</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">December 5, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this second post in a series, Sijie Guo compares Apache Pulsar and Apache Kafka&rsquo;s storage and failure recovery models.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-segment-based-architecture/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Comparing Pulsar and Kafka: unified queuing and streaming</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">December 1, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this first post in a series, Sijie Guo compares Apache Pulsar and Apache Kafka&rsquo;s messaging consumption, queuing, and streaming models.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-streaming-queuing/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">The Heron Stream Processing Engine on Google Kubernetes Engine</h2>
+  					</div>
+  					<div class="card-info">
+
+        			<span class="icon fa fa-4x fa-user-circle-o"></span>
+
+
+  						<p class="card-date">November 28, 2017</p>
+  						<p class="card-author">Chris Kellogg</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">How to deploy a Heron toplogy on a GKE cluster powered by Kubernetes</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-on-gke-power-by-kubernetes/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Low-latency streaming with Heron on InfiniBand (part 2 of 2)</h2>
+  					</div>
+  					<div class="card-info">
+
+        			<span class="icon fa fa-4x fa-user-circle-o"></span>
+
+
+  						<p class="card-date">November 8, 2017</p>
+  						<p class="card-author">Supun Kamburugamuve</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Examining experimental results from integrating the Heron stream processing engine with the InfiniBand network architecture</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-on-infiniband-2/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/bookkeeper-logo.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why Apache Bookkeeper? Part 2</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">November 6, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this second of two blog posts on Apache BookKeeper Sijie Guo, co-founder of Streamlio talks about the features that provide I/O isolation, data distribution, scalability and operability.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/why-bookkeeper-part-2/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Cursors in Apache Pulsar</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Ivan_Kelly_Crop_Web.jpg">
+
+
+  						<p class="card-date">November 3, 2017</p>
+  						<p class="card-author">Ivan Kelly</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this post and accompanying video, Ivan Kelly, PMC member for Apache BookKeeper and engineer at Streamlio, discusses how the Apache Pulsar messaging system uses durably stored cursors (an enhanced form of offset) to provide fault-tolerant messaging.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/cursors-in-pulsar/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Strata Presentation: “Messaging, storage, or both” (Part 1)
+  </h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+
+
+  						<p class="card-date">October 24, 2017</p>
+  						<p class="card-author">Matteo Merli</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this first video in a 3-part series of a presentation given at Strata last month, Streamlio engineer Matteo Merli gives an overview of the Pulsar messaging system and what distinguishes it from other messaging systems from an enterprise standpoint, focusing on Pulsar&rsquo;s scalability, multi-tenancy features, and geo-replication capabilities.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/messaging-storage-presentation/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Globally distributed Apache Pulsar quickstart</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Ivan_Kelly_Crop_Web.jpg">
+
+
+  						<p class="card-date">October 23, 2017</p>
+  						<p class="card-author">Ivan Kelly</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Deploy a multi-region Pulsar installation on Google Cloud Platform in just a few commands using an Ansible playbook.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/pulsar-distributed-quickstart/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Low-latency streaming with Heron on InfiniBand (part 1 of 2)</h2>
+  					</div>
+  					<div class="card-info">
+
+        			<span class="icon fa fa-4x fa-user-circle-o"></span>
+
+
+  						<p class="card-date">October 20, 2017</p>
+  						<p class="card-author">Supun Kamburugamuve</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Taking the network layer beyond Ethernet can yield major gains in distributed processing systems</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-on-infiniband/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/distributed-snapshot.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Exactly once is NOT exactly the same</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Jerry_Peng_Crop_Web.jpg">
+
+
+  						<p class="card-date">October 13, 2017</p>
+  						<p class="card-author">Jerry Peng</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">In this post, we will take a look at different processing semantics for stream processing engines. We will examine what exactly-once processing semantics actually guarantees and the differences in the implementations of exactly-once processing semantics. Here at Streamlio, we have standardized on ‘effectively-once’ as our terminology, and we’ll explain why.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/exactly-once/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Geo-replication in Apache Pulsar, part 2: patterns and practices
+  </h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">October 10, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">An overview of common multi-datacenter geo-replication patterns for the Pulsar messaging system (full-mesh, active-active, active-standby, and aggregation) as well as recommended practices for system monitoring, capacity planning, and throttling.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/geo-replication-patterns-practices/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/Streamlio-Logo.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Announcing Support for OpenMessaging</h2>
+  					</div>
+  					<div class="card-info">
+
+        			<span class="icon fa fa-4x fa-user-circle-o"></span>
+
+
+  						<p class="card-date">October 9, 2017</p>
+  						<p class="card-author">Matteo Merli and Lewis Kaneshiro</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Streamlio has joined with industry leaders to announce OpenMessaging, a new project within the Linux Standards Foundation to deliver standards-based messaging interoperability to accelerate data-driven infrastructure.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/open-messaging/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/streamlio-diagram-2k.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Helping Product Managers deliver real-time product innovations</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Lewis_Kaneshiro_17K9978_Square_Web.jpg">
+
+
+  						<p class="card-date">October 5, 2017</p>
+  						<p class="card-author">Lewis Kaneshiro</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Enterprises rely on product managers to come up with ideas and turn those ideas into revenue-generating applications to spur the next leg of growth and to create shareholder value. That&rsquo;s a lot of pressure! It&rsquo;s more essential now than ever before that product managers have the correct software stack to realize those ideas, which, with the world moving toward ever-faster performance and response times, means embracing an end-to-end real-time solution.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/product-managers/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Heron: the extensible streaming engine
+  </h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Karthik_Ramasamy_17K0108_Square_Web.jpg">
+
+
+  						<p class="card-date">October 2, 2017</p>
+  						<p class="card-author">Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">This post looks at the architecture of Heron, the real-time stream processing engine developed at and open-sourced by Twitter. The various modules in the system communicate between one another using well-defined communication protocols. As a consequence, Heron is highly extensible and allows the application developer, system administrator, or Heron contributor to create a new implementation of a specific module and plug it into the system without affecting other modules or the communication mechanisms between them.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-extensible-engine/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Geo-replication in Apache Pulsar, part 1: concepts and features
+  </h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">September 27, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">A look at another enterprise-grade feature of Apache Pulsar: geo-replication. It is essential for enterprises today to have disaster avoidance and recovery strategies in place. Whereas other messaging systems can only replicate between two datacenters, Pulsar can scale out to as many as are needed. We will also look at the two types of geo-replication supported in Pulsar, synchronous and asynchronous, and when to use one vs the other.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/apache-pulsar-geo-replication/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Multi-tenant messaging with Apache Pulsar</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+
+
+  						<p class="card-date">September 26, 2017</p>
+  						<p class="card-author">Matteo Merli and Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">How Apache Pulsar provides a messaging system fit for large, multifaceted enterprises</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/multi-tenant-messaging-with-apache-pulsar/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/messaging-storage.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Messaging, storage, or both?</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">September 25, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">The real-time journey of Apache Pulsar, DistributedLog, and BookKeeper</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/messaging-storage-or-both/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/kubernetes-logo.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Experiences porting Heron to Kubernetes</h2>
+  					</div>
+  					<div class="card-info">
+
+        			<span class="icon fa fa-4x fa-user-circle-o"></span>
+
+
+  						<p class="card-date">September 18, 2017</p>
+  						<p class="card-author">John Crawford from ndustrial.io</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Containerization makes all the difference</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-on-kubernetes/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/Streamlio-Logo.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why choose a unified real-time platform?</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Luc_Perkins_Crop_Web.jpg">
+
+
+  						<p class="card-date">September 14, 2017</p>
+  						<p class="card-author">Luc Perkins</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Why durable messaging, compute, and stream storage need to be understood as an inseparable whole</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/real-time-platform/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/bookkeeper-logo.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why Apache BookKeeper? Part 1: consistency, durability, availability</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">September 12, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">An in-depth overview of some of the compelling features and guarantees provided by BookKeeper</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/why-apache-bookkeeper/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/bookkeeper-logo.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Introduction to Apache BookKeeper</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sijie_Guo_17K0010_Square_Web.jpg">
+
+
+  						<p class="card-date">September 8, 2017</p>
+  						<p class="card-author">Sijie Guo</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">A scalable, fault-tolerant, and low-latency log storage service optimized for real-time workloads</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/intro-to-bookkeeper/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why Heron? Part 2</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Karthik_Ramasamy_17K0108_Square_Web.jpg">
+
+
+  						<p class="card-date">September 5, 2017</p>
+  						<p class="card-author">Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Continuation of the key compelling and enterprise-grade features provided by Heron, the open source stream processing system originally developed by Twitter.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/why-heron-part-2/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why Heron? Part 1</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Karthik_Ramasamy_17K0108_Square_Web.jpg">
+
+
+  						<p class="card-date">September 1, 2017</p>
+  						<p class="card-author">Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">An overview of the key compelling and enterprise-grade features that Heron provides in the open source.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/why-heron/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why Apache Pulsar? Part 2</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+
+
+  						<p class="card-date">August 28, 2017</p>
+  						<p class="card-author">Matteo Merli and Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">An overview of the key enterprise-grade features that Pulsar provides out of the box.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/why-apache-pulsar-part-2/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Why Apache Pulsar? Part 1</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+
+
+  						<p class="card-date">August 25, 2017</p>
+  						<p class="card-author">Matteo Merli and Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">An overview of the key enterprise-grade features that Pulsar provides out of the box.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/why-apache-pulsar/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img//blog/pulsar-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Introduction to the Apache Pulsar pub-sub messaging platform</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Matteo_Merli_17K9844_Square_Web.jpg">
+
+
+  						<p class="card-date">August 22, 2017</p>
+  						<p class="card-author">Matteo Merli and Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">A high-level overview of Pulsar, a recently open-sourced pub-sub messaging platform built for massive scale and zero data loss.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/intro-to-pulsar/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/streamlio-diagram-2k.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Announcing Streamlio</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Lewis_Kaneshiro_17K9978_Square_Web.jpg">
+
+
+  						<p class="card-date">August 15, 2017</p>
+  						<p class="card-author">Lewis Kaneshiro</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">We&rsquo;re excited to announce the launch of Streamlio, with Series A funding from LightSpeed Venture Partners. We&rsquo;re building an enterprise-grade, unified, end-to-end real-time platform, by the co-creators of best-of-breed open source technologies proven at Twitter and Yahoo.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/announcing-streamlio/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/blog/heron-logo-wide.svg" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Introduction to Heron</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Karthik_Ramasamy_17K0108_Square_Web.jpg">
+
+
+  						<p class="card-date">August 8, 2017</p>
+  						<p class="card-author">Karthik Ramasamy</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Heron is a real-time stream processing engine first deployed at Twitter. This post provides an overview of Heron for architects and developers interested in learning about its architecture and terminology.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/intro-to-heron/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+  				</div>
+
+
+
+  				<div class="row row-eq-height">
+
+  				<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 media-card">
+
+  						<img class="card-image" src="https://streaml.io/media/img/topology-processing-flow.png" alt="placeholder"/>
+
+  					<div class="card-heading">
+  						<h2 class="card-title">Heron going exactly-once</h2>
+  					</div>
+  					<div class="card-info">
+
+  						<img class="icon img-circle" src="https://streaml.io/media/img/Sanjeev_Kulkarni_17K0143_Square_Web.jpg">
+
+
+  						<p class="card-date">May 5, 2017</p>
+  						<p class="card-author">Sanjeev Kulkarni</p>
+  					</div>
+  					<div class="card-body">
+  						<p class="card-description">Data processing guarantees in streaming systems fall into three categories: at-most-once, at-least-once, and exactly-once. This blog post outlines the requirements and previews exactly-once guarantees in Heron, the next generation real-time stream processing engine.</p>
+  					</div>
+  					<div class="card-footer">
+  						<a href="https://streaml.io/blog/heron-going-exactly-once/" class="button button-default">Read More</a>
+  					</div>
+  				</div>
+
+
+
+  		</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid footer-global">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a href="https://streamlio-redesign.firebaseapp.com/product">Product Overview</a></h4>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/product/messaging">Messaging</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/product/processing">Real-time processing</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/product/storage">Stream storage</a></h5>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a href="https://streamlio-redesign.firebaseapp.com/resources">Resources</a></h4>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/resources">Resource Library</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/docs/getting-started">Getting Started</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/blog">Blog</a></h5>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a href="https://streamlio-redesign.firebaseapp.com/about">About</a></h4>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/company">Company</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/team">Team</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/news">News</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/events">Events</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/contact">Contact</a></h5>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a>Social</a></h4>
+        <h5 class="list-body"><a href="https://twitter.com/streamlio"><span class="fa fa-twitter"></span> Twitter</a></h5>
+        <h5 class="list-body"><a href="https://www.linkedin.com/company/streamlio/"><span class="fa fa-linkedin-square"></span> Linkedin</a></h5>
+      </div>
+    </div>
+
+    <div class="row pos-rel">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+        <a class="footer-brand" href="https://streamlio-redesign.firebaseapp.com/"><img src="https://streamlio-redesign.firebaseapp.com/media/logo/Streamlio-Logo_Full_White.svg" alt="Streamlio logo"></a>
+        <p class="footer-copyright">&copy;2018 Streamlio, Inc.</p>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-1 pos-ab-bottom">
+        <p class="footer-footnote">*Apache Pulsar and Apache Heron are efforts undergoing incubation at The Apache Software Foundation (ASF), sponsored by Apache Incubator PMC. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure,
+          communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that
+          the project has yet to be fully endorsed by the ASF.</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    function compressedNavbar() {
+      $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= 100) {
+          $('.navbar-global').addClass('navbar-compressed');
+        } else {
+          $('.navbar-global').removeClass('navbar-compressed');
+        }
+      });
+    }
+
+    function modalPopup() {
+      $("#myModal").modal('show');
+    }
+
+    function carousel() {
+      $('#myCarousel').carousel();
+    }
+
+    function filteringScript() {
+      $('input[type="checkbox"]').change(function() {
+        var $checked = $('input[type="checkbox"]').filter(':checked');
+        if ($checked.length) {
+          var cat_filters = $checked.map(function() {
+            return $(this).val().toLowerCase();
+          }).get();
+          var key_filters = $checked.map(function() {
+            return $(this).val().toLowerCase();
+          }).get();
+          $('.panel').each(function() {
+            var $t = $(this);
+            if (cat_filters.indexOf($t.data('filter-cat').toLowerCase()) >= 0) {
+              $t.show();
+            } else {
+              $t.hide();
+            }
+            if (key_filters.indexOf($t.data('filter-key').toLowerCase()) >= 0) {
+              $t.show();
+            } else {
+              $t.hide();
+            }
+          });
+        } else {
+          $('.panel').show();
+        }
+      });
+    }
+    $(function() {
+      compressedNavbar();
+      modalPopup();
+      carousel();
+      filteringScript();
+    });
+  </script>
+</body>
+
+</html>

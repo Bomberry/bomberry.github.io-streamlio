@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Bootstrap/FontAwsome - CDN - Latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <!-- Bootstrap/FontAwsome - LOCAL - Latest compiled and minified CSS -->
+  <!-- Note: This is included/commented out in config.sass -->
+  <!--<link href="css/bootstrap/" rel="stylesheet" type="text/css">-->
+  <!--<link href="css/font-awesome.css" rel="stylesheet" type="text/css">-->
+  <!--Google Type - CDN - Fonts for use SASS/CSS-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Heebo|Martel" type="text/css" rel="stylesheet">-->
+  <!--Main SASS/CSS for Streamlio-->
+  <link href="css/streamlio.css" type="text/css" rel="stylesheet" />
+  <!--Favicon link block-->
+  <!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">-->
+  <!--<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">-->
+  <!--<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">-->
+  <!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">-->
+  <!--<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">-->
+  <!--<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">-->
+  <!--<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">-->
+  <!--<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">-->
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">-->
+  <!--<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">-->
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+  <!--<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">-->
+  <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+  <!--<meta name="msapplication-TileColor" content="#ffffff">-->
+  <!--<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">-->
+  <!--<meta name="theme-color" content="#ffffff">-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+  <title>Streamlio</title>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="ResourcePage" class="">
+  <!-- Global Nav -->
+  <nav id="globalNavBar" class="navbar navbar-fixed-top navbar-global" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#"><img class="brand" src="media/logo/Streamlio-Logo.svg" alt="Streamlio logo"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="global-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <!--        <li><a alt="What is Streamlio" href="#">What is Streamlio?</a></li>-->
+          <li class="dropdown">
+            <a alt="Product" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a alt="Overview" href="#">Overview</a></li>
+              <li><a alt="Messaging &amp; queuing" href="#">Messaging &amp; queuing</a></li>
+              <li><a alt="Real-time processing" href="#">Real-time processing</a></li>
+              <li><a alt="Stream storage" href="#">Stream storage</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a alt="Resources" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a alt="Resource library" href="#">Resource library</a></li>
+              <li><a alt="Video tutorials" href="#">Video tutorials</a></li>
+              <li><a alt="Getting started" href="#">Getting started</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a alt="About" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a alt="Company" href="#">Company</a></li>
+              <li><a alt="News and events" href="#">News and events</a></li>
+              <li><a alt="Community" href="#">Community</a></li>
+            </ul>
+          </li>
+          <li class="navbar-toggler" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle navigation"><a alt="Search"><span class="navbar-toggler-icon fa fa-search"></span></a></li>
+          <li><a alt="Try Now" href="#" class="button-action button-glacier-reverse">Try Now</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Search Bar module -->
+    <div class="collapse" id="navbar-search">
+      <div class="">
+        <form class="search-form" id="" action="">
+          <div class="input-group input-group-lg">
+            <input type="text" name="search" class="search form-control" placeholder="Search">
+            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <!--      <span class="input-group-addon search-close" id="basic-addon2"><i class="fa fa-window-close" aria-hidden="true"></i></span>-->
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- / Search Bar module -->
+  </nav>
+  <!--block-pageTitleBlock-->
+  <div id="pageTitleBlock" class="container-fluid pageTitleBlock bg-image plexus-5">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        <h1> Resources and tutorials </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid content-2Col bg-gradient gradient-1 color-streamlio-white">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="row center-flex">
+          <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-align-center hidden-xs"> <img class="img-block img-unset box-shadow" height="150rem" src="https://streamlio-redesign.firebaseapp.com/media/img/streamlio-solution-brief-thumb.png" alt="" /> </div>
+          <div class="col-sm-7 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-align-left">
+            <div class="col-xs-10 col-xs-offset-1 ">
+              <h5>FEATURED</h5>
+              <h3> Streamlio Solution Brief </h3>
+              <p class="lead"> Read about the Streamlio intelligent platform for fast data. </p>
+              <p><a href="https://streamlio-redesign.firebaseapp.com/pdf/Streamlio-Solution-Brief.pdf" class="button button-streamlio-cyan-reverse">Read More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="" class="container-fluid content-block-padding-small cardList-filter">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1">
+        <h3>Resource Library</h3>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-align-right">
+        <div class="btn-group">
+          <button type="button" class="btn btn-lg button-glacier dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by Type<span class="caret"></span><span class="sr-only">Toggle category filter dropdown</span></button>
+          <ul class="dropdown-menu">
+            <li>
+              <input type="checkbox" id="cat-checkbox-video" name="video" value="video" data-filter="video" checked>
+              <label for="cat-checkbox-video">video</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cat-checkbox-blog" name="blog" value="blog" data-filter="blog" checked>
+              <label for="cat-checkbox-blog">blog</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cat-checkbox-tech notes" name="tech notes" value="tech notes" data-filter="tech notes" checked>
+              <label for="cat-checkbox-tech notes">tech notes</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cat-checkbox-solution brief" name="solution brief" value="solution brief" data-filter="solution brief" checked>
+              <label for="cat-checkbox-solution brief">solution brief</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cat-checkbox-presentation" name="presentation" value="presentation" data-filter="presentation" checked>
+              <label for="cat-checkbox-presentation">presentation</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cat-checkbox-whitepaper" name="whitepaper" value="whitepaper" data-filter="whitepaper" checked>
+              <label for="cat-checkbox-whitepaper">whitepaper</label>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-lg button-glacier dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by Keyword<span class="caret"></span><span class="sr-only">Toggle keyword filter dropdown</span></button>
+          <ul class="dropdown-menu">
+            <li>
+              <input type="checkbox" id="key-checkbox-concepts" name="concepts" value="concepts" data-filter="concepts" checked>
+              <label for="key-checkbox-concepts">concepts</label>
+            </li>
+            <li>
+              <input type="checkbox" id="key-checkbox-messaging" name="messaging" value="messaging" data-filter="messaging" checked>
+              <label for="key-checkbox-messaging">messaging</label>
+            </li>
+            <li>
+              <input type="checkbox" id="key-checkbox-processing" name="processing" value="processing" data-filter="processing" checked>
+              <label for="key-checkbox-processing">processing</label>
+            </li>
+            <li>
+              <input type="checkbox" id="key-checkbox-storage" name="storage" value="storage" data-filter="storage" checked>
+              <label for="key-checkbox-storage">storage</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-bCH-D2ucOdE" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/bCH-D2ucOdE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microservices Part 3: Security Considerations</h5>
+                  <p>In this final video of a three-part series, Christian Hasker of Streamlio interviews JJ about what security considerations enterprises should think about when adopting microservices.
+                  </p>
+                  <h5 class="card-date">2018-01-22</h5>
+                  <h5 class="card-author">JJ Jeyappragash</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-dBBOUQ7c6L8" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/dBBOUQ7c6L8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microservices Part 2: How to break up a monolithic application: guidelines and best practices</h5>
+                  <p>In this second video of a three-part series, Christian Hasker of Streamlio interviews JJ, an expert in microservices about how to actually break apart a monolithic application into microservices. JJ provides some guidelines and best
+                    practices.
+                  </p>
+                  <h5 class="card-date">2018-01-21</h5>
+                  <h5 class="card-author">JJ Jeyappragash</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-S0HAF8uXNW8" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/S0HAF8uXNW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microservices Part 1: What are they, what aren&#39;t they? An interview with an expert</h5>
+                  <p>Breaking apart monolithic applications into microservices, and adopting microservices-based architectures for new applications is a hot trend within enterprises. In this first video of a three-part series, Christian Hasker of Streamlio
+                    interviews JJ Jeyappragash, an expert in microservices, who explains what microservices are, and more importantly, what they are not.
+                  </p>
+                  <h5 class="card-date">2018-01-20</h5>
+                  <h5 class="card-author">JJ Jeyappragash</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-zjQXUqDdW60" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/zjQXUqDdW60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Unified queuing and streaming: Part 2</h5>
+                  <p>In this video Sanjeev Kulkarni of Streamlio discusses a retail use case that would need both queuing and streaming. He whiteboards how Apache Pulsar is uniquely able to handle both use cases within one distributed messaging system.
+                  </p>
+                  <h5 class="card-date">2018-01-19</h5>
+                  <h5 class="card-author">Sanjeev Kulkarni</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-9Z92IyQJb7o" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/9Z92IyQJb7o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Unified queuing and streaming: Part 1</h5>
+                  <p>In this short video, Sanjeev Kulkarni and Christian Hasker of Streamlio discuss the differences between queuing and streaming. Apache Pulsar, the next generation distributed pub/sub system is unique in that it can handle both queuing
+                    and streaming use cases. Sanjeev presents a definition of each, and explains when it would make sense to use one vs the other.
+                  </p>
+                  <h5 class="card-date">2018-01-19</h5>
+                  <h5 class="card-author">Sanjeev Kulkarni</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-Cy9ev9nAZpI" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/Cy9ev9nAZpI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Migrating an Apache Kafka application to Apache Pulsar with no code changes</h5>
+                  <p>In this 201 level video, Sijie Guo of Streamlio demonstrates how to migrate an existing Kafka application to Apache Pulsar with no code change using the Kafka API wrapper. It can be used to migrate an application to take advantage of
+                    next generation messaging features in Pulsar such as multi-datacenter support, multi-tenancy, strong durability guarantees, and unified messaging and queuing architecture.
+                  </p>
+                  <h5 class="card-date">2018-01-05</h5>
+                  <h5 class="card-author">Sijie Guo</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-h3wylHdvs-g" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/h3wylHdvs-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Install Apache Pulsar and get up and running in 4 minutes</h5>
+                  <p>Development 101 series: in this quick 4-minute video, Sanjeev Kulkarni shows you how easy it is to download, install and get Apache Pulsar up and running on your laptop. For more information on Apache Pulsar visit streaml.io or the project
+                    at pulsar.apache.org.
+                  </p>
+                  <h5 class="card-date">2017-12-11</h5>
+                  <h5 class="card-author">Sanjeev Kulkarni</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-iRe26eamu3U" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/iRe26eamu3U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Introduction to microservices and real-time data processing</h5>
+                  <p>Karthik Ramasamy, co-founder of Streamlio, gave this talk at a meetup at Narvar ([corp.narvar.com](https://corp.narvar.com)). In this presentation, designed for developers that are thinking about moving away from monolithic application
+                    architectures, he shares thoughts about microservices and real-time data processing.
+                  </p>
+                  <h5 class="card-date">2017-11-10</h5>
+                  <h5 class="card-author">Karthik Ramasamy</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-qaXfMHagiK0" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/qaXfMHagiK0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Running Heron on Google Kubernetes Engine</h5>
+                  <p>In this hands-on demo, Chris Kellogg, engineer at Streamlio, shows how easy it is to set up the Heron streaming engine up and get it running on Google Kubernetes Engine, powered by Kubernetes.
+                  </p>
+                  <h5 class="card-date">2017-11-09</h5>
+                  <h5 class="card-author">Chris Kellogg</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-FdluULVeH2Y" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/FdluULVeH2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>How Apache Pulsar uses Apache BookKeeper to store topics</h5>
+                  <p>In this expert developer whiteboard session Ivan Kelly, Apache BookKeeper PMC member and engineer at Streamlio, discusses how Apache Pulsar uses Apache BookKeeper to store replicated logs for hundreds of thousands of topics.
+                  </p>
+                  <h5 class="card-date">2017-11-13</h5>
+                  <h5 class="card-author">Ivan Kelly</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-eFp4Ugck2aQ" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/eFp4Ugck2aQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Message guarantees in Apache Pulsar with Apache BookKeeper</h5>
+                  <p>In this expert developer whiteboard session Ivan Kelly, Apache BookKeeper PMC member and engineer at Streamlio, discusses what happens to a message when it enters Apache Pulsar and the guarantees that are provided.
+                  </p>
+                  <h5 class="card-date">11-7-2017</h5>
+                  <h5 class="card-author">Ivan Kelly</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-pEh2jubWnIM" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/pEh2jubWnIM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Experiences in production with Heron</h5>
+                  <p>In this video, Karthik Ramasamy, co-creator of Heron while working at Twitter and now co-founder of Streamlio, talks about lessons learned running Heron in production at massive scale at Twitter. He also presents feedback regarding common
+                    issues in development. While the presentation is Heron specific, these lessons can be applied to other streaming systems as well.
+                  </p>
+                  <h5 class="card-date">11-2-2017</h5>
+                  <h5 class="card-author">Karthik Ramasamy</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-qe-F4M_dilA" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/qe-F4M_dilA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>How Apache Pulsar stores cursors using Apache BookKeeper</h5>
+                  <p>In this expert developer whiteboard session, Ivan Kelly, PMC member of Apache BookKeeper and engineer at Streamlio talks about cursor management. This is very hard for other messaging systems to do but is no sweat for Apache Pulsar,
+                    which leverages Apache BookKeeper. Make sure to read Ivan&#39;s blog post on the subject at [streaml.io/blog](https://streaml.io/blog).
+                  </p>
+                  <h5 class="card-date">11-2-2017</h5>
+                  <h5 class="card-author">Ivan Kelly</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-hDV5dztBjvQ" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/hDV5dztBjvQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Introduction to the Heron Stream Processing Engine&#39;s Architecture</h5>
+                  <p>In this video Karthik Ramasamy, co-creator of Twitter Heron, and co-founder of Streamlio, presents an overview of the design goals for the Heron stream processing engine. He also looks at the overall architecture of Heron, which has
+                    been used in production at Twitter for 3 years.
+                  </p>
+                  <h5 class="card-date">11-1-2017</h5>
+                  <h5 class="card-author">Karthik Ramasamy</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-W4EjtNkAyOE" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/W4EjtNkAyOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microsoft: Self-regulating stream processing in Heron, Part 4
+                                        </h5>
+                  <p>In this final video in a 4-part series, Microsoft Cloud and Information Services Lab researcher, Avrilia Floratou presents the policy for service-level objectives in Dhalion, a self-healing process for Twitter Heron stream processing.
+                    She also presents the experiments that she and Ashvin Agrawal conducted on Dhalion, and also talks about future work. This video is the fourth in a 4-part series and is based on a presentation that was first delivered at the VLDB (Very
+                    Large Database) conference at the Technical University of Munich, Germany in September 2017.
+                  </p>
+                  <h5 class="card-date">10-18-2017</h5>
+                  <h5 class="card-author">Avrilia Floratou</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-RywRitQbOgY&amp;t" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/RywRitQbOgY&amp;t" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microsoft: Self-regulating stream processing in Heron, Part 3
+                                        </h5>
+                  <p>In this second video in a 4-part series, Microsoft Cloud and Information Services Lab researcher, Ashvin Agrawal presents some of the policies related to dynamic resource provisioning in Dhalion, a self-healing process for Twitter Heron
+                    stream processing. This video is the third in a 4-part series and is based on a presentation that was first delivered at the VLDB (Very Large Database) conference at the Technical University of Munich, Germany in September 2017.
+                  </p>
+                  <h5 class="card-date">10-17-2017</h5>
+                  <h5 class="card-author">Ashvin Agrawal</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-CY3GgtE2UFQ" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/CY3GgtE2UFQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microsoft: Self-regulating stream processing in Heron, Part 2
+                                        </h5>
+                  <p>In this 2nd video in a 4-part series, by Microsoft Cloud and Information Services Lab researcher, Avrilia Floratou, she talks about some of the operational challenges with streaming systems, and introduces Dhalion, a self-healing process
+                    for Twitter Heron stream processing. This video is the second in a 4-part series and is based on a presentation that was first delivered at the VLDB (Very Large Database) conference at the Technical University of Munich, Germany in
+                    September 2017.
+                  </p>
+                  <h5 class="card-date">10-17-2017</h5>
+                  <h5 class="card-author">Avrilia Floratou</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-g0ho6SLYuoI" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/g0ho6SLYuoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Microsoft: Self-regulating stream processing in Heron, Part 1
+                                        </h5>
+                  <p>This presentation in 4 parts, by Microsoft Cloud and Information Services Lab researchers, Avrilia Floratou, and Ashvin Agrawal, was first delivered at the VLDB (Very Large Database) conference at the Technical University of Munich,
+                    Germany in September 2017. Avrilia and Ashvin have worked on a self-healing process for Twitter Heron stream processing engine called Dhalion. This video is the first in a 4-part series and focuses on introducing the Heron streaming
+                    system.
+                  </p>
+                  <h5 class="card-date">2017-10-17</h5>
+                  <h5 class="card-author">Ashvin Agrawal</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-0Oatl_d6CfA" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/0Oatl_d6CfA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Multi-tenant Messaging with Apache Pulsar (and Monopoly!)</h5>
+                  <p>In this quick video tutorial (using Monopoly) we&#39;ll take a look at the multi-tenant capabilities in the Apache Pulsar (incubating) messaging system. Pulsar was designed as an enterprise grade solution to meet the following requirements
+                    at Yahoo: * Ensure that strict SLAs are met * Guarantee isolation between tenants * Enforce resource utilization quotas * Provide per-tenant and system-wide security * Ensure low-cost operations and simpler manageability
+                  </p>
+                  <h5 class="card-date">09-28-2017</h5>
+                  <h5 class="card-author">Christian Hasker</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-clRO56VR_u8" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/clRO56VR_u8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Introduction to the Apache Pulsar Messaging System</h5>
+                  <p>This short demo shows you how to easily get up and running with Apache Pulsar. Apache Pulsar is an open-source distributed pub-sub messaging system originally created at Yahoo and now part of the Apache Software Foundation. Built from
+                    the ground up as a multi-tenant system, it includes support for isolation, authentication, authorization and quotas. With built-in geo-replication and durable storage backed by Apache BookKeeper it is horizontally scalable and can
+                    be distributed across multiple data centers. Pulsar has run in production at massive scale at Yahoo for more than three years, and today powers the message part of the Streamlio platform.
+                  </p>
+                  <h5 class="card-date">09-06-2017</h5>
+                  <h5 class="card-author">Luc Perkins</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-Ner-anugV-A" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/Ner-anugV-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Heron Delivery Semantics, Part 2</h5>
+                  <p>In Part 2 Sanjeev Kulkarni, co-creator of Heron and co-founder of Streamlio, examines the difference between effectively once semantics and exactly once semantics in streaming systems. Exactly once is a very expensive mechanism, and
+                    often effectively once achieves the same goal.
+                  </p>
+                  <h5 class="card-date">09-01-2017</h5>
+                  <h5 class="card-author">Sanjeev Kulkarni</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-nurVizIp5RI" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/nurVizIp5RI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Heron Delivery Semantics, Part 1</h5>
+                  <p>Sanjeev Kulkarni, co-creator of Heron stream processing engine, and co-founder of Streamlio, outlines the different delivery mechanisms supported in Heron. He explains the difference between at most once semantics, at least once semantics,
+                    effectively once semantics, and exactly once semantics. These terms can all be very confusing. In Part 1 Sanjeev focuses on at most and at least once semantics. In Part 2 he dives more deeply into effectively once, and exactly once.
+                  </p>
+                  <h5 class="card-date">09-01-2017</h5>
+                  <h5 class="card-author">Sanjeev Kulkarni</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-UyEeY_YeZsQ" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/UyEeY_YeZsQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>The Streamlio sandbox walkthrough</h5>
+                  <p>This is a short video showing you how to install and get started with the Streamlio sandbox. The Streamlio sandbox integrates best of breed compute, messaging and storage, proven in production at Twitter and Yahoo. By the end of this
+                    tutorial you will be able to run your first real-time data application with Streamlio.</p>
+                  <h5 class="card-date">08-24-2017</h5>
+                  <h5 class="card-author">Luc Perkins</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-ed5zxfvlT-M" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/ed5zxfvlT-M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Apache Pulsar (incubating) Concepts and Terminology</h5>
+                  <p>Apache Pulsar (incubating) is an enterprise-grade publish-subscribe (aka pub-sub) messaging system that was originally developed at Yahoo. It is one of the core components of the Streamlio end-to-end real-time solution. This whiteboard
+                    session introduces the core concepts and terminology needed to work with Pulsar.</p>
+                  <h5 class="card-date">08-25-2017</h5>
+                  <h5 class="card-author">Christian Hasker</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video-3GyRZzxqAas" class="modal fade container-fluid" role="dialog" aria-labelledby="TITLE">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-offset-0">
+              <div class="row">
+                <div class="col-xs-12 content-media">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/3GyRZzxqAas" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-xs-12 content-info">
+                  <h5>Heron Stream Processing Architecture and Terminology</h5>
+                  <p>Heron is a real-time stream processing engine, built at and proven in production at massive scale at Twitter. This short video provides an overview of Heron for architects and developers interested in learning about its architecture
+                    and terminology.</p>
+                  <h5 class="card-date">08-30-2017</h5>
+                  <h5 class="card-author">Christian Hasker</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="" class="container-fluid cardList">
+    <div class="row row-eq-height">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="row">
+          <div class="col-sm-4 panel" data-filter-cat="tech notes" data-filter-key="concepts">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-o"></span></h5>
+              <h5 class="card-category"> tech notes </h5>
+              <h2 class="card-title"> Key Concepts </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Key Concepts </h3>
+              <p class="card-description"> Key concepts in streaming and real-time </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='\/resources\/concepts';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="solution brief" data-filter-key="concepts">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-o"></span></h5>
+              <h5 class="card-category"> solution brief </h5>
+              <h2 class="card-title"> Streamlio Real-Time Solution </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Streamlio Real-Time Solution </h3>
+              <p class="card-description"> Overview of the Streamlio platform </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='\/pdf\/Streamlio-Solution-Brief.pdf';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="blog" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-o"></span></h5>
+              <h5 class="card-category"> blog </h5>
+              <h2 class="card-title"> Open-Sourcing Pulsar, Pub-Sub Messaging at Scale </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Open-Sourcing Pulsar, Pub-Sub Messaging at Scale </h3>
+              <p class="card-description"> Yahoo&#39;s overview blog on Pulsar </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/yahooeng.tumblr.com\/post\/150078336821\/open-sourcing-pulsar-pub-sub-messaging-at-scale';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Pulsar, a highly scalable, low latency pub-sub messaging system </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Pulsar, a highly scalable, low latency pub-sub messaging system </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/ydn\/october-2016-hug-pulsar-a-highly-scalable-low-latency-pubsub-messaging-system';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Pulsar -- Distributed Pub/Sub Platform </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Pulsar -- Distributed Pub/Sub Platform </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/merlimat\/pulsar-distributed-pubsub-platform';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="video" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category"> video </h5>
+              <h2 class="card-title"> Twitter Heron on Apache Aurora </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Twitter Heron on Apache Aurora </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.youtube.com\/watch?v=ua0ufmr9sQI\x26feature=youtu.be\x26app=desktop';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="video" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category"> video </h5>
+              <h2 class="card-title"> Flying Faster with Heron </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Flying Faster with Heron </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.infoq.com\/presentations\/twitter-heron';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="video" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category"> video </h5>
+              <h2 class="card-title"> Heron: Real-Time Stream Data Processing at Twitter </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Heron: Real-Time Stream Data Processing at Twitter </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.youtube.com\/watch?v=pUaFOuGgmco';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Real-Time Analytics: Algorithms and Systems </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Real-Time Analytics: Algorithms and Systems </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/arunkejariwal\/real-time-analytics-algorithms-and-systems';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Stream Processing and Anomaly Detection </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Stream Processing and Anomaly Detection </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/arunkejariwal\/velocity-2015final';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> Low Latency Stream Processing: Apache Heron with Infiniband &amp; Intel Omni-Path </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Low Latency Stream Processing: Apache Heron with Infiniband &amp; Intel Omni-Path </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/dsc.soic.indiana.edu\/publications\/Heron_Infiniband.pdf';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> Dhalion: Self Regulating Stream Processing in Heron </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Dhalion: Self Regulating Stream Processing in Heron </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.microsoft.com\/en-us\/research\/publication\/dhalion-self-regulating-stream-processing-heron\/';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> Twitter Heron: Towards Extensible Streaming Engines </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Twitter Heron: Towards Extensible Streaming Engines </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/ieeexplore.ieee.org\/stamp\/stamp.jsp?tp=\x26arnumber=7930056';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> Streaming@Twitter </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Streaming@Twitter </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/sites.computer.org\/debull\/A15dec\/p15.pdf';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> Storm@Twitter </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Storm@Twitter </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/dl.acm.org\/citation.cfm?id=2595641';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> DistributedLog: A High Performance Replicated Log Service </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> DistributedLog: A High Performance Replicated Log Service </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/ieeexplore.ieee.org\/abstract\/document\/7930058\/';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> A Technical Review of Kafka and DistributedLog </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> A Technical Review of Kafka and DistributedLog </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/bookkeeper.apache.org\/distributedlog\/technical-review\/2016\/09\/19\/kafka-vs-distributedlog.html';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="whitepaper" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-file-text-o"></span></h5>
+              <h5 class="card-category"> whitepaper </h5>
+              <h2 class="card-title"> Durability with BookKeeper </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Durability with BookKeeper </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/dl.acm.org\/citation.cfm?id=2433144';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Apache BookKeeper: A High Performance and Low Latency Storage Service </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Apache BookKeeper: A High Performance and Low Latency Storage Service </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/hustlmsp\/apache-bookkeeper-a-high-performance-and-low-latency-storage-service';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Apache BookKeeper as a Distributed Store </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Apache BookKeeper as a Distributed Store </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/jujjuri\/apache-con2016final';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Cloud Messaging Service </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Cloud Messaging Service </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='https:\/\/www.slideshare.net\/MessagingMeetup\/cloud-messaging-service-technical-overview';">Learn More</button> </div>
+          </div>
+          <div class="col-sm-4 panel" data-filter-cat="presentation" data-filter-key="storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-desktop"></span></h5>
+              <h5 class="card-category"> presentation </h5>
+              <h2 class="card-title"> Building reliable systems with Apache BookKeeper </h2>
+            </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Building reliable systems with Apache BookKeeper </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" onclick="location.href='http:\/\/www.slideshare.net\/MatthieuMorel\/building-reliable-systems-with-apache-bookkeeper';">Learn More</button> </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="concepts">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microservices Part 3: Security Considerations </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microservices Part 3: Security Considerations </h3>
+              <p class="card-description"> Part 3 in our tutorial series on microservices, covering key security needs and implications. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-bCH-D2ucOdE">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="concepts">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microservices Part 2: How to break up a monolithic application: guidelines and best practices </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microservices Part 2: How to break up a monolithic application: guidelines and best practices </h3>
+              <p class="card-description"> Part 2 of our tutorial series on microservices, covering how to plan and get started. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-dBBOUQ7c6L8">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="concepts">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microservices Part 1: What are they, what aren&#39;t they? An interview with an expert </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microservices Part 1: What are they, what aren&#39;t they? An interview with an expert </h3>
+              <p class="card-description"> Tutorial series on microservices, providing an overview of key concepts. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-S0HAF8uXNW8">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Unified queuing and streaming: Part 2 </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Unified queuing and streaming: Part 2 </h3>
+              <p class="card-description"> A dive into a use case requiring queuing and streaming. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-zjQXUqDdW60">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Unified queuing and streaming: Part 1 </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Unified queuing and streaming: Part 1 </h3>
+              <p class="card-description"> Explains the differences between message queuing and streaming. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-9Z92IyQJb7o">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Migrating an Apache Kafka application to Apache Pulsar with no code changes </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Migrating an Apache Kafka application to Apache Pulsar with no code changes </h3>
+              <p class="card-description"> Walks through how to migrate Kafka applications to Pulsar. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-Cy9ev9nAZpI">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Install Apache Pulsar and get up and running in 4 minutes </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Install Apache Pulsar and get up and running in 4 minutes </h3>
+              <p class="card-description"> A step-by-step demonstration of setting up Apache Pulsar on your laptop. </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-h3wylHdvs-g">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="concepts">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Introduction to microservices and real-time data processing </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Introduction to microservices and real-time data processing </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-iRe26eamu3U">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Running Heron on Google Kubernetes Engine </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Running Heron on Google Kubernetes Engine </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-qaXfMHagiK0">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging, storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> How Apache Pulsar uses Apache BookKeeper to store topics </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> How Apache Pulsar uses Apache BookKeeper to store topics </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-FdluULVeH2Y">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging, storage">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Message guarantees in Apache Pulsar with Apache BookKeeper </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Message guarantees in Apache Pulsar with Apache BookKeeper </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-eFp4Ugck2aQ">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Experiences in production with Heron </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Experiences in production with Heron </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-pEh2jubWnIM">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> How Apache Pulsar stores cursors using Apache BookKeeper </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> How Apache Pulsar stores cursors using Apache BookKeeper </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-qe-F4M_dilA">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Introduction to the Heron Stream Processing Engine&#39;s Architecture </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Introduction to the Heron Stream Processing Engine&#39;s Architecture </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-hDV5dztBjvQ">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 4
+                                </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 4
+                                </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-W4EjtNkAyOE">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 3
+                                </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 3
+                                </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-RywRitQbOgY&amp;t">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 2
+                                </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 2
+                                </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-CY3GgtE2UFQ">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 1
+                                </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Microsoft: Self-regulating stream processing in Heron, Part 1
+                                </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-g0ho6SLYuoI">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Multi-tenant Messaging with Apache Pulsar (and Monopoly!) </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Multi-tenant Messaging with Apache Pulsar (and Monopoly!) </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-0Oatl_d6CfA">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Introduction to the Apache Pulsar Messaging System </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Introduction to the Apache Pulsar Messaging System </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-clRO56VR_u8">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Heron Delivery Semantics, Part 2 </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Heron Delivery Semantics, Part 2 </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-Ner-anugV-A">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Heron Delivery Semantics, Part 1 </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Heron Delivery Semantics, Part 1 </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-nurVizIp5RI">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> The Streamlio sandbox walkthrough </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> The Streamlio sandbox walkthrough </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-UyEeY_YeZsQ">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="messaging">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Apache Pulsar (incubating) Concepts and Terminology </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Apache Pulsar (incubating) Concepts and Terminology </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-ed5zxfvlT-M">Learn More</button>
+            </div>
+          </div>
+          <div class="panel col-sm-4" data-filter-cat="" data-filter-key="processing">
+            <div class="panel-body">
+              <h5 class="card-icon"><span class="fa fa-3x fa-film"></span></h5>
+              <h5 class="card-category">Video</h5>
+              <h2 class="card-title"> Heron Stream Processing Architecture and Terminology </h2> </div>
+            <div class="panel-info">
+              <h3 class="card-title"> Heron Stream Processing Architecture and Terminology </h3>
+              <p class="card-description"> </p>
+              <button class="button-default" title="" type="button" data-toggle="modal" data-target="#video-3GyRZzxqAas">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid callToAction2Col">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="row row-eq-height">
+          <div class="col-sm-6 col-sm-offset-0 col-xs-11 col-xs-offset-1">
+            <div class="action-panel h-100 bg-color-light-gray-tint-3">
+              <img class="img-responsive img-cover" src="https://streamlio-redesign.firebaseapp.com/media/img/streaming-lights-2-500w.jpg" alt="Image">
+              <div class="action-body">
+                <h1>Benchmarking Streaming Platforms</h1>
+                <p>Industry analyst firm Gigaom surveys the technology landscape for streaming messaging and compares Apache Kafka and Apache Pulsar performance</p>
+              </div>
+              <div class="action-footer"> <a class="button button-streamlio-cyan-reverse" href="http://info.streaml.io/benchmarking-streaming-messaging-platforms">Read the Report</a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-sm-offset-0 col-xs-11 col-xs-offset-1">
+            <div class="action-panel h-100 bg-color-light-gray-tint-3">
+              <img class="img-responsive img-cover" src="https://streamlio-redesign.firebaseapp.com/media/img/engine-gears-500w.jpg" alt="Image">
+              <div class="action-body">
+                <h1>Webinar: Connecting Microservices</h1>
+                <p>Hear Streamlio&#39;s Karthik Ramasamy explain how you can connect microservices using Streamlio</p>
+              </div>
+              <div class="action-footer"> <a class="button button-streamlio-cyan-reverse" href="http://info.streaml.io/building-data-driven-microservices-webcast">Watch Now</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer-global">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a href="https://streamlio-redesign.firebaseapp.com/product">Product Overview</a></h4>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/product/messaging">Messaging</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/product/processing">Real-time processing</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/product/storage">Stream storage</a></h5>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a href="https://streamlio-redesign.firebaseapp.com/resources">Resources</a></h4>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/resources">Resource Library</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/docs/getting-started">Getting Started</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/blog">Blog</a></h5>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a href="https://streamlio-redesign.firebaseapp.com/about">About</a></h4>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/company">Company</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/team">Team</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/news">News</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/events">Events</a></h5>
+        <h5 class="list-body"><a href="https://streamlio-redesign.firebaseapp.com/about/contact">Contact</a></h5>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1 footer-list">
+        <h4 class="list-title"><a>Social</a></h4>
+        <h5 class="list-body"><a href="https://twitter.com/streamlio"><span class="fa fa-twitter"></span> Twitter</a></h5>
+        <h5 class="list-body"><a href="https://www.linkedin.com/company/streamlio/"><span class="fa fa-linkedin-square"></span> Linkedin</a></h5>
+      </div>
+    </div>
+
+    <div class="row pos-rel">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+        <a class="footer-brand" href="https://streamlio-redesign.firebaseapp.com/"><img src="https://streamlio-redesign.firebaseapp.com/media/logo/Streamlio-Logo_Full_White.svg" alt="Streamlio logo"></a>
+        <p class="footer-copyright">&copy;2018 Streamlio, Inc.</p>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-1 pos-ab-bottom">
+        <p class="footer-footnote">*Apache Pulsar and Apache Heron are efforts undergoing incubation at The Apache Software Foundation (ASF), sponsored by Apache Incubator PMC. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure,
+          communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that
+          the project has yet to be fully endorsed by the ASF.</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    function compressedNavbar() {
+      $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= 100) {
+          $('.navbar-global').addClass('navbar-compressed');
+        } else {
+          $('.navbar-global').removeClass('navbar-compressed');
+        }
+      });
+    }
+
+    function modalPopup() {
+      $("#myModal").modal('show');
+    }
+
+    function carousel() {
+      $('#myCarousel').carousel();
+    }
+
+    function filteringScript() {
+      $('input[type="checkbox"]').change(function() {
+        var $checked = $('input[type="checkbox"]').filter(':checked');
+        if ($checked.length) {
+          var cat_filters = $checked.map(function() {
+            return $(this).val().toLowerCase();
+          }).get();
+          var key_filters = $checked.map(function() {
+            return $(this).val().toLowerCase();
+          }).get();
+          $('.panel').each(function() {
+            var $t = $(this);
+            if (cat_filters.indexOf($t.data('filter-cat').toLowerCase()) >= 0) {
+              $t.show();
+            } else {
+              $t.hide();
+            }
+            if (key_filters.indexOf($t.data('filter-key').toLowerCase()) >= 0) {
+              $t.show();
+            } else {
+              $t.hide();
+            }
+          });
+        } else {
+          $('.panel').show();
+        }
+      });
+    }
+    $(function() {
+      compressedNavbar();
+      modalPopup();
+      carousel();
+      filteringScript();
+    });
+  </script>
+</body>
+
+</html>

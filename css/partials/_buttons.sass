@@ -18,10 +18,16 @@ button,
   //font-size: $base-unit-rem*1.5
   //padding: $base-unit-rem $base-unit-rem $base-unit-rem*.75
   line-height: 1
-  padding: 1em 1em .75em
+  padding: .75em 1em .5em
   z-index: 100
   &:hover
     z-index: 101
+  &.dropdown-toggle > span.caret
+    margin-left: $base-unit-em
+a.button
+  padding: .75em 1em 0.5em
+  text-shadow: none
+  text-decoration: none
 
 .button-action
   @extend button
@@ -30,7 +36,7 @@ button,
   @extend button
   color: $color-accent-default !important
   border-color: $color-accent-default
-  background-color: transparentize($color-white,0.16)
+  background-color: transparentize($color-streamlio-white,0.16)
   &:hover
     color: white !important
     border-color: white
@@ -44,12 +50,13 @@ button,
   &:hover
     color: $color-accent-default !important
     border-color: $color-accent-default
-    background-color: transparentize($color-white,0.16)
+    background-color: transparentize($color-streamlio-white,0.16)
 
 .button-disabled
   opacity: .62
   cursor: default
   pointer-events: none
+  box-shadow: none
 
 @include generate-button-classes-for-streamlio-colors
 //.button-apple

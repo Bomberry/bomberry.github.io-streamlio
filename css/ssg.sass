@@ -1,15 +1,61 @@
+@charset 'utf-8'
 /* CSS Document */
 
-//  Variable Overides
-//  Variable overides must go before variables declaired in the @import file(s)
+
+//  Main Config Import File
+//  REQUIRED (loads all of the other main SASS components)
+@import "config"
+//  For debugging here is the config statement
+// @import "variables"
+// @import "bootstrap"
+// @import "functions"
+// @import "mixins"
+// @import "generators"
+// @import "overrides"
+// @import "typography"
+// @import "style"
 
 
-//  Import Files
-//  When importing "stubs" (fragements), the preceding "_" nor the ".sass" extension are required.
-@import "variables"
-@import "bootstrap"
-@import "functions"
-@import "generators"
-@import "mixins"
-//@import "overrides"
-//@import "style"
+//  @import partials
+//  These provide additional formatting and styling with images and gradients with maps defined in variables
+@import "partials/backgroundGradients"
+@import "partials/backgroundImages"
+
+//  component partials
+@import "partials/buttons"
+@import "partials/figures"
+@import "partials/separators"
+@import "partials/tables"
+
+//  styling partials
+@import "partials/articleCardList"
+@import "partials/blockquote"
+@import "partials/cardList"
+@import "partials/cardList-2Col"
+@import "partials/cardListBlock"
+@import "partials/carouselBlock"
+@import "partials/content-2Col"
+@import "partials/featureList"
+@import "partials/globalFooter"
+@import "partials/globalNav"
+@import "partials/imageBlock"
+@import "partials/introTextBlock"
+@import "partials/modal-mediaList"
+@import "partials/pageTitleBlock"
+@import "partials/profile"
+@import "partials/row2ColCallToAction"
+@import "partials/row3CardList"
+@import "partials/rowFeatureList"
+
+//@import "partials/dev"
+//@import "partials/dev-1"
+//@import "partials/dev-2"
+
+
+//  styling guide partial
+@import "ssg/ssg"
+
+
+//  debug styling override
+//  set the global-debug flag (true/false) in the variables/units partial.
+@import "partials/debug"

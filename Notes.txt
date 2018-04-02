@@ -7,6 +7,21 @@ Item Incomplete (before completion)
 √   Item complete (before deletion)
 
 
+Check to see why Carousel1 is showing auto translation from french in Chrome.
+check for pagination for blog and news pages.
+Think about creating a sort/filter system in the subnav so that it's always accessable when scroling down a page.
+
+
+GlobalNav
+√   Move the submenu up to under the link.
+
+NOTES:
+√   Figure > IMG > create CSS style to make a 50% (40%)
+p.body-size should be 1.25rem
+Refactor all "cardList" Card-List-Block and CardListBlock and CardList-2Col
+
+
+
 TYPOGRAPHY
 √   Changing in Chrome at 100% and 90% (resolution)
 
@@ -31,26 +46,25 @@ block-content-2col.html the first caption should have light text on the dark bac
 
 
 CAROUSEL
-Test Putting content blocks into carousel-item
-Check carousel autoplay by default (create toggle element in data-autoplay:false)
-Create an example with content-2col with test on left and image on right
+√   Test Putting content blocks into carousel-item
+√   Check carousel autoplay by default (create toggle element in data-autoplay:false)
+√   Create an example with content-2col with test on left and image on right
+-- Ask luc about preprocessing and generating tags for HTML code for Carousel
 
 
 TYPOGRAPHY
-Find and replace MARTEL with font that is similar but with Italic sets or generate a new family
+√   Find and replace MARTEL with font that is similar but with Italic sets or generate a new family
 
 
 NAV (GLOBAL)
-Fix dropdown placement (moz/fox?)
+√   Fix dropdown placement (moz/fox?)
 Add sub-nav bar with breadcrumb/inline links (anchors) for documents with several sections/parts
 
 
-BUTTONS
-
 CARD LIST
-Filter(s) for card-list Category and Keywords (multi-dimension) Submit buttons
-One for Category and one for Keywords
-sample Categories and Keywords need to be data-attribute for each card.
+-   Filter(s) for card-list Category and Keywords (multi-dimension) Submit buttons
+√   One for Category and one for Keywords
+√   sample Categories and Keywords need to be data-attribute for each card.
 Sample with image for info inline.
 
 
@@ -59,8 +73,16 @@ MEDIA LIST
 
 
 MEDIA LIST POPUP (Modal)
-Fix media list display
-Check to see that it's presentation is proper
+√   Fix media list display
+√   Check to see that it's presentation is proper
+
+
+MODAL
+Check to see if we can use iFramse in the Modal dialog and lazy-load the pages.
+
+buttons
+Make sure they can be links, and how to do it.
+
 
 
 MISCELLANEOUS
@@ -70,8 +92,8 @@ Include updated snippets for Dreamweaver in the source root folder
 
 
 THEME/STYLE
-Remove hardcoded values, or overwright with styling so that content-blocks have the same easy to use callout as buttons
-cascade styling colors to buttons. Wont overwright button styles that are hardcoded (class) inline
+Remove hardcoded values, or overwrite with styling so that content-blocks have the same easy to use callout as buttons
+cascade styling colors to buttons. Wont overwrite button styles that are hardcoded (class) inline
 
 
 MISCELLANEOUS

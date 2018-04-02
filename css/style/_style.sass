@@ -1,0 +1,72 @@
+// Styling.sass
+// Styling for basic and generated elements
+
+code
+  @extend .bg-color-hopbush-tint-3
+  @extend .color-hopbush-shade-3
+
+.box-shadow
+  box-shadow: $global-box-shadow
+  &-medium
+    box-shadow: $global-box-shadow-medium
+  &-small
+    box-shadow: $global-box-shadow-small
+  &-small-white
+    box-shadow: $global-box-shadow-small-white
+
+
+.no-border
+  border: none
+.no-shadow
+  box-shadow: none
+.no-transition
+  transition: none
+
+
+.colorTest001
+  @extend .color-glacier-tint-3
+.colorTest002
+  color: get-shade(glacier, 3)
+
+.color-set-default
+  @include set-text-with-color(dark-gray)
+.color-theme-default
+  @include set-text-color-theme(dark-gray)
+
+@include generate-text-with-color
+@include generate-text-color-themes
+@include generate-text-color-themes-alt
+@include generate-text-color-themes-light
+@include generate-text-color-themes-light-mono
+@include generate-text-color-themes-dark
+@include generate-text-color-themes-dark-mono
+
+//  STYLING - TO MOVE AND COMPLETE
+/*    From: _block-introTextBlock.sass  */
+//.textBlock-accentColor-default
+//    h1, h2, h3, h4, h5
+//      color: $font-color-default
+//    p
+//      color: $color-primary
+//.textBlock-accentColor-default
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-default
+//    p
+//      color: $font-color-default
+//.textBlock-accentColor-currentTheme
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-accent-default
+//    p
+//      color: $font-color-default
+// .textBlock-accentColor-glacier
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-accent-default
+//.textBlock-accentColor-streamlio-cyan
+//    h1, h2, h3, h4, h5, a
+//      color: get-color(streamlio-cyan)
+//.textBlock-accentColor-streamlio-blue
+//    h1, h2, h3, h4, h5, a
+//      color: $font-color-accent-default
+//.textBlock-accentColor-streamlio-green
+//    h1, h2, h3, h4, h5, a
+//      @extend .color-streamlio-green

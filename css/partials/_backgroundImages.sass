@@ -72,6 +72,11 @@
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-9)}")
   &.plexus-10
     background-image: url("../media/background/#{map-get($streamlio-background-images, plexus-10)}")
+  //Transparent images for use on background color or gradient
+  &.t-plexus-1
+    background-image: url("../media/background/#{map-get($streamlio-transparent-background-images, t-plexus-1)}")
+  &.t-plexus-2
+    background-image: url("../media/background/#{map-get($streamlio-transparent-background-images, t-plexus-2)}")
   //lower opacity and placed before CSS object
   &.plexus-1-subtle::before
     @extend %image-subtle

@@ -13,7 +13,8 @@ $streamlio-colors-complete: ()
 //  .color-colorName-shade-shadeValue
 @each $key, $value in $streamlio-colors
   //  Colors
-  $streamlio-colors-complete: append($streamlio-colors-complete, "#{$key}: #{$value}")
+  //$streamlio-colors-complete: append($streamlio-colors-complete, "#{$key}: #{$value}")
+  $streamlio-colors-complete: append($streamlio-colors-complete, "#{$key} #{$value}")
   //  Tints
   @for $i from 1 to 4
     $increment: $i * 10
@@ -27,7 +28,7 @@ $streamlio-colors-complete: ()
 
 
 //  Generates placeholder entries for the previous color set
-@each $key, $value in $streamlio-colors
+@each $key, $value in $streamlio-colors-complete
   %color-#{$key}
     color: #{$value}
   %bg-color-#{$key}

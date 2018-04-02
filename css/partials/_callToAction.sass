@@ -1,4 +1,4 @@
-//  row2ColCallToAction.sass
+//  callToAction.sass
 
 
 
@@ -12,24 +12,19 @@
     text-align: center
   p:not(:last-child)
     padding-bottom: ($global-block-padding/2)
+  p:last-of-type
+    padding-bottom: $global-block-padding
   a
     text-decoration: none
     &:hover
       text-decoration: underline
-  //button
-    color: $color-accent-default
-    border-width: 1px
-    border-color: $color-accent-default
-    border-style: solid
-    background-color: transparentize($color-white,0.16)
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15)
-    transition: box-shadow 0.15s ease-in-out
-    &:hover
-      color: white
-      background-color: transparentize($color-accent-default,0.16)
-      //@extend: .bg-color-light-gray
-      box-shadow: 0 5px 15px rgba(0,0,0,0.35)
-      z-index: 100
+    &.footer-button
+      position: absolute
+      bottom: 0
+      left: $base-unit-rem
+      right: $base-unit-rem
+      margin-bottom: $base-unit-rem
+
 
   .block-callToAction
     padding-top: $global-block-padding-2

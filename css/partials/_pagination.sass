@@ -1,0 +1,25 @@
+//  pagination.sass
+
+
+ul.pagination,
+ul.pager
+  > li
+    > a,
+    > span
+      @extend .button-glacier
+      font-size: $font-size-subtitle-small
+      line-height: $font-size-subtitle-small
+      padding: .75em 1em .5em
+      &.fa
+        font-size: $font-size-subtitle-small
+        line-height: $font-size-subtitle-small
+        padding: .5em 1em .5em
+    &.active
+      > a,
+      > span
+        @extend .button-dark-gray-reverse
+    &.next,
+    &.previous
+      @include border-radius(.5em)
+    &.disabled
+      @extend .button-disabled

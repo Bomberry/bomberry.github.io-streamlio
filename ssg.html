@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +40,7 @@
 <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
 
 
-<title>Streamlio</title>
+<title>Streamlio &mdash; Website Styling Guide</title>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -50,276 +50,885 @@
 </head>
 
 
+
 <body>
-<nav class="nav">
-  <h4 class="navbar-text">Streamlio Web Style Guide</h4>
-</nav>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-md-2 sidebar">
-      <header>
-      <h4>Table of Contents</h4>
-      </header>
-      <h5><a>Colors</a></h5>
-      <ul class="nav nav-stacked">
-        <li><a>Primary</a></li>
-        <li><a>Grays</a></li>
-        <li><a>Secondary</a></li>
-      </ul>
-      <h5><a>Blocks</a></h5>
-      <ul class="nav nav-stacked">
-        <li><a>baseIntroText</a></li>
-        <li><a>blockCardList</a></li>
-        <li><a>cardList</a></li>
-        <li><a>carouselBlock</a></li>
-        <li><a>globalFooter</a></li>
-        <li><a>globalNav</a></li>
-        <li><a>pageTitleBlock</a></li>
-        <li><a>row3CardList</a></li>
-        <li><a>rowFeatureList</a></li>
-        <li><a>ENTER_A_NAME</a></li>
-      </ul>
+<!-- Global Nav -->
+<nav id="globalNavBar" class="navbar navbar-fixed-top navbar-global" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="brand" src="media/logo/Streamlio-Logo.svg" alt="Streamlio logo"></a>
     </div>
 
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-      <article class="row">
-        <header>
-          <h3>Colors</h3>
-          <p>The Streamlio colors are seperated into three groups: primary colors, gray colors, and secondary colors.</p>
-        </header>
-        <section class="row">
-          <h4>Primary Colors</h4>
-          <div class="color-block col-xs-1">
-            <ul>
-              <li class="title">1. Streamlio Cyan</li>
-              <li class="bg-color-streamlio-cyan-tint-3"> </li>
-              <li class="bg-color-streamlio-cyan-tint-2"> </li>
-              <li class="bg-color-streamlio-cyan-tint-1"> </li>
-              <li class="bg-color-streamlio-cyan">1. Streamlio Cyan</li>
-              <li class="bg-color-streamlio-cyan-shade-1"> </li>
-              <li class="bg-color-streamlio-cyan-shade-2"> </li>
-              <li class="bg-color-streamlio-cyan-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-streamlio-blue col-xs-1">
-            <ul>
-              <li class="title">2. Streamlio Blue</li>
-              <li class="bg-color-streamlio-blue-tint-3"> </li>
-              <li class="bg-color-streamlio-blue-tint-2"> </li>
-              <li class="bg-color-streamlio-blue-tint-1"> </li>
-              <li class="bg-color-streamlio-blue">2. Streamlio Blue</li>
-              <li class="bg-color-streamlio-blue-shade-1"> </li>
-              <li class="bg-color-streamlio-blue-shade-2"> </li>
-              <li class="bg-color-streamlio-blue-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-streamlio-green col-xs-1">
-            <ul>
-              <li class="title">3. Streamlio Green</li>
-              <li class="bg-color-streamlio-green-tint-3"> </li>
-              <li class="bg-color-streamlio-green-tint-2"> </li>
-              <li class="bg-color-streamlio-green-tint-1"> </li>
-              <li class="bg-color-streamlio-green">3. Streamlio Green</li>
-              <li class="bg-color-streamlio-green-shade-1"> </li>
-              <li class="bg-color-streamlio-green-shade-2"> </li>
-              <li class="bg-color-streamlio-green-shade-3"> </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="row">
-          <h4>Gray Colors</h4>
-          <div class="color-block bg-color-light-gray col-xs-1">
-            <ul>
-              <li class="bg-color-light-gray-tint-3"> </li>
-              <li class="bg-color-light-gray-tint-2"> </li>
-              <li class="bg-color-light-gray-tint-1"> </li>
-              <li class="bg-color-light-gray">4. Light Gray</li>
-              <li class="bg-color-light-gray-shade-1"> </li>
-              <li class="bg-color-light-gray-shade-2"> </li>
-              <li class="bg-color-light-gray-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-dark-gray col-xs-1">
-            <ul>
-              <li class="bg-color-dark-gray-tint-3"> </li>
-              <li class="bg-color-dark-gray-tint-2"> </li>
-              <li class="bg-color-dark-gray-tint-1"> </li>
-              <li class="bg-color-dark-gray">5. Dark Gray</li>
-              <li class="bg-color-dark-gray-shade-1"> </li>
-              <li class="bg-color-dark-gray-shade-2"> </li>
-              <li class="bg-color-dark-gray-shade-3"> </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="row">
-          <h4>Secondary Colors</h4>
-          <div class="color-block bg-color-chestnut-rose col-xs-1">
-            <ul>
-              <li class="bg-color-chestnut-rose-tint-3"> </li>
-              <li class="bg-color-chestnut-rose-tint-2"> </li>
-              <li class="bg-color-chestnut-rose-tint-1"> </li>
-              <li class="bg-color-chestnut-rose">6. Chestnut Rose</li>
-              <li class="bg-color-chestnut-rose-shade-1"> </li>
-              <li class="bg-color-chestnut-rose-shade-2"> </li>
-              <li class="bg-color-chestnut-rose-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-fuchsia-pink col-xs-1">
-            <ul>
-              <li class="bg-color-fuchsia-pink-tint-3"> </li>
-              <li class="bg-color-fuchsia-pink-tint-2"> </li>
-              <li class="bg-color-fuchsia-pink-tint-1"> </li>
-              <li class="bg-color-fuchsia-pink">7. Fuchsia Pink</li>
-              <li class="bg-color-fuchsia-pink-shade-1"> </li>
-              <li class="bg-color-fuchsia-pink-shade-2"> </li>
-              <li class="bg-color-fuchsia-pink-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-tacha col-xs-1">
-            <ul>
-              <li class="bg-color-tacha-tint-3"> </li>
-              <li class="bg-color-tacha-tint-2"> </li>
-              <li class="bg-color-tacha-tint-1"> </li>
-              <li class="bg-color-tacha">8. Tacha</li>
-              <li class="bg-color-tacha-shade-1"> </li>
-              <li class="bg-color-tacha-shade-2"> </li>
-              <li class="bg-color-tacha-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-indigo col-xs-1">
-            <ul>
-              <li class="bg-color-indigo-tint-3"> </li>
-              <li class="bg-color-indigo-tint-2"> </li>
-              <li class="bg-color-indigo-tint-1"> </li>
-              <li class="bg-color-indigo">9. Indigo</li>
-              <li class="bg-color-indigo-shade-1"> </li>
-              <li class="bg-color-indigo-shade-2"> </li>
-              <li class="bg-color-indigo-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-luxor-gold col-xs-1">
-            <ul>
-              <li class="bg-color-luxor-gold-tint-3"> </li>
-              <li class="bg-color-luxor-gold-tint-2"> </li>
-              <li class="bg-color-luxor-gold-tint-1"> </li>
-              <li class="bg-color-luxor-gold">10. Luxor Gold</li>
-              <li class="bg-color-luxor-gold-shade-1"> </li>
-              <li class="bg-color-luxor-gold-shade-2"> </li>
-              <li class="bg-color-luxor-gold-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-night-shadz col-xs-1">
-            <ul>
-              <li class="bg-color-night-shadz-tint-3"> </li>
-              <li class="bg-color-night-shadz-tint-2"> </li>
-              <li class="bg-color-night-shadz-tint-1"> </li>
-              <li class="bg-color-night-shadz">11. Night Shadz</li>
-              <li class="bg-color-night-shadz-shade-1"> </li>
-              <li class="bg-color-night-shadz-shade-2"> </li>
-              <li class="bg-color-night-shadz-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-apple col-xs-1">
-            <ul>
-              <li class="bg-color-apple-tint-3"> </li>
-              <li class="bg-color-apple-tint-2"> </li>
-              <li class="bg-color-apple-tint-1"> </li>
-              <li class="bg-color-apple">12. Apple</li>
-              <li class="bg-color-apple-shade-1"> </li>
-              <li class="bg-color-apple-shade-2"> </li>
-              <li class="bg-color-apple-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-vivid-violet col-xs-1">
-            <ul>
-              <li class="bg-color-vivid-violet-tint-3"> </li>
-              <li class="bg-color-vivid-violet-tint-2"> </li>
-              <li class="bg-color-vivid-violet-tint-1"> </li>
-              <li class="bg-color-vivid-violet">13. Vivid Violet</li>
-              <li class="bg-color-vivid-violet-shade-1"> </li>
-              <li class="bg-color-vivid-violet-shade-2"> </li>
-              <li class="bg-color-vivid-violet-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-hopbush col-xs-1">
-            <ul>
-              <li class="bg-color-hopbush-tint-3"> </li>
-              <li class="bg-color-hopbush-tint-2"> </li>
-              <li class="bg-color-hopbush-tint-1"> </li>
-              <li class="bg-color-hopbush">14. Hopbush</li>
-              <li class="bg-color-hopbush-shade-1"> </li>
-              <li class="bg-color-hopbush-shade-2"> </li>
-              <li class="bg-color-hopbush-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-amethyst col-xs-1">
-            <ul>
-              <li class="bg-color-amethyst-tint-3"> </li>
-              <li class="bg-color-amethyst-tint-2"> </li>
-              <li class="bg-color-amethyst-tint-1"> </li>
-              <li class="bg-color-amethyst">15. Amethyst</li>
-              <li class="bg-color-amethyst-shade-1"> </li>
-              <li class="bg-color-amethyst-shade-2"> </li>
-              <li class="bg-color-amethyst-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-twine col-xs-1">
-            <ul>
-              <li class="bg-color-twine-tint-3"> </li>
-              <li class="bg-color-twine-tint-2"> </li>
-              <li class="bg-color-twine-tint-1"> </li>
-              <li class="bg-color-twine">16. Twine</li>
-              <li class="bg-color-twine-shade-1"> </li>
-              <li class="bg-color-twine-shade-2"> </li>
-              <li class="bg-color-twine-shade-3"> </li>
-            </ul>
-          </div>
-          <div class="color-block bg-color-glacier col-xs-1">
-            <ul>
-              <li class="bg-color-glacier-tint-3"> </li>
-              <li class="bg-color-glacier-tint-2"> </li>
-              <li class="bg-color-glacier-tint-1"> </li>
-              <li class="bg-color-glacier">17. Glacier</li>
-              <li class="bg-color-glacier-shade-1"> </li>
-              <li class="bg-color-glacier-shade-2"> </li>
-              <li class="bg-color-glacier-shade-3"> </li>
-            </ul>
-          </div>
-        </section>
-      </article>
-
-
-      <article class="row">
-        <header>
-          <h3>Blocks</h3>
-          <p>Blocks are modular component pages that are used to create sections and templates.</p>
-        </header>
-        <section class="row">
-          <h4>Blocks</h4>
-          <div class="color-block col-xs-1">
-            <ul class="nav nav-stacked">
-              <li><a>baseIntroText</a></li>
-              <li><a>blockCardList</a></li>
-              <li><a>cardList</a></li>
-              <li><a>carouselBlock</a></li>
-              <li><a>globalFooter</a></li>
-              <li><a>globalNav</a></li>
-              <li><a>pageTitleBlock</a></li>
-              <li><a>row3CardList</a></li>
-              <li><a>rowFeatureList</a></li>
-              <li><a>ENTER_A_NAME</a></li>
-            </ul>
-
-          </div>
-        </section>
-      </article>
-
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="global-navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+<!--        <li><a alt="What is Streamlio" href="#">What is Streamlio?</a></li>-->
+        <li class="dropdown">
+          <a alt="Product" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Colors<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="disabled"><a alt="Colors" href="#Colors">Colors</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a alt="Primary Colors" href="#primaryColors">Primary Colors</a></li>
+            <li><a alt="Gray Tints &amp; Shades" href="#grayTintsShades">Gray Tints &amp; Shades</a></li>
+            <li><a alt="Secondary Colors" href="#secondaryColors">Secondary Colors</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a alt="Resources" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Styling<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a alt="Fonts" href="#fonts">Fonts</a></li>
+            <li><a alt="Typography" href="#typography">Typography</a></li>
+            <li><a alt="Coloring" href="#coloring">Coloring</a></li>
+            <li><a alt="Coloring" href="#gradients">Gradients</a></li>
+            <li><a alt="Background Images" href="#backgroundImages">Background Images</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a alt="Buttons" href="#buttons">Buttons</a></li>
+            <li><a alt="Figures" href="#figures">Figures</a></li>
+            <li><a alt="Separators" href="#separators">Separators</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a alt="About" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blocks<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a alt="baseIntroText" href="#baseIntroText">baseIntroText</a></li>
+            <li><a alt="blockCardList" href="#blockCardList">blockCardList</a></li>
+            <li><a alt="cardList" href="#cardList">cardList</a></li>
+            <li><a alt="carouselBlock" href="#carouselBlock">carouselBlock</a></li>
+            <li><a alt="globalFooter" href="#globalFooter">globalFooter</a></li>
+            <li><a alt="globalNav" href="#globalNav">globalNav</a></li>
+            <li><a alt="pageTitleBlock" href="#pageTitleBlock">pageTitleBlock</a></li>
+            <li><a alt="row3CardList" href="#row3CardList">row3CardList</a></li>
+            <li><a alt="rowFeatureList" href="#rowFeatureList">rowFeatureList</a></li>
+            <li><a alt="ENTER_A_NAME" href="#ENTER_A_NAME">ENTER_A_NAME</a></li>
+          </ul>
+        </li>
+<!--        <li class="navbar-toggler" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle navigation"><a alt="Search"><span class="navbar-toggler-icon fa fa-search"></span></a></li>-->
+<!--        <li><a alt="Try Now" href="#" class="button-action button-glacier-reverse">Try Now</a></li>-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+<!-- Search Bar module -->
+  <div class="collapse" id="navbar-search">
+    <div class="">
+      <form class="search-form" id="" action="">
+      <div class="input-group input-group-lg">
+      <input type="text" name="search" class="search form-control" placeholder="Search">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+<!--      <span class="input-group-addon search-close" id="basic-addon2"><i class="fa fa-window-close" aria-hidden="true"></i></span>-->
+      </div>
+      </form>
     </div>
   </div>
+<!-- / Search Bar module -->
+</nav>
+
+
+<!--block-pageTitleBlock-->
+<div class="container-fluid pageTitleBlock bg-image plexus-5">
+    <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h1>Streamlio<br/>Website Styling Guide</h1>
+          <p>Version 0.1 &mdash; 20180222</p>
+      </div>
+    </div>
 </div>
+
+
+
+<div class="container-fluid">
+  <div class="row content-block">
+    <div class="col-xs-10 col-xs-offset-1">
+
+      <!-- COLORS -->
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0">
+          <article>
+            <header id="colors" class="pad-top">
+              <h1>Colors</h1>
+              <p>The Streamlio colors are seperated into three groups: primary colors, gray colors, and secondary colors.</p>
+              <p>Color and background&ndash;color attributes can be set using <code>.color-COLORNAME</code>/<code>.color-COLORNAME-TINTSHADE-NUMBER</code> or <code>.bg-color-COLORNAME</code>/<code>.bg-color-COLORNAME-TINTSHADE-NUMBER</code> respectivly.</p>
+            </header>
+            <section id="primaryColors" class="pad-top">
+              <h2>Primary Colors</h2>
+              <p>The primary colors are dirived from the logo colors, and should be used sparingly on the site.</p>
+            </section>
+            <section class="row">
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-streamlio-cyan-tint-3 color-streamlio-cyan-shade-3">Tint 3</li>
+                  <li class="bg-color-streamlio-cyan-tint-2 color-streamlio-cyan-shade-3">Tint 2</li>
+                  <li class="bg-color-streamlio-cyan-tint-1 color-streamlio-cyan-shade-3">Tint 1</li>
+                  <li class="bg-color-streamlio-cyan">Streamlio Cyan</li>
+                  <li class="bg-color-streamlio-cyan-shade-1 color-streamlio-cyan-tint-3">Shade 1</li>
+                  <li class="bg-color-streamlio-cyan-shade-2 color-streamlio-cyan-tint-3">Shade 1</li>
+                  <li class="bg-color-streamlio-cyan-shade-3 color-streamlio-cyan-tint-3">Shade 1</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-streamlio-blue-tint-3 color-streamlio-blue-shade-3">Tint 3</li>
+                  <li class="bg-color-streamlio-blue-tint-2 color-streamlio-blue-shade-3">Tint 2</li>
+                  <li class="bg-color-streamlio-blue-tint-1 color-streamlio-blue-shade-3">Tint 1</li>
+                  <li class="bg-color-streamlio-blue">Streamlio Blue</li>
+                  <li class="bg-color-streamlio-blue-shade-1 color-streamlio-blue-tint-3">Shade 1</li>
+                  <li class="bg-color-streamlio-blue-shade-2 color-streamlio-blue-tint-3">Shade 2</li>
+                  <li class="bg-color-streamlio-blue-shade-3 color-streamlio-blue-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-streamlio-green-tint-3 color-streamlio-green-shade-3">Tint 3</li>
+                  <li class="bg-color-streamlio-green-tint-2 color-streamlio-green-shade-3">Tint 2</li>
+                  <li class="bg-color-streamlio-green-tint-1 color-streamlio-green-shade-3">Tint 1</li>
+                  <li class="bg-color-streamlio-green">Streamlio Green</li>
+                  <li class="bg-color-streamlio-green-shade-1 color-streamlio-green-tint-3">Shade 1</li>
+                  <li class="bg-color-streamlio-green-shade-2 color-streamlio-green-tint-3">Shade 2</li>
+                  <li class="bg-color-streamlio-green-shade-3 color-streamlio-green-tint-3">Shade 3</li>
+                </ul>
+              </div>
+            </section>
+            <section id="grayTintsShades" class="pad-top">
+              <h2>Gray Colors</h2>
+              <p>The gray serires of colors are used for most of the text and captions on the site. The default body colors is <code>.color-dark-gray</code>.</p>
+            </section>
+            <section class="row">
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-light-gray-tint-3 color-light-gray-shade-3">Tint 3</li>
+                  <li class="bg-color-light-gray-tint-2 color-light-gray-shade-3">Tint 2</li>
+                  <li class="bg-color-light-gray-tint-1 color-light-gray-shade-3">Tint 1</li>
+                  <li class="bg-color-light-gray">Light Gray</li>
+                  <li class="bg-color-light-gray-shade-1 color-light-gray-tint-3">Shade 1</li>
+                  <li class="bg-color-light-gray-shade-2 color-light-gray-tint-3">Shade 2</li>
+                  <li class="bg-color-light-gray-shade-3 color-light-gray-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-dark-gray-tint-3 color-dark-gray-shade-3">Tint 3</li>
+                  <li class="bg-color-dark-gray-tint-2 color-dark-gray-shade-3">Tint 2</li>
+                  <li class="bg-color-dark-gray-tint-1 color-dark-gray-shade-3">Tint 1</li>
+                  <li class="bg-color-dark-gray">Dark  Gray</li>
+                  <li class="bg-color-dark-gray-shade-1 color-dark-gray-tint-3">Shade 1</li>
+                  <li class="bg-color-dark-gray-shade-2 color-dark-gray-tint-3">Shade 2</li>
+                  <li class="bg-color-dark-gray-shade-3 color-dark-gray-tint-3">Shade 3</li>
+                </ul>
+              </div>
+            </section>
+            <section id="secondaryColors" class="pad-top">
+              <h2>Secondary Colors</h2>
+              <p>The gray serires of colors are used for most of the text and captions on the site. The default body colors is <code>.color-dark-gray</code>.</p>
+            </section>
+            <section class="row">
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-chestnut-rose-tint-3 color-chestnut-rose-shade-3">Tint 3</li>
+                  <li class="bg-color-chestnut-rose-tint-2 color-chestnut-rose-shade-3">Tint 2</li>
+                  <li class="bg-color-chestnut-rose-tint-1 color-chestnut-rose-shade-3">Tint 1</li>
+                  <li class="bg-color-chestnut-rose">Chestnut Rose</li>
+                  <li class="bg-color-chestnut-rose-shade-1 color-chestnut-rose-tint-3">Shade 1</li>
+                  <li class="bg-color-chestnut-rose-shade-2 color-chestnut-rose-tint-3">Shade 2</li>
+                  <li class="bg-color-chestnut-rose-shade-3 color-chestnut-rose-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-fuchsia-pink-tint-3 color-fuchsia-pink-shade-3">Tint 3</li>
+                  <li class="bg-color-fuchsia-pink-tint-2 color-fuchsia-pink-shade-3">Tint 2</li>
+                  <li class="bg-color-fuchsia-pink-tint-1 color-fuchsia-pink-shade-3">Tint 1</li>
+                  <li class="bg-color-fuchsia-pink">Fuchsia Pink</li>
+                  <li class="bg-color-fuchsia-pink-shade-1 color-fuchsia-pink-tint-3">Shade 1</li>
+                  <li class="bg-color-fuchsia-pink-shade-2 color-fuchsia-pink-tint-3">Shade 2</li>
+                  <li class="bg-color-fuchsia-pink-shade-3 color-fuchsia-pink-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-tacha-tint-3 color-tacha-shade-3">Tint 3</li>
+                  <li class="bg-color-tacha-tint-2 color-tacha-shade-3">Tint 2</li>
+                  <li class="bg-color-tacha-tint-1 color-tacha-shade-3">Tint 1</li>
+                  <li class="bg-color-tacha">Tacha</li>
+                  <li class="bg-color-tacha-shade-1 color-tacha-tint-3">Shade 1</li>
+                  <li class="bg-color-tacha-shade-2 color-tacha-tint-3">Shade 2</li>
+                  <li class="bg-color-tacha-shade-3 color-tacha-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-indiglow-tint-3 color-indiglow-shade-3">Tint 3</li>
+                  <li class="bg-color-indiglow-tint-2 color-indiglow-shade-3">Tint 2</li>
+                  <li class="bg-color-indiglow-tint-1 color-indiglow-shade-3">Tint 1</li>
+                  <li class="bg-color-indiglow">Indiglow</li>
+                  <li class="bg-color-indiglow-shade-1 color-indiglow-tint-3">Shade 1</li>
+                  <li class="bg-color-indiglow-shade-2 color-indiglow-tint-3">Shade 2</li>
+                  <li class="bg-color-indiglow-shade-3 color-indiglow-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-luxor-gold-tint-3 color-luxor-gold-shade-3">Tint 3</li>
+                  <li class="bg-color-luxor-gold-tint-2 color-luxor-gold-shade-3">Tint 2</li>
+                  <li class="bg-color-luxor-gold-tint-1 color-luxor-gold-shade-3">Tint 1</li>
+                  <li class="bg-color-luxor-gold">Luxor Gold</li>
+                  <li class="bg-color-luxor-gold-shade-1 color-luxor-gold-tint-3">Shade 1</li>
+                  <li class="bg-color-luxor-gold-shade-2 color-luxor-gold-tint-3">Shade 2</li>
+                  <li class="bg-color-luxor-gold-shade-3 color-luxor-gold-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-night-shadz-tint-3 color-night-shadz-shade-3">Tint 3</li>
+                  <li class="bg-color-night-shadz-tint-2 color-night-shadz-shade-3">Tint 2</li>
+                  <li class="bg-color-night-shadz-tint-1 color-night-shadz-shade-3">Tint 1</li>
+                  <li class="bg-color-night-shadz">Night Shadz</li>
+                  <li class="bg-color-night-shadz-shade-1 color-night-shadz-tint-3">Shade 1</li>
+                  <li class="bg-color-night-shadz-shade-2 color-night-shadz-tint-3">Shade 2</li>
+                  <li class="bg-color-night-shadz-shade-3 color-night-shadz-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-apple-tint-3 color-apple-shade-3">Tint 3</li>
+                  <li class="bg-color-apple-tint-2 color-apple-shade-3">Tint 2</li>
+                  <li class="bg-color-apple-tint-1 color-apple-shade-3">Tint 1</li>
+                  <li class="bg-color-apple">Apple</li>
+                  <li class="bg-color-apple-shade-1 color-apple-tint-3">Shade 1</li>
+                  <li class="bg-color-apple-shade-2 color-apple-tint-3">Shade 2</li>
+                  <li class="bg-color-apple-shade-3 color-apple-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-vivid-violet-tint-3 color-vivid-violet-shade-3">Tint 3</li>
+                  <li class="bg-color-vivid-violet-tint-2 color-vivid-violet-shade-3">Tint 2</li>
+                  <li class="bg-color-vivid-violet-tint-1 color-vivid-violet-shade-3">Tint 1</li>
+                  <li class="bg-color-vivid-violet">Vivid Violet</li>
+                  <li class="bg-color-vivid-violet-shade-1 color-vivid-violet-tint-3">Shade 1</li>
+                  <li class="bg-color-vivid-violet-shade-2 color-vivid-violet-tint-3">Shade 2</li>
+                  <li class="bg-color-vivid-violet-shade-3 color-vivid-violet-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-hopbush-tint-3 color-hopbush-shade-3">Tint 3</li>
+                  <li class="bg-color-hopbush-tint-2 color-hopbush-shade-3">Tint 2</li>
+                  <li class="bg-color-hopbush-tint-1 color-hopbush-shade-3">Tint 1</li>
+                  <li class="bg-color-hopbush">Hopbush</li>
+                  <li class="bg-color-hopbush-shade-1 color-hopbush-tint-3">Shade 1</li>
+                  <li class="bg-color-hopbush-shade-2 color-hopbush-tint-3">Shade 2</li>
+                  <li class="bg-color-hopbush-shade-3 color-hopbush-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-amethyst-tint-3 color-amethyst-shade-3">Tint 3</li>
+                  <li class="bg-color-amethyst-tint-2 color-amethyst-shade-3">Tint 2</li>
+                  <li class="bg-color-amethyst-tint-1 color-amethyst-shade-3">Tint 1</li>
+                  <li class="bg-color-amethyst">Amethyst</li>
+                  <li class="bg-color-amethyst-shade-1 color-amethyst-tint-3">Shade 1</li>
+                  <li class="bg-color-amethyst-shade-2 color-amethyst-tint-3">Shade 2</li>
+                  <li class="bg-color-amethyst-shade-3 color-amethyst-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-twine-tint-3 color-twine-shade-3">Tint 3</li>
+                  <li class="bg-color-twine-tint-2 color-twine-shade-3">Tint 2</li>
+                  <li class="bg-color-twine-tint-1 color-twine-shade-3">Tint 1</li>
+                  <li class="bg-color-twine">Twine</li>
+                  <li class="bg-color-twine-shade-1 color-twine-tint-3">Shade 1</li>
+                  <li class="bg-color-twine-shade-2 color-twine-tint-3">Shade 2</li>
+                  <li class="bg-color-twine-shade-3 color-twine-tint-3">Shade 3</li>
+                </ul>
+              </div>
+              <div class="color-block col-sm-4">
+                <ul>
+                  <li class="bg-color-glacier-tint-3 color-glacier-shade-3">Tint 3</li>
+                  <li class="bg-color-glacier-tint-2 color-glacier-shade-3">Tint 2</li>
+                  <li class="bg-color-glacier-tint-1 color-glacier-shade-3">Tint 1</li>
+                  <li class="bg-color-glacier">Glacier</li>
+                  <li class="bg-color-glacier-shade-1 color-glacier-tint-3">Shade 1</li>
+                  <li class="bg-color-glacier-shade-2 color-glacier-tint-3">Shade 2</li>
+                  <li class="bg-color-glacier-shade-3 color-glacier-tint-3">Shade 3</li>
+                </ul>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <div class="block-separator"></div>
+
+      <!-- STYLING -->
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0">
+          <article>
+            <header id="fonts" class="pad-top">
+              <h1>Fonts</h1>
+              <p>The styling of the Streamlio website uses text, colors, gradients, and images from the branding guideline to keep a consistant visual message for the website.</p>
+            </header>
+            <section>
+              <h2>Main Font - Cambay - Sans Font</h2>
+              <p>The main font can be applied using <code>.font-sans</code> class.</p>
+              <blockquote><p class="font-sans">The primary font is Cambay, and is a sans-serif font. It is used for the main content of the website.</p></blockquote>
+            </section>
+            <section>
+              <h2>Alternate Font - Roboto - Sans Alt</h2>
+              <p>The alternate font can be applied using <code>.font-sans-alt</code> class.</p>
+              <blockquote><p class="font-sans-alt">The alternate primary font is Roboto, and is also a sans-serif font. It is used only in special cases.</p></blockquote>
+            </section>
+            <section>
+              <h2>Alternate Font Condenced - Roboto Condensed - Sans Condenced</h2>
+              <p>The alternate condenced font can be applied using <code>.font-sans-condensed</code> class.</p>
+              <blockquote><p class="font-sans-condensed">The alternate condenced font is Roboto Condenced, and is also a sans-serif font. It is used only in special cases.</p></blockquote>
+            </section>
+            <section>
+              <h2>Secondary Font - Martel - Serif Font</h2>
+              <p>The secondary font can be applied using <code>.font-serif</code> class.</p>
+              <blockquote><p class="font-serif">The secondary font is Martel, and is a serif font. It is used only in cases where personal emotion is expressed, such as a testimonial, or in a blockquote (tag/element). It is also used for <a href="#figures">figure</a> captions.</p></blockquote>
+            </section>
+            <section>
+              <h2>FontAwesome</h2>
+              <p>FontAwesome <span class="fa fa-font-awesome"></span> is used for icongraphs used throughtout the site.</p>
+            </section>
+          </article>
+
+          <article>
+            <header id="typography" class="introTextBlock pad-top">
+              <h1>Typography</h1>
+              <p>Type communicates the message. The following style convertions display how various HTML elements are styled and additional CSS styles for additional styling.</p>
+            </header>
+            <section class="introText-title title-extended">
+              <h2>Heading Tags</h2>
+              <p>Standard styles for h1-h6 tags. Heading elements have their own bottom padding keeping the verticle rhythm.</p>
+            </section>
+            <section class="guide-sample-block">
+              <h1>h1. heading</h1>
+              <h2>h2. heading</h2>
+              <h3>h3. heading</h3>
+              <h4>h4. heading</h4>
+              <h5>h5. heading</h5>
+              <h6>h6. heading</h6>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Paragraph Tags with Heading Classes</h2>
+              <p>Standard h1-h6 classes applied to p tags. Paragraph elements have their own bottom padding to keep the vertical rhythm.</p>
+            </section>
+            <section class="guide-sample-block">
+              <p class="h1">p.h1</p>
+              <p class="h2">p.h2</p>
+              <p class="h3">p.h3</p>
+              <p class="h4">p.h4</p>
+              <p class="h5">p.h5</p>
+              <p class="h6">p.h6</p>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Paragraph Styling</h2>
+              <p>Paragraph styling, and pagagraphs with CSS classes applied.In addition, paragraphs have a built in padding-bottom, except for the last paragraph in a parent block. Paragraph elements have their own bottom padding to keep the vertical rhythm.</p>
+              <p class="color-light-gray">Note: paragraphs tags have :not(:last-of-type) so that all subsequent p tags, sans last, have additional spacing to keep the vertical rhythm. See the above and this paragraph as an example.</p>
+            </section>
+            <section class="guide-sample-block">
+              <div class="block-separator-small">Paragraph (Default)</div>
+              <p class="element-marker marker-right"><span class="element-marker marker-left marker-offset">p. default paragraph no class</span></p>
+              <div class="block-separator-small">Title</div>
+              <p class="title-large element-marker marker-right"><span class="element-marker marker-left marker-offset">p.title-large</span> &mdash; This is a paragraph with the title-large class applied.</p>
+              <p class="title-normal element-marker marker-right"><span class="element-marker marker-left marker-offset">p.title-normal</span> &mdash; This is a paragraph with the title-normal class applied.</p>
+              <p class="title-small element-marker marker-right"><span class="element-marker marker-left marker-offset">p.title-small</span> &mdash; This is a paragraph with the title-small class applied.</p>
+              <div class="block-separator-small">Subtitle</div>
+              <p class="subtitle-large element-marker marker-right"><span class="element-marker marker-left marker-offset">p.subtitle-large</span> &mdash; This is a paragraph with the subtitle-large class applied.</p>
+              <p class="subtitle-normal element-marker marker-right"><span class="element-marker marker-left marker-offset">p.subtitle-normal</span> &mdash; This is a paragraph with the subtitle-normal class applied.</p>
+              <p class="subtitle-small element-marker marker-right"><span class="element-marker marker-left marker-offset">p.subtitle-small</span> &mdash; This is a paragraph with the subtitle-small class applied.</p>
+              <div class="block-separator-small">Heading</div>
+              <p class="heading-large element-marker marker-right"><span class="element-marker marker-left marker-offset">p.heading-large</span> &mdash; This is a paragraph with the heading-large class applied.</p>
+              <p class="heading-normal element-marker marker-right"><span class="element-marker marker-left marker-offset">p.heading-normal</span> &mdash; This is a paragraph with the heading-normal class applied.</p>
+              <p class="heading-small element-marker marker-right"><span class="element-marker marker-left marker-offset">p.heading-small</span> &mdash; This is a paragraph with the heading-small class applied.</p>
+              <div class="block-separator-small">Body</div>
+              <p class="body-larger element-marker marker-right"><span class="element-marker marker-left marker-offset">p.body-larger</span> &mdash; This is a paragraph with the body-larger class applied.</p>
+              <p class="body-large element-marker marker-right"><span class="element-marker marker-left marker-offset">p.body-large</span> &mdash; This is a paragraph with the body-large class applied.</p>
+              <p class="body-normal element-marker marker-right"><span class="element-marker marker-left marker-offset">p.body-normal</span> &mdash; This is a paragraph with the body-normal class applied.</p>
+              <p class="body-small element-marker marker-right"><span class="element-marker marker-left marker-offset">p.body-small</span> &mdash; This is a paragraph with the body-small class applied.</p>
+              <p class="body-smallest element-marker marker-right"><span class="element-marker marker-left marker-offset">p.body-smallest</span> &mdash; This is a paragraph with the body-smallest class applied.</p>
+            </section>
+          </article>
+
+          <article>
+            <header id="coloring" class="pad-top">
+              <h1>Coloring</h1>
+              <p>The styling of the Streamlio website uses text, colors, gradients, and images from the branding guideline to keep a consistant visual message for the website.</p>
+            </header>
+            <section>
+              <h2>Text Colors</h2>
+              <p>Any of the CSS tags can be assigned a color, and will propogate into childeren tags, unless there is a specific override for the tags. Simply include class <code>.color-COLOR_NAME</code> to style the tag(s).</p>
+              <h3 class="color-chestnut-rose-shade-2">H3 tag with <code>color-chestnut-rose-shade-2</code> applied.</h3>
+              <p class="color-amethyst-tint-1">This paragraph tag has a class with <code>.color-amethyst-tint-1</code> applied to it.</p>
+              <p>This is a sample paragraph with a <span class="color-apple">span</span> with <code>.color-apple</code> applied to it.</p>
+            </section>
+            <section>
+              <h2>Text Color Themes</h2>
+              <p>There are several color themes that can be applied, based on the either a single (streamlio) color or two (streamlio) colors.</p>
+            </section>
+            <section>
+              <header>
+                <h4>Color Set Default</h4>
+                <p>Default color set using <code>.color-set-default</code> class.</p>
+                <p>Set h1-h6, p and a(states) colors to dark-gray.</p>
+              </header>
+              <div class="color-set-default">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme Default</h4>
+                <p>Default color theme using <code>.color-theme-default</code> class.</p>
+                <p>Set h1-h3 colors to dark-gray, shade (3).</br>
+                Set h4-h6 colors to dark-gray, tint(3).</br>
+                Set p and a(states) colors to dark-gray.</p>
+              </header>
+              <div class="color-theme-default">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Single Color</h4>
+                <p>Color theme using <code>.text-color-COLOR_NAME</code>, example: <code>.text-color-streamlio-cyan</code></p>
+                <p>Set h1-h6, p and a(states) colors to COLOR_NAME.</p>
+              </header>
+              <div class="text-color-streamlio-cyan">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme</h4>
+                <p>Color theme using <code>.text-color-theme-COLOR_NAME</code>, example: <code>.text-color-theme-streamlio-cyan</code></p>
+                <p>Set h1-h3 colors to COLOR_NAME, shade (3).</br>
+                Set h4-h6 colors to COLOR_NAME, tint(3).</br>
+                Set p and a(states) COLOR_NAME.</p>
+              </header>
+              <div class="text-color-theme-streamlio-cyan">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme Alt</h4>
+                <p>Color theme using <code>.text-color-theme-alt-COLOR_NAME</code>, example: <code>.text-color-theme-alt-streamlio-cyan</code></p>
+                <p>Set h1-h3 colors to COLOR_NAME, shade (3).</br>
+                Set h4-h6 colors to COLOR_NAME, tint(3).</br>
+                Set p and a(states) COLOR_NAME.</p>
+              </header>
+              <div class="text-color-theme-alt-streamlio-cyan">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme Light</h4>
+                <p>Color theme using <code>.text-color-theme-light-COLOR_NAME</code>, example: <code>.text-color-theme-light-streamlio-green</code></p>
+                <p>Set h1-h2 colors to COLOR_NAME, tint (1).</br>
+                Set h3-h4 colors to COLOR_NAME, tint (2).</br>
+                Set h5-h6 colors to COLOR_NAME, tint(3).</br>
+                Set p and a(states) light-gray, tint(3).</p>
+              </header>
+              <div class="text-color-theme-light-streamlio-green">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme Lignt Mono</h4>
+                <p>Color theme using <code>.text-color-theme-light-mono-COLOR_NAME</code>, example: <code>.text-color-theme-light-mono-streamlio-green</code></p>
+              </header>
+              <div class="text-color-theme-light-mono-streamlio-green">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme Dark</h4>
+                <p>Color theme using <code>.text-color-theme-dark-COLOR_NAME</code>, example: <code>.text-color-theme-dark-streamlio-blue</code></p>
+                <p>Set h1-h2 colors to COLOR_NAME, shade (3).</br>
+                Set h3-h4 colors to COLOR_NAME, shade (2).</br>
+                Set h5-h6 colors to COLOR_NAME, shade(1).</br>
+                Set p and a(states) dark-gray, shade(3).</p>
+              </header>
+              <div class="text-color-theme-dark-streamlio-blue">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <header>
+                <h4>Color Theme Dark Mono</h4>
+                <p>Color theme using <code>.text-color-theme-dark-mono-COLOR_NAME</code>, example: <code>.text-color-theme-dark-mono-streamlio-blue</code></p>
+              </header>
+              <div class="text-color-theme-dark-mono-streamlio-blue">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>This is a paragraph, with a <a>link</a> to show color variations.</p>
+              </div>
+            </section>
+            <section>
+              <h2>Background Colors</h2>
+              <p>Any of the CSS tags can be assigned a background-color, and will apply to block the block level element, unless there is a specific override for a child tag. Simply include class <code>.bg-color-COLOR_NAME</code> to style the tag(s). This is especialy useful when applying a background color to a block level element.</p>
+              <h3 class="bg-color-chestnut-rose-tint-1">H3 tag with <code>.bg-color-chestnut-rose-tint-1</code> applied.</h3>
+              <p class="bg-color-amethyst-tint-1">This paragraph tag has a class with <code>.bg-color-amethyst-tint-1</code> applied to it.</p>
+              <p>This is a sample paragraph with a <span class="bg-color-apple">span</span> with <code>.bg-color-apple</code> applied to it, and another with <span class="bg-color-apple color-streamlio-white">span</span> with both <code>.bg-color-apple</code> and <code>.color-streamlio-white</code> applied to it.</p>
+            </section>
+          </article>
+          <article>
+            <header id="gradients" class="pad-top">
+              <h1>Gradients</h1>
+              <p>The styling of the Streamlio website uses text, colors, gradients, and images from the branding guideline to keep a consistant visual message for the website.</p>
+            </header>
+            <section>
+              <h2>Base Gradients</h2>
+              <p>The base gradients can be applied just like background colors, using the class <code>bg-gradient</code> followed by the gradient selector <code>gradient-GRADIENT_NUMBER</code>.</p>
+            </section>
+            <section class="row">
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-1"><h1>&nbsp;</h1><code>gradient-1</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-2"><h1>&nbsp;</h1><code>gradient-2</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-3"><h1>&nbsp;</h1><code>gradient-3</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-4"><h1>&nbsp;</h1><code>gradient-4</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-5"><h1>&nbsp;</h1><code>gradient-5</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-6"><h1>&nbsp;</h1><code>gradient-6</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-7"><h1>&nbsp;</h1><code>gradient-7</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-8"><h1>&nbsp;</h1><code>gradient-8</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-9"><h1>&nbsp;</h1><code>gradient-9</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-12 col-xs-offset-0 bg-gradient gradient-10"><h1>&nbsp;</h1><code>gradient-10</code><h1>&nbsp;</h1>
+              </div>
+            </section>
+            <section>
+              <h2>Advanced Gradients</h2>
+              <p>Additional gradients can be created by updating the <strong>sass</strong> file: <code>partials/_backgroundGradients.sass</code> and adding the gradient to the list.</p>
+            </section>
+          </article>
+          <article>
+            <header id="backgroundImages" class="pad-top">
+              <h1>Background Images</h1>
+              <p>The styling of the Streamlio website uses text, colors, gradients, and images from the branding guideline to keep a consistant visual message for the website.</p>
+            </header>
+            <section>
+              <h2>Plexus</h2>
+              <p>The primary colors are dirived from the logo colors, and should be used sparingly on the site.</p>
+            </section>
+            <section class="row">
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-1"><h1>&nbsp;</h1><code>plexus-1</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-2"><h1>&nbsp;</h1><code>plexus-2</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-3"><h1>&nbsp;</h1><code>plexus-3</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-4"><h1>&nbsp;</h1><code>plexus-4</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-5"><h1>&nbsp;</h1><code>plexus-5</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-6"><h1>&nbsp;</h1><code>plexus-6</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-7"><h1>&nbsp;</h1><code>plexus-7</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-8"><h1>&nbsp;</h1><code>plexus-8</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-9"><h1>&nbsp;</h1><code>plexus-9</code><h1>&nbsp;</h1>
+              </div>
+              <div class="col-xs-6 col-xs-offset-0 bg-image plexus-10"><h1>&nbsp;</h1><code>plexus-10</code><h1>&nbsp;</h1>
+              </div>
+            </section>
+            <section>
+              <h2>Image Types</h2>
+              <p>The primary colors are dirived from the logo colors, and should be used sparingly on the site.</p>
+            </section>
+            <section>
+              <h2>Image Effects</h2>
+              <p>The primary colors are dirived from the logo colors, and should be used sparingly on the site.</p>
+            </section>
+            <section>
+              <h2>Customized Images</h2>
+              <p>The primary colors are dirived from the logo colors, and should be used sparingly on the site.</p>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <div class="block-separator"></div>
+
+      <!-- BLOCKS -->
+      <div class="row">
+        <!--IntroTextBlock-Title-Half-Left-->
+        <div class="col-xs-12 col-xs-offset-0">
+          <article>
+            <header id="buttons" class="introTextBlock pad-top">
+              <h1>Buttons</h1>
+              <p>Buttons can be declared as either <code>BUTTON</code> tag, or as an <code>A</code> tag with <code>.button</code> class applied to it.</p>
+              <p>Buttons can be colored by adding <code>.button-COLOR_NAME</code> class to the element.</p>
+              <p>Buttons can be disabled by adding <code>.button-disabled</code> class to the element.</p>
+              <p class="color-light-gray">Note: The BUTTON tag has a set font size applied. Applying .button class on a text element (link, paragraph, heading, etc...) the element inherits the font-size from the parent.</p>
+            </header>
+            <section class="introText-title title-extended">
+              <h2>Button Tag</h2>
+              <p>Standard button tag elemnts.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;button class="button-default"&gt;Default&lt;/button&gt;
+&lt;button class="button-default-reverse"&gt;Default Reverse&lt;/button&gt;
+&lt;button class="button-default-reverse button-disabled"&gt;Default Reverse Disabled&lt;/button&gt;
+&lt;button class="button-apple"&gt;Button Apple&lt;/button&gt;
+&lt;button class="button-apple-reverse"&gt;Button Apple Reverse&lt;/button&gt;
+&lt;button class="button-apple button-disabled"&gt;Button Apple Disabled&lt;/button&gt;
+              </pre>
+              <button class="button-default">Default</button>
+              <button class="button-default-reverse">Default Reverse</button>
+              <button class="button-default-reverse button-disabled">Default Reverse Disabled</button>
+              <button class="button-apple">Button Apple</button>
+              <button class="button-apple-reverse">Button Apple Reverse</button>
+              <button class="button-apple button-disabled">Button Apple Disabled</button>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Button Sizes</h2>
+              <p>Both the <code>button</code> tag and <code>.button</code> classe have additional larger sizes as follows.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;button class="button-default"&gt;Default Button&lt;/button&gt;
+&lt;button class="button-default-reverse button-large"&gt;Button Large&lt;/button&gt;
+&lt;button class="button-apple button-larger"&gt;Button Larger&lt;/button&gt;
+&lt;button class="button-apple-reverse button-largest"&gt;Button Largest&lt;/button&gt;
+&lt;button class="button-indiglow button-jumbo"&gt;Button Jumbo&lt;/button&gt;
+              </pre>
+              <button class="button-default">Default Button</button>
+              <button class="button-default-reverse button-large">Button Large</button>
+              <button class="button-apple button-larger">Button Larger</button>
+              <button class="button-apple-reverse button-largest">Button Largest</button>
+              <button class="button-indiglow button-jumbo">Button Jumbo</button>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>A Tag</h2>
+              <p>Standard A (link) tag elemnts can also be made into buttons by adding <code>button</code> and <code>button-COLOR_NAME</code> classes to the tag.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;a class="button button-default"&gt;Default&lt;/a&gt;
+&lt;a class="button button-default-reverse"&gt;Default Reverse&lt;/a&gt;
+&lt;a class="button button-default-reverse button-disabled"&gt;Default Reverse Disabled&lt;/a&gt;
+&lt;a class="button button-twine"&gt;Button Twine&lt;/a&gt;
+&lt;a class="button button-twine-reverse"&gt;Button Twine Reverse&lt;/a&gt;
+&lt;a class="button button-twine button-disabled"&gt;Button Twine Disabled&lt;/a&gt;
+              </pre>
+              <a class="button button-default">Default</a>
+              <a class="button button-default-reverse">Default Reverse</a>
+              <a class="button button-default-reverse button-disabled">Default Reverse Disabled</a>
+              <a class="button button-twine">Button Twine</a>
+              <a class="button button-twine-reverse">Button Twine Reverse</a>
+              <a class="button button-twine button-disabled">Button Twine Disabled</a>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Heading Tags</h2>
+              <p>Standard heading tag elemnts (H1-H6) can also be made into buttons by adding <code>button</code> and <code>button-COLOR_NAME</code> classes to the tag.</p>
+              <p class="color-light-gray">Note: The heading tags span across the with of the container element.</p>
+              <p class="color-light-gray">Note: To make the heading into an active link, add an <code>on-click</code> attribute to the element.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;h1 class="button button-default"&gt;Default&lt;/h1&gt;
+&lt;h2 class="button button-default-reverse"&gt;Default Reverse&lt;/h2&gt;
+&lt;h3 class="button button-default-reverse button-disabled"&gt;Default Reverse Disabled&lt;/h3&gt;
+&lt;h4 class="button button-tacha"&gt;Button Tacha&lt;/h4&gt;
+&lt;h5 class="button button-tacha-reverse"&gt;Button Tacha Reverse&lt;/h5&gt;
+&lt;h6 class="button button-tacha button-disabled"&gt;Button Tacha Disabled&lt;/h6&gt;
+              </pre>
+              <h1 class="button button-default">h1 Default</h1>
+              <h2 class="button button-default-reverse">h2 Default Reverse</h2>
+              <h3 class="button button-default-reverse button-disabled">h3 Default Reverse Disabled</h3>
+              <h4 class="button button-tacha">h4 Button Tacha</h4>
+              <h5 class="button button-tacha-reverse">h5 Button Tacha Reverse</h5>
+              <h6 class="button button-tacha button-disabled">h6 Button Tacha Disabled</h6>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Heading Tags with A (Link) Tags</h2>
+              <p>Standard heading tag elemnts (H1-H6) can also be made into buttons by adding an <code>A</code> tag, then <code>button</code> and <code>button-COLOR_NAME</code> classes to the tag.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;h1&gt;&lt;a class="button button-default"&gt;Default&lt;/a&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;a class="button button-default-reverse"&gt;Default Reverse&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;a class="button button-default-reverse button-disabled"&gt;Default Reverse Disabled&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a class="button button-amethyst"&gt;Button Amethyst&lt;/a&gt;&lt;/h4&gt;
+&lt;h5&gt;&lt;a class="button button-amethyst-reverse"&gt;Button Amethyst Reverse&lt;/a&gt;&lt;/h5&gt;
+&lt;h6&gt;&lt;a class="button button-amethyst button-disabled"&gt;Button Amethyst Disabled&lt;/a&gt;&lt;/h6&gt;
+              </pre>
+              <h1 class="content-block"><a class="button button-default">h1 Default</a></h1>
+              <h2 class="content-block"><a class="button button-default-reverse">h2 Default Reverse</a></h2>
+              <h3 class="content-block"><a class="button button-default-reverse button-disabled">h3 Default Reverse Disabled</a></h3>
+              <h4 class="content-block"><a class="button button-amethyst">h4 Button Amethyst</a></h4>
+              <h5 class="content-block"><a class="button button-amethyst-reverse">h5 Button Amethyst Reverse</a></h5>
+              <h6 class="content-block"><a class="button button-amethyst button-disabled">h6 Button Amethyst Disabled</a></h6>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--IntroTextBlock-Title-Half-Left-->
+        <div class="col-xs-12 col-xs-offset-0">
+          <article>
+            <header id="figures" class="introTextBlock pad-top">
+              <h1>Figures</h1>
+              <p>Buttons can be declared as either <code>BUTTON</code> tag, or as an <code>A</code> tag with <code>.button</code> class applied to it.</p>
+              <p class="color-light-gray">Note: The BUTTON tag has a set font size applied. Applying .button class on a text element (link, paragraph, heading, etc...) the element inherits the font-size from the parent.</p>
+            </header>
+            <section class="introText-title title-extended">
+              <h2>Figure Tag</h2>
+              <p>Standard button tag elemnts.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;button class="button-default"&gt;Default&lt;/button&gt;
+              </pre>
+              <button class="button-default">Default</button>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>A Tag</h2>
+              <p>Standard A (link) tag elemnts can also be made into buttons by adding <code>button</code> and <code>button-COLOR_NAME</code> classes to the tag.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;a class="button button-default"&gt;Default&lt;/a&gt;
+              </pre>
+              <a class="button button-default">Default</a>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Heading Tags</h2>
+              <p>Standard heading tag elemnts (H1-H6) can also be made into buttons by adding <code>button</code> and <code>button-COLOR_NAME</code> classes to the tag.</p>
+              <p class="color-light-gray">Note: The heading tags span across the with of the container element.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;h1 class="button button-default"&gt;Default&lt;/h1&gt;
+              </pre>
+              <h1 class="button button-default">h1 Default</h1>
+            </section>
+            <section class="introText-title title-extended">
+              <h2>Heading Tags with A (Link) Tags</h2>
+              <p>Standard heading tag elemnts (H1-H6) can also be made into buttons by adding an <code>A</code> tag, then <code>button</code> and <code>button-COLOR_NAME</code> classes to the tag.</p>
+            </section>
+            <section class="guide-sample-block">
+              <pre>
+&lt;h1&gt;&lt;a class="button button-default"&gt;Default&lt;/a&gt;&lt;/h1&gt;
+              </pre>
+              <h1 class="content-block"><a class="button button-default">h1 Default</a></h1>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!--JavaScript for Bootstrap and jQuery-->
+<!-- CDN Versions of the JavaScript for Bootstrap and jQuery -->
+<!--Note: jQuery first, then Bootstrap-->
+<!--jQuery-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!--Bootstrap-->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Local JavaScript for Bootstrap and jQuery -->
+<!--<script type="text/javascript" src="js/jquery-1.8.0.js"></script>--> <!-- BUG: the jQuery.js file  is missing from the folder-->
+<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+<!--End JavaScript Imports-->
+<!-- Local JavaScript TO BE MOVED TO JS FILES-->
+<!-- Navbar "compressed" Script -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() >= 100) {
+        $('.navbar-global').addClass('navbar-compressed');
+      } else {
+        $('.navbar-global').removeClass('navbar-compressed');
+      }
+    });
+  });
+</script>
+
+
+<!-- Modal Popup Script -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#myModal").modal('show');
+});
+</script>
 
 
 </body>

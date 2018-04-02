@@ -4,26 +4,35 @@
 .media-card
   border: $global-border-stroke
   text-align: left
-  
+
+  + img
+    display: block
+    margin-left: auto
+    margin-right: auto
+
   figure
     margin: 0 -15px 15px
-  
+
   .card-heading,
   .card-info
     padding-bottom: $global-block-padding-3
-    
+
   .card-heading
     //nothing here to see, move along
-    
+
   .card-catagory
     font-size: $font-size-heading-small
   .card-title
     font-weight: $font-weight-heavy
   .card-info
-    
     span.icon
       padding-right: 1rem
       position: absolute
+    img.icon
+      height: 3rem
+      width: 3rem
+      position: absolute
+      border: $global-border-stroke-small
     p.card-date,
     p.card-author
       font-size: $font-size-heading-small
@@ -33,7 +42,7 @@
       padding-bottom: $global-block-padding-0
       padding-left: $global-block-padding
   .card-body
-    margin-bottom: $global-block-padding
+    margin-bottom: $global-block-padding * 1.25
   .card-footer
     display: inline-block
     bottom: 0
@@ -41,6 +50,9 @@
     right: 0
     position: absolute
     text-align: center
+    margin-bottom: $global-block-padding-1
     padding-bottom: $global-block-padding-1
     > button + button
       margin-left: $global-block-padding-2
+  .pad-top
+    padding-top: $global-block-padding-1

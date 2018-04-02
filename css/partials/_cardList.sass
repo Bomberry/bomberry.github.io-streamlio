@@ -7,16 +7,18 @@
 
 .cardList
   display: table
+  width: 100%
   .panel
     display: -webkit-flex
     min-height: $card-height
     //max-height: 250px
     //overflow: hidden
     margin-bottom: 0
-    border-width: 1px
-    border-color: shade($color-white, $color-delta * 3)
-    border-style: solid
     background-color: transparent !important
+    //border-width: 1px
+    //border-color: shade($color-streamlio-white, $color-delta * 3)
+    //border-style: solid
+    border: $global-border-stroke-small
     box-shadow: $global-box-shadow-small
     transition: $global-transition-box-shadow
     .panel-body
@@ -24,6 +26,7 @@
       width: 100%
       //min-height: $card-height
       //max-height: $card-height
+      //flex: 1 0 auto
       overflow-y: auto
       text-align: left
       opacity: 1
@@ -56,9 +59,15 @@
         position: absolute
         bottom: 0
         //vertical-align: bottom
+    //.panel-footer
+      //display: inline-block
+      width: 100%
+      position: absolute
+      bottom: 0
+      //vertical-align: bottom
     .panel-info
       background-color: $background-color-accent-default
-      color: $color-white
+      color: $color-streamlio-white
       //display: none
       height: 0
       width: 100%
@@ -90,7 +99,7 @@
         height: 100%
         padding: 1.5rem 0.5rem
         h1, h2, h3, h4, h5, p, a, a:hover
-          color: $color-white
+          color: $color-streamlio-white
         //h1, h2, h3, h4, h5
           font-size: $font-size-heading-large
           font-weight: $font-weight-heavy
@@ -106,14 +115,14 @@
           text-decoration: underline
 
     //  TODO: move Button to noe partial
-    button
+    button,
+    .button
       @extend .button-default
-      width: 100%
       margin: 1.5rem 0
-      //color: $color-white
+      //color: $color-streamlio-white
       font-size: 1.5rem
       //border-width: 1px
-      //border-color: $color-white
+      //border-color: $color-streamlio-white
       //border-style: solid
       //background-color: rgba($color-accent-default, 0.15)
       box-shadow: $global-box-shadow-small
@@ -121,8 +130,10 @@
       &:not(:first-of-type)
         margin-top: 0
       &:hover
-        //color: $color-white
+        //color: $color-streamlio-white
         //background-color: rgba($color-accent-default,.82)
         //@extend: .bg-color-light-gray
         box-shadow: $global-box-shadow
         z-index: 100
+      &.button-wide
+        width: 100%
